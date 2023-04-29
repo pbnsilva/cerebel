@@ -1,0 +1,47 @@
+{
+    "created_at": 234234234234,
+    "sections": [
+        {
+            "type": "category_teasers",
+            "name": "Popular Categories",
+            "content": [
+                {
+                    "image": "url",
+                    "title": "Vintage"
+                },
+                {
+                    "type": "category_teaser",
+                    "image": "url",
+                    "title": "Dress"
+                },
+                {
+                    "type": "category_teaser",
+                    "image": "url",
+                    "title": "Top"
+                },
+                {
+                    "type": "category_teaser",
+                    "image": "url",
+                    "title": "Vegan"
+                }
+            ]
+        },
+        {
+            "type": "map_teaser",
+            "name": "Popular shop around you"
+        },
+        {
+            "type": "brand_teasers",
+            "name": "Brand Spotlight",
+            "content": [
+                {
+                    "title": "A Day",
+                    "items": [
+                        {}
+                    ]
+                }
+            ]
+        }
+
+    ]
+}

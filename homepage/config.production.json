@@ -1,0 +1,33 @@
+{
+  "url": "https://wearefaer.com",
+  "server": {
+    "port": 8088,
+    "host": "0.0.0.0"
+  },
+   "database": {
+      "client": "sqlite3",
+      "connection": {
+          "filename": "/var/lib/ghost/content/data/ghost.db"
+      },
+      "debug": false
+    },
+  "mail": {
+    "transport": "SMTP",
+    "options": {
+      "service": "Gmail",
+      "auth": {
+        "user": "faermaildummy@gmail.com",
+        "pass": "d2X&dmHak$LG"
+      }
+    }
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  }
+}

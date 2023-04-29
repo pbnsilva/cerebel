@@ -1,0 +1,19 @@
+POST https://api.cerebel.io/v2/store/faer/search/image
+X-Cerebel-Token: AonNLZaEXMtLiHdqJqqGQjKrVRGMhq
+Content-Type: application/json
+@bodies/body4.json
+
+POST https://api.cerebel.io/v2/store/faer/search/image
+X-Cerebel-Token: AonNLZaEXMtLiHdqJqqGQjKrVRGMhq
+Content-Type: application/json
+@bodies/body5.json
+
+POST https://api.cerebel.io/v2/store/faer/search/image
+X-Cerebel-Token: AonNLZaEXMtLiHdqJqqGQjKrVRGMhq
+Content-Type: application/json
+@bodies/body6.json
+
+POST https://api.cerebel.io/v2/store/faer/search/image
+X-Cerebel-Token: AonNLZaEXMtLiHdqJqqGQjKrVRGMhq
+Content-Type: application/json
+@bodies/body7.json

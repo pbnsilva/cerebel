@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchResultNavigationView" customModule="faer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YVR-0c-RKf">
+                    <rect key="frame" x="10" y="0.0" width="273" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Mja-ej-TeL"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6kH-FI-4nv">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rew-qH-tNU" userLabel="Shadow light">
+                    <rect key="frame" x="0.0" y="88" width="293" height="1"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.99756528253424659" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="E7f-Yo-eLF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABI-Oe-7lj" userLabel="Shadow">
+                    <rect key="frame" x="0.0" y="89" width="293" height="1"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yYf-ZX-JeT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00z-QB-nUR">
+                    <rect key="frame" x="10" y="45" width="273" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-1T-wZy">
+                            <rect key="frame" x="224" y="5" width="49" height="34"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                            <state key="normal" title="Filter">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="filterBtnTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="n9y-ZR-nfz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZG-oy-oK5">
+                            <rect key="frame" x="0.0" y="5" width="37" height="34"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                            <state key="normal" title="Sale">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="saleBtnTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="8jU-PR-XEr"/>
+                            </connections>
+                        </button>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-solid" translatesAutoresizingMaskIntoConstraints="NO" id="6Ir-w5-ns3" userLabel="Sales active">
+                            <rect key="frame" x="47" y="12" width="37" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="LEM-Oq-rY6"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eAf-1T-wZy" secondAttribute="trailing" id="1yV-Wr-keZ"/>
+                        <constraint firstAttribute="bottom" secondItem="eAf-1T-wZy" secondAttribute="bottom" constant="5" id="699-JR-LEQ"/>
+                        <constraint firstItem="cZG-oy-oK5" firstAttribute="top" secondItem="00z-QB-nUR" secondAttribute="top" constant="5" id="Cdt-CM-xfd"/>
+                        <constraint firstItem="6Ir-w5-ns3" firstAttribute="leading" secondItem="cZG-oy-oK5" secondAttribute="trailing" constant="10" id="GIP-2P-dNa"/>
+                        <constraint firstItem="cZG-oy-oK5" firstAttribute="leading" secondItem="00z-QB-nUR" secondAttribute="leading" id="SJm-an-jNw"/>
+                        <constraint firstItem="eAf-1T-wZy" firstAttribute="top" secondItem="00z-QB-nUR" secondAttribute="top" constant="5" id="ULm-iH-3uC"/>
+                        <constraint firstAttribute="bottom" secondItem="cZG-oy-oK5" secondAttribute="bottom" constant="5" id="cN1-ma-GMY"/>
+                        <constraint firstItem="6Ir-w5-ns3" firstAttribute="centerY" secondItem="cZG-oy-oK5" secondAttribute="centerY" id="fdQ-ID-y0r"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ABI-Oe-7lj" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0hw-Lx-v25"/>
+                <constraint firstItem="YVR-0c-RKf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="3Hf-2S-Ctk"/>
+                <constraint firstAttribute="trailing" secondItem="ABI-Oe-7lj" secondAttribute="trailing" id="4Cv-G8-FfS"/>
+                <constraint firstItem="ABI-Oe-7lj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8L4-s1-t23"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YVR-0c-RKf" secondAttribute="trailing" constant="10" id="Cwl-lI-4sM"/>
+                <constraint firstItem="ABI-Oe-7lj" firstAttribute="top" secondItem="rew-qH-tNU" secondAttribute="bottom" id="ROg-ue-hDB"/>
+                <constraint firstItem="00z-QB-nUR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="bBo-80-VRN"/>
+                <constraint firstItem="00z-QB-nUR" firstAttribute="top" secondItem="YVR-0c-RKf" secondAttribute="bottom" id="bah-Ny-PyT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="00z-QB-nUR" secondAttribute="trailing" constant="10" id="nku-xl-ExJ"/>
+                <constraint firstItem="YVR-0c-RKf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oCx-Xe-MWs"/>
+                <constraint firstItem="rew-qH-tNU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tOK-tf-LDa"/>
+                <constraint firstItem="ABI-Oe-7lj" firstAttribute="top" secondItem="00z-QB-nUR" secondAttribute="bottom" id="x5j-eM-82E"/>
+                <constraint firstAttribute="trailing" secondItem="rew-qH-tNU" secondAttribute="trailing" id="xh4-Tv-rBQ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionViewHeight" destination="Mja-ej-TeL" id="Qxf-3a-JpQ"/>
+                <outlet property="filterBtn" destination="eAf-1T-wZy" id="Fzz-wG-4Uf"/>
+                <outlet property="salesIcon" destination="6Ir-w5-ns3" id="fLj-Cb-Poq"/>
+            </connections>
+            <point key="canvasLocation" x="-226.40000000000001" y="172.71364317841082"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check-solid" width="37" height="30"/>
+    </resources>
+</document>

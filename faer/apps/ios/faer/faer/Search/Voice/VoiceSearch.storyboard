@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lGl-1Z-BUw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+        <array key="fontawesome-webfont-solid.ttf">
+            <string>FontAwesome5FreeSolid</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Voice Search View Controller-->
+        <scene sceneID="Qpt-cO-qjK">
+            <objects>
+                <viewController storyboardIdentifier="searchVoiceSB" id="rLX-va-vYY" customClass="VoiceSearchViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="689-ae-Pdq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jw6-ER-Y9e">
+                                <rect key="frame" x="20" y="43" width="84" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Hello, how can I help?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojw-z4-1yS" userLabel="Hello, how can I help?">
+                                <rect key="frame" x="20" y="119" width="335" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpH-fi-WVO" userLabel="settings">
+                                <rect key="frame" x="311" y="35" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RHM-cX-gXz"/>
+                                    <constraint firstAttribute="width" constant="44" id="tH4-i6-tsf"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="navbar-cancel"/>
+                                <connections>
+                                    <action selector="hero_dismissViewController" destination="aqu-EU-GDU" eventType="touchUpInside" id="gPR-q8-diy"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-zz-g71">
+                                <rect key="frame" x="20" y="132.5" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmT-H2-LGE" userLabel="MicBtn Hint">
+                                <rect key="frame" x="0.0" y="431" width="375" height="78"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Hold microphone to speak, release to search" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynq-sO-mle" userLabel="MicBtn hint">
+                                        <rect key="frame" x="40" y="0.0" width="295" height="44"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lF-cy-Ivl">
+                                        <rect key="frame" x="177" y="54" width="21" height="24"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ynq-sO-mle" firstAttribute="leading" secondItem="fmT-H2-LGE" secondAttribute="leading" constant="40" id="BBH-Mk-3ci"/>
+                                    <constraint firstItem="ynq-sO-mle" firstAttribute="top" secondItem="fmT-H2-LGE" secondAttribute="top" id="DF9-PC-Pzy"/>
+                                    <constraint firstItem="1lF-cy-Ivl" firstAttribute="centerX" secondItem="fmT-H2-LGE" secondAttribute="centerX" id="FEB-Wz-Hrb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ynq-sO-mle" secondAttribute="trailing" constant="40" id="JO9-gw-FJy"/>
+                                    <constraint firstItem="1lF-cy-Ivl" firstAttribute="top" secondItem="ynq-sO-mle" secondAttribute="bottom" constant="10" id="OZq-dW-9bB"/>
+                                    <constraint firstAttribute="bottom" secondItem="1lF-cy-Ivl" secondAttribute="bottom" id="uRg-de-m82"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysA-c8-VNm">
+                                <rect key="frame" x="0.0" y="132.5" width="375" height="534.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4L0-ch-P0E">
+                                        <rect key="frame" x="20" y="60" width="335" height="133"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Some things you can say" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDR-va-FBJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="22"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Find me a black dress&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8F-3w-bfG">
+                                                <rect key="frame" x="0.0" y="37" width="335" height="22"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Find me a navy sweater&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-RA-1GJ">
+                                                <rect key="frame" x="0.0" y="74" width="335" height="22"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Find me a high-waist jeans&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVc-7d-sBM">
+                                                <rect key="frame" x="0.0" y="111" width="335" height="22"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4L0-ch-P0E" secondAttribute="trailing" constant="20" id="ZSc-EH-twp"/>
+                                    <constraint firstItem="4L0-ch-P0E" firstAttribute="leading" secondItem="ysA-c8-VNm" secondAttribute="leading" constant="20" id="aoy-JM-umg"/>
+                                    <constraint firstItem="4L0-ch-P0E" firstAttribute="top" secondItem="ysA-c8-VNm" secondAttribute="top" constant="60" id="jcK-8A-Keb"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="HiQ-a0-q0z" userLabel="Search Type Menu">
+                                <rect key="frame" x="147.5" y="527" width="80" height="80"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTA-nL-mAW" userLabel="camera search" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="15" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="MjP-ug-6Gg"/>
+                                            <constraint firstAttribute="height" constant="50" id="dfV-jL-2Vl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="24"/>
+                                        <state key="normal" title="">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="camera"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasBorder" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjG-Hk-o0u" userLabel="mic search" customClass="MicButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="CfF-gf-NwW"/>
+                                            <constraint firstAttribute="width" constant="80" id="OVn-DE-5j3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="40"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="mic"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5h-CU-oBb" userLabel="keyboard search" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="15" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="5Ju-y2-BXm"/>
+                                            <constraint firstAttribute="height" constant="50" id="ofa-Kh-WFf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="24"/>
+                                        <state key="normal" title="">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="keyboard"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasBorder" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="searchMenu"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgh-hJ-rcy" userLabel="input animation" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="114" y="45.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="f40-MU-X5W"/>
+                                    <constraint firstAttribute="height" constant="25" id="fFg-8o-NJw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballBeat"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CNo-zz-g71" firstAttribute="leading" secondItem="ogo-mG-qUE" secondAttribute="leading" constant="20" id="3Zy-25-2Fl"/>
+                            <constraint firstItem="ogo-mG-qUE" firstAttribute="trailing" secondItem="ojw-z4-1yS" secondAttribute="trailing" constant="20" id="634-iu-Imc"/>
+                            <constraint firstItem="HiQ-a0-q0z" firstAttribute="top" secondItem="fmT-H2-LGE" secondAttribute="bottom" constant="18" id="8ZW-7d-3BU"/>
+                            <constraint firstItem="ysA-c8-VNm" firstAttribute="trailing" secondItem="ogo-mG-qUE" secondAttribute="trailing" id="98H-ag-UmX"/>
+                            <constraint firstItem="ysA-c8-VNm" firstAttribute="top" secondItem="CNo-zz-g71" secondAttribute="top" id="D1l-3Q-bGz"/>
+                            <constraint firstItem="ojw-z4-1yS" firstAttribute="leading" secondItem="ogo-mG-qUE" secondAttribute="leading" constant="20" id="E8Y-Oe-YSR"/>
+                            <constraint firstItem="vgh-hJ-rcy" firstAttribute="leading" secondItem="Jw6-ER-Y9e" secondAttribute="trailing" constant="10" id="RHe-n7-aR9"/>
+                            <constraint firstItem="vpH-fi-WVO" firstAttribute="top" secondItem="ogo-mG-qUE" secondAttribute="top" constant="15" id="Y6h-9e-BnN"/>
+                            <constraint firstItem="ojw-z4-1yS" firstAttribute="top" secondItem="vpH-fi-WVO" secondAttribute="bottom" constant="40" id="bDC-Fp-KP9"/>
+                            <constraint firstItem="fmT-H2-LGE" firstAttribute="trailing" secondItem="ogo-mG-qUE" secondAttribute="trailing" id="byO-lP-yy7"/>
+                            <constraint firstItem="CNo-zz-g71" firstAttribute="top" secondItem="Jw6-ER-Y9e" secondAttribute="bottom" constant="60" id="cme-88-GEp"/>
+                            <constraint firstItem="ysA-c8-VNm" firstAttribute="bottom" secondItem="ogo-mG-qUE" secondAttribute="bottom" id="e5K-It-Y9H"/>
+                            <constraint firstItem="HiQ-a0-q0z" firstAttribute="centerX" secondItem="689-ae-Pdq" secondAttribute="centerX" id="he6-ji-2Zb"/>
+                            <constraint firstItem="ogo-mG-qUE" firstAttribute="trailing" secondItem="vpH-fi-WVO" secondAttribute="trailing" constant="20" id="mNL-Iy-ynV"/>
+                            <constraint firstItem="ogo-mG-qUE" firstAttribute="trailing" secondItem="CNo-zz-g71" secondAttribute="trailing" constant="20" id="r6P-jn-pO4"/>
+                            <constraint firstItem="ysA-c8-VNm" firstAttribute="leading" secondItem="ogo-mG-qUE" secondAttribute="leading" id="ssx-Iw-iA9"/>
+                            <constraint firstItem="Jw6-ER-Y9e" firstAttribute="top" secondItem="ogo-mG-qUE" secondAttribute="top" constant="23" id="vQs-lB-SgW"/>
+                            <constraint firstItem="vgh-hJ-rcy" firstAttribute="centerY" secondItem="Jw6-ER-Y9e" secondAttribute="centerY" id="vkV-YC-heU"/>
+                            <constraint firstItem="ogo-mG-qUE" firstAttribute="bottom" secondItem="HiQ-a0-q0z" secondAttribute="bottom" constant="60" id="xIk-UF-Ik9"/>
+                            <constraint firstItem="fmT-H2-LGE" firstAttribute="leading" secondItem="ogo-mG-qUE" secondAttribute="leading" id="xW9-ZT-1Qw"/>
+                            <constraint firstItem="Jw6-ER-Y9e" firstAttribute="leading" secondItem="ogo-mG-qUE" secondAttribute="leading" constant="20" id="yzb-gs-veh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ogo-mG-qUE"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="kc4-9t-T5q"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="greeting" destination="ojw-z4-1yS" id="Dik-vh-3A7"/>
+                        <outlet property="inputAnimation" destination="vgh-hJ-rcy" id="wTX-Wp-5Vy"/>
+                        <outlet property="micBtnHint" destination="fmT-H2-LGE" id="H2m-jU-Wq3"/>
+                        <outlet property="micButton" destination="AjG-Hk-o0u" id="Aw3-pB-Usl"/>
+                        <outlet property="micHint" destination="ynq-sO-mle" id="kyb-KD-4Hu"/>
+                        <outlet property="questionHint1" destination="R8F-3w-bfG" id="WRs-aO-8RE"/>
+                        <outlet property="questionHint2" destination="9bI-RA-1GJ" id="M6F-8b-4bO"/>
+                        <outlet property="questionHint3" destination="JVc-7d-sBM" id="k9X-VN-6vf"/>
+                        <outlet property="speakHintTopConstraint" destination="D1l-3Q-bGz" id="WDg-m1-21r"/>
+                        <outlet property="speakHintView" destination="ysA-c8-VNm" id="eJf-8T-k6s"/>
+                        <outlet property="transcriptView" destination="CNo-zz-g71" id="TAG-SG-jEa"/>
+                        <segue destination="L40-c3-Zsa" kind="showDetail" identifier="searchResultSegue" id="KT3-Io-QJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqu-EU-GDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239.2" y="1068.215892053973"/>
+        </scene>
+        <!--SearchResult-->
+        <scene sceneID="gbf-1u-emf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchResult" id="L40-c3-Zsa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ma-c3-I1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="863"/>
+        </scene>
+        <!--Voice Search Navigation View Controller-->
+        <scene sceneID="pBn-RF-F88">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lGl-1Z-BUw" customClass="VoiceSearchNavigationViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sE6-1X-eii">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rLX-va-vYY" kind="relationship" relationship="rootViewController" id="oUv-Zm-W5l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8RK-Im-M5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="1068.215892053973"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navbar-cancel" width="30" height="30"/>
+    </resources>
+</document>

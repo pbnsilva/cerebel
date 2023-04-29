@@ -1,0 +1,24 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: searchteasers-cron
+spec:
+  schedule: "0 1 * * *"
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: searchteasers-container
+            image: eu.gcr.io/cerebel-prod/searchteasers@sha256:_SHA_
+            env:
+            - name: ENV
+              value: "prod"
+            - name: ELASTIC_HOST
+              value: "http://elasticsearch:9200"
+            - name: REDIS_HOST
+              value: "redis:6379"
+            - name: PROMETHEUS_PORT
+              value: "9100"
+          restartPolicy: OnFailure

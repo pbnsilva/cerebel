@@ -1,0 +1,4 @@
+build/
+cerebel.egg-info/
+dist/
+notebooks/.ipynb_checkpoints/

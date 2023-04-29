@@ -1,0 +1,139 @@
+syntax = "proto3";
+
+package store;
+
+service ProductStore {
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+  rpc Delete(DeleteRequest) returns (DeleteResponse) {}
+
+  rpc BulkGetItemsByID(BulkGetItemsByIDRequest) returns (BulkGetItemsByIDResponse) {}
+  rpc BulkUpsertItems(BulkUpsertItemsRequest) returns (BulkUpsertItemsResponse) {}
+  rpc BulkDeleteItemsByID(BulkDeleteItemsByIDRequest) returns (BulkDeleteItemsByIDResponse) {}
+
+  rpc ListItems(ListItemsRequest) returns (stream Item) {}
+  rpc ListItemsForBrand(ListItemsForBrandRequest) returns (stream Item) {}
+
+  rpc GenerateReadToken(GenerateReadTokenRequest) returns (GenerateReadTokenResponse) {}
+}
+
+message AuthTokens {
+  repeated string read_tokens = 1;
+  string admin_token = 2;
+}
+
+message CreateRequest {
+  string store_id = 1;
+}
+
+message CreateResponse {
+  AuthTokens tokens = 1;
+}
+
+message DeleteRequest {
+  string store_id = 1;
+}
+
+message DeleteResponse {
+}
+
+message Item {
+  string id = 1;
+  uint64 created_at = 2;
+  string vendor_id = 3;
+  string name = 4;
+  string brand = 5;
+  string brand_id = 6;
+  string url = 7;
+  repeated string gender = 8;
+  string description = 9;
+  repeated string image_url = 10;
+  repeated string tags = 11;
+  Price price = 12;
+  Price original_price = 13;
+  repeated Store stores = 14;
+  repeated Variant variants = 15;
+  repeated Annotation annotations = 16;
+  string share_url = 17;
+}
+
+message Variant {
+  string id = 1;
+  string vendor_id = 2;
+  string vendor_sku = 3;
+  string name = 4;
+  repeated string image_url = 5;
+  bool available = 6;
+  string color = 7;
+  string size = 8;
+}
+
+message Price {
+  float eur = 1;
+  float gbp = 2;
+  float usd = 3;
+  float dkk = 4;
+  float sek = 5;
+  float inr = 6;
+  float aud = 7;
+}
+
+message Location {
+  float lat = 1;
+  float lon = 2;
+}
+
+message Store {
+  string name = 1;
+  string country = 2;
+  string city = 3;
+  string postal_code = 4;
+  Location location = 5;
+  string address = 6;
+}
+
+message Annotation {
+  string kind = 1;
+  repeated string values = 2;
+}
+
+message BulkGetItemsByIDRequest {
+  string store_id = 1;
+  repeated string ids = 2;
+}
+
+message BulkGetItemsByIDResponse {
+  repeated Item items = 1;
+}
+
+message BulkUpsertItemsRequest {
+  string store_id = 1;
+  repeated Item items = 2;
+}
+
+message BulkUpsertItemsResponse {
+}
+
+message BulkDeleteItemsByIDRequest {
+  string store_id = 1;
+  repeated string ids = 2;
+}
+
+message BulkDeleteItemsByIDResponse {
+}
+
+message ListItemsRequest {
+  string store_id = 1;
+}
+
+message ListItemsForBrandRequest {
+  string store_id = 1;
+  string brand = 2;
+}
+
+message GenerateReadTokenRequest {
+  string store_id = 1;
+}
+
+message GenerateReadTokenResponse {
+  string read_token = 1;
+}

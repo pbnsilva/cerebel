@@ -1,0 +1,7 @@
+cron:
+    - description: "update search home page in Faer app for women"
+      url: /search_homepage/update/women
+      schedule: every 5 minutes
+    - description: "update search home page in Faer app for men"
+      url: /search_homepage/update/men
+      schedule: every 5 minutes

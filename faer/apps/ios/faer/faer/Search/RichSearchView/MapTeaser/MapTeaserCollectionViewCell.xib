@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapTeaserCollectionViewCell" id="gTV-IL-0wX" customClass="MapTeaserCollectionViewCell" customModule="faer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="247" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="247" height="207"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WoQ-xI-EOn">
+                        <rect key="frame" x="0.0" y="0.0" width="247" height="207"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover &lt;stores&gt; shops near you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRe-n4-82M">
+                        <rect key="frame" x="20" y="81.5" width="207" height="44"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXd-jt-zzm">
+                        <rect key="frame" x="167" y="10" width="70" height="30"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                        <state key="normal" title="Hide map">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="hideMapTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="LvO-Na-aXq"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WoQ-xI-EOn" secondAttribute="trailing" id="20R-7g-qA6"/>
+                <constraint firstItem="WoQ-xI-EOn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="92h-xN-9eF"/>
+                <constraint firstItem="uRe-n4-82M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Esi-Hk-suD"/>
+                <constraint firstItem="uRe-n4-82M" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="HJa-7o-Zzu"/>
+                <constraint firstItem="KXd-jt-zzm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Nww-lt-k4V"/>
+                <constraint firstAttribute="trailing" secondItem="KXd-jt-zzm" secondAttribute="trailing" constant="10" id="W39-Fr-rQ6"/>
+                <constraint firstAttribute="trailing" secondItem="uRe-n4-82M" secondAttribute="trailing" constant="20" id="ZnH-ZT-ZQQ"/>
+                <constraint firstItem="uRe-n4-82M" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dLF-9W-saI"/>
+                <constraint firstItem="WoQ-xI-EOn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hPG-3Y-R6R"/>
+                <constraint firstAttribute="bottom" secondItem="WoQ-xI-EOn" secondAttribute="bottom" id="hyg-ze-AEm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="247" height="207"/>
+            <connections>
+                <outlet property="imageView" destination="WoQ-xI-EOn" id="NYf-OP-F92"/>
+                <outlet property="title" destination="uRe-n4-82M" id="kJH-vq-Pw0"/>
+            </connections>
+            <point key="canvasLocation" x="295.19999999999999" y="224.4377811094453"/>
+        </collectionViewCell>
+    </objects>
+</document>

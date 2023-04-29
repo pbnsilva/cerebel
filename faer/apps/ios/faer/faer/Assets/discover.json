@@ -1,0 +1,288 @@
+{
+    "feed": {
+        "styles": [
+                   {
+                   "image_url": "https://instagram.ftxl1-1.fna.fbcdn.net/t51.2885-15/e35/20633249_677528235785030_2571963696884482048_n.jpg",
+                   "source_name": "instagram",
+                   "source_profile": "erika_boldrin",
+                   "source_link": "https://instagram.ftxl1-1.fna.fbcdn.net/t51.2885-15/e35/20633249_677528235785030_2571963696884482048_n.jpg",
+                   "touch_areas": [
+                                   [
+                                    528,
+                                    443,
+                                    433,
+                                    404
+                                    ],
+                                   [
+                                    0,
+                                    877,
+                                    1080,
+                                    470
+                                    ]
+                                   ],
+                   "items": [
+                             {
+                             "bounds": [
+                                        528,
+                                        443,
+                                        433,
+                                        404
+                                        ],
+                             "id": "1",
+                             "price": 12.99,
+                             "price_currency": "€",
+                             "brand": "Nike",
+                             "name": "Sport Bra",
+                             "fabrics": [
+                                         "Fabric organic cotton 100%"
+                                         ],
+                             "url": "https://store.nike.com/us/en_us/pd/fierce-womens-medium-support-sports-bra/pid-10613776/pgid-10273396",
+                             "certificates": [
+                                              "Global Organic Textile Standard"
+                                              ],
+                             "image_urls": [
+                                            "https://images3.nike.com/is/image/DotCom/PDP_HERO/620279_101_C_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images2.nike.com/is/image/DotCom/PDP_HERO/620279_101_B_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images.nike.com/is/image/DotCom/PDP_HERO/620279_101_A_PREM/fierce-womens-medium-support-sports-bra.jpg"
+                                            ]
+                             },
+                             {
+                             "id": "2",
+                             "bounds": [
+                                        0,
+                                        877,
+                                        1080,
+                                        470
+                                        ],
+                             "brand": "Nike",
+                             "price": 14.99,
+                             "price_currency": "€",
+                             "name": "Sport Pants",
+                             "fabrics": [
+                                         "Fabric organic cotton 100%"
+                                         ],
+                             "url": "https://store.nike.com/us/en_us/pd/epic-lux-womens-running-crops/pid-11653506/pgid-11892149",
+                             "image_urls": [
+                                            "https://images3.nike.com/is/image/DotCom/PDP_HERO/855635_037_C_PREM/epic-lux-womens-running-crops.jpg",
+                                            "https://images2.nike.com/is/image/DotCom/PDP_HERO/855635_037_E_PREM/epic-lux-womens-running-crops.jpg",
+                                            "https://images.nike.com/is/image/DotCom/PDP_HERO/855635_037_D_PREM/epic-lux-womens-running-crops.jpg"
+                                            ],
+                             "certificates": [
+                                              "Global Organic Textile Standard"
+                                              ]
+                             }
+                             ]
+                   },
+                   {
+                   "image_url": "https://instagram.ftxl1-1.fna.fbcdn.net/t51.2885-15/e35/20766206_111152992902495_1214662114753380352_n.jpg",
+                   "source_name": "instagram",
+                   "source_profile": "erika_boldrin",
+                   "touch_areas": [
+                                   [
+                                    102,
+                                    684,
+                                    239,
+                                    248
+                                    ]
+                                   ]
+                   },
+                   {
+                   "image_url": "https://instagram.ftxl1-1.fna.fbcdn.net/t51.2885-15/e35/20688113_1732276333732933_6007945114301759488_n.jpg",
+                   "source_name": "instagram",
+                   "source_profile": "erika_boldrin",
+                   "touch_areas": [
+                                   [
+                                    100,
+                                    214,
+                                    405,
+                                    298
+                                    ],
+                                   [
+                                    240,
+                                    523,
+                                    210,
+                                    254
+                                    ],
+                                   [
+                                    271,
+                                    1160,
+                                    317,
+                                    164
+                                    ]
+                                   ],
+                   "items": [
+                             {
+                             "id": "4",
+                             "bounds": [
+                                        100,
+                                        214,
+                                        405,
+                                        298
+                                        ],
+                             "brand": "Foo",
+                             "name": "Floral Shirt",
+                             "colors": [
+                                        "Black",
+                                        "White",
+                                        "Yellow"
+                                        ],
+                             "fabrics": [
+                                         "Fabric organic cotton 100%"
+                                         ],
+                             "url": "foo",
+                             "price": 89.99,
+                             "price_currency": "€",
+                             "certificates": [
+                                              "Global Organic Textile Standard"
+                                              ],
+                             "image_urls": [
+                                            "https://images3.nike.com/is/image/DotCom/PDP_HERO/620279_101_C_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images2.nike.com/is/image/DotCom/PDP_HERO/620279_101_B_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images.nike.com/is/image/DotCom/PDP_HERO/620279_101_A_PREM/fierce-womens-medium-support-sports-bra.jpg"
+                                            ]
+                             },
+                             {
+                             "id": "5",
+                             "bounds": [
+                                        240,
+                                        523,
+                                        210,
+                                        254
+                                        ],
+                             "brand": "Foo",
+                             "name": "Short Skirt",
+                             "url": "foo",
+                             "price": 31.99,
+                             "price_currency": "€",
+                             "colors": [
+                                        "White",
+                                        "Blue"
+                                        ],
+                             "image_urls": [
+                                            "https://images3.nike.com/is/image/DotCom/PDP_HERO/620279_101_C_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images2.nike.com/is/image/DotCom/PDP_HERO/620279_101_B_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images.nike.com/is/image/DotCom/PDP_HERO/620279_101_A_PREM/fierce-womens-medium-support-sports-bra.jpg"
+                                            ]
+                             },
+                             {
+                             "id": "6",
+                             "bounds": [
+                                        271,
+                                        1160,
+                                        317,
+                                        164
+                                        ],
+                             "brand": "Birkenstock",
+                             "name": "Sandals",
+                             "price": 44.99,
+                             "price_currency": "€",
+                             "url": "foo",
+                             "fabrics": [
+                                         "Leather"
+                                         ],
+                             "image_urls": [
+                                            "https://images3.nike.com/is/image/DotCom/PDP_HERO/620279_101_C_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images2.nike.com/is/image/DotCom/PDP_HERO/620279_101_B_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images.nike.com/is/image/DotCom/PDP_HERO/620279_101_A_PREM/fierce-womens-medium-support-sports-bra.jpg"
+                                            ]
+                             }
+                             ]
+                   },
+                   {
+                   "image_url": "https://instagram.ftxl1-1.fna.fbcdn.net/t51.2885-15/e35/20837068_505558573127982_4565864416800669696_n.jpg",
+                   "source_name": "instagram",
+                   "source_profile": "pernilleteisbaek",
+                   "touch_areas": [
+                                   [
+                                    460,
+                                    622,
+                                    145,
+                                    104
+                                    ],
+                                   [
+                                    474,
+                                    740,
+                                    99,
+                                    277
+                                    ],
+                                   [
+                                    430,
+                                    774,
+                                    36,
+                                    64
+                                    ]
+                                   ],
+                   "items": [
+                             {
+                             "id": "7",
+                             "bounds": [
+                                        460,
+                                        622,
+                                        145,
+                                        104
+                                        ],
+                             "price": 14.99,
+                             "price_currency": "€",
+                             "brand": "Foo",
+                             "name": "Striped Shirt",
+                             "url": "foo",
+                             "colors": [
+                                        "Black",
+                                        "White"
+                                        ],
+                             "image_urls": [
+                                            "https://images3.nike.com/is/image/DotCom/PDP_HERO/620279_101_C_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images2.nike.com/is/image/DotCom/PDP_HERO/620279_101_B_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images.nike.com/is/image/DotCom/PDP_HERO/620279_101_A_PREM/fierce-womens-medium-support-sports-bra.jpg"
+                                            ]
+                             },
+                             {
+                             "id": "8",
+                             "bounds": [
+                                        474,
+                                        740,
+                                        99,
+                                        277
+                                        ],
+                             "brand": "Foo",
+                             "price": 34.99,
+                             "price_currency": "€",
+                             "name": "Jeans",
+                             "url": "foo",
+                             "colors": [
+                                        "Black",
+                                        "Dark Grey"
+                                        ],
+                             "image_urls": [
+                                            "https://images3.nike.com/is/image/DotCom/PDP_HERO/620279_101_C_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images2.nike.com/is/image/DotCom/PDP_HERO/620279_101_B_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images.nike.com/is/image/DotCom/PDP_HERO/620279_101_A_PREM/fierce-womens-medium-support-sports-bra.jpg"
+                                            ]
+                             },
+                             {
+                             "id": "9",
+                             "bounds": [
+                                        430,
+                                        774,
+                                        36,
+                                        64
+                                        ],
+                             "brand": "Foo",
+                             "price": 112.99,
+                             "price_currency": "€",
+                             "name": "Small Handbag",
+                             "url": "foo",
+                             "colors": [
+                                        "Black"
+                                        ],
+                             "image_urls": [
+                                            "https://images3.nike.com/is/image/DotCom/PDP_HERO/620279_101_C_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images2.nike.com/is/image/DotCom/PDP_HERO/620279_101_B_PREM/fierce-womens-medium-support-sports-bra.jpg",
+                                            "https://images.nike.com/is/image/DotCom/PDP_HERO/620279_101_A_PREM/fierce-womens-medium-support-sports-bra.jpg"
+                                            ]
+                             }
+                             ]
+                   }
+                   ]
+    }
+}

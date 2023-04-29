@@ -1,0 +1,69 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dashboard
+  labels:
+    app: dashboard
+spec:
+  ports:
+  - port: 8085
+    name: http
+  - port: 9100
+    name: prometheus
+  selector:
+    app: dashboard
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: dashboard 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        prometheus.io/port: "9100"
+        prometheus.io/scrape: "true"
+      labels:
+        app: dashboard
+    spec:
+      volumes:
+      - name: secret
+        secret:
+          secretName: gcloud-client-secret
+      - name: data
+        hostPath:
+          path: /root/data
+      containers:
+      - name: dashboard-container
+        image: eu.gcr.io/cerebel-prod/dashboard@sha256:_SHA_
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8085
+        - containerPort: 9100
+        volumeMounts:
+          - name: secret
+            mountPath: /secret
+          - name: data
+            mountPath: /data
+        env:
+        - name: ENV
+          value: "prod"
+        - name: HTTP_PORT
+          value: "8085"
+        - name: PROMETHEUS_PORT
+          value: "9100"
+        - name: HOME_BASE_URL
+          value: "https://dash.wearefaer.com"
+        - name: ELASTIC_HOST
+          value: "http://elasticsearch:9200"
+        - name: SEARCH_HOST
+          value: "http://backend:8080"
+        - name: FEED_HOST
+          value: "backend:9090"
+        - name: STORE_HOST
+          value: "backend:9090"
+        - name: SUGGESTER_HOST
+          value: "http://backend:8080"
+        - name: SCRAPYD_HOST
+          value: "http://scrapyd:6800"

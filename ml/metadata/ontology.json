@@ -1,0 +1,1367 @@
+{
+    "/br": {
+        "label": "Brand"
+    },
+    "/ca": {
+        "label": "Category",
+        "subcategories": [
+            "/ca/03ec9d23",
+            "/ca/09314d84",
+            "/ca/1fe24bcd",
+            "/ca/aac9e4a0"
+        ]
+    },
+    "/ca/002bd2a3": {
+        "label": "Sports socks"
+    },
+    "/ca/5f3c201d": {
+        "subcategories": [
+            "/ca/002bd2a3",
+            "/ca/02fab9f4",
+            "/ca/7e99e8dc",
+            "/ca/ab201fed"
+        ],
+        "label": "Socks"
+    },
+    "/ca/02fab9f4": {
+        "label": "Thigh high socks"
+    },
+    "/ca/0385e81b": {
+        "label": "Clutch bags"
+    },
+    "/ca/bf413917": {
+        "subcategories": [
+            "/ca/0385e81b",
+            "/ca/410bbab5",
+            "/ca/5761c9a9",
+            "/ca/72dbe731",
+            "/ca/94448ae1",
+            "/ca/b848fe5c",
+            "/ca/d33fe185",
+            "/ca/d92aee9b",
+            "/ca/ea3fbb08",
+            "/ca/f840add8"
+        ],
+        "label": "Bags"
+    },
+    "/ca/03ec9d23": {
+        "label": "Shoes",
+        "subcategories": [
+            "/ca/03ec9d231",
+            "/ca/03ec9d2310",
+            "/ca/03ec9d2311",
+            "/ca/03ec9d2312",
+            "/ca/03ec9d2313",
+            "/ca/03ec9d232",
+            "/ca/03ec9d233",
+            "/ca/03ec9d234",
+            "/ca/03ec9d235",
+            "/ca/03ec9d236",
+            "/ca/03ec9d237",
+            "/ca/03ec9d238",
+            "/ca/03ec9d239",
+            "/ca/8a6af16e"
+        ]
+    },
+    "/ca/03ec9d231": {
+        "label": "Trainers",
+        "subcategories": [
+            "/ca/56e42a3b",
+            "/ca/6c35f1f5"
+        ]
+    },
+    "/ca/03ec9d2310": {
+        "label": "Outdoor"
+    },
+    "/ca/03ec9d2311": {
+        "label": "Mules & Clogs"
+    },
+    "/ca/03ec9d2312": {
+        "label": "Heels"
+    },
+    "/ca/03ec9d2313": {
+        "label": "Flip-Flops & Beach Shoes"
+    },
+    "/ca/03ec9d232": {
+        "label": "Flats & Lace-Ups"
+    },
+    "/ca/03ec9d233": {
+        "label": "Athletic"
+    },
+    "/ca/03ec9d234": {
+        "label": "Boots",
+        "subcategories": [
+            "/ca/2b0d2acb",
+            "/ca/3b00eba9",
+            "/ca/60c72a61",
+            "/ca/645a2e4c",
+            "/ca/9e9893b7",
+            "/ca/d7773c85",
+            "/ca/e4343b94",
+            "/ca/e783aa09",
+            "/ca/edc762f6",
+            "/ca/efd4beb4",
+            "/ca/f5413162",
+            "/ca/fab6acd0",
+            "/ca/fdb6defa"
+        ]
+    },
+    "/ca/03ec9d235": {
+        "label": "Pumps"
+    },
+    "/ca/03ec9d236": {
+        "label": "Sandals"
+    },
+    "/ca/03ec9d237": {
+        "label": "Loafers & Slip-Ons"
+    },
+    "/ca/03ec9d238": {
+        "label": "Oxfords"
+    },
+    "/ca/03ec9d239": {
+        "label": "Slippers"
+    },
+    "/ca/041b8b5e": {
+        "label": "Oxford shirts"
+    },
+    "/ca/1fe24bcd18": {
+        "subcategories": [
+            "/ca/041b8b5e",
+            "/ca/0a8d3377",
+            "/ca/713e005c",
+            "/ca/9fbaed88"
+        ],
+        "label": "Shirts"
+    },
+    "/ca/044b15fc": {
+        "label": "Necklaces"
+    },
+    "/ca/b3995a9e": {
+        "subcategories": [
+            "/ca/044b15fc",
+            "/ca/48ba6fd6",
+            "/ca/994a65b6",
+            "/ca/b1e03f6a",
+            "/ca/bd1d4ffb"
+        ],
+        "label": "Jewellery"
+    },
+    "/ca/050b2a82": {
+        "label": "Capes"
+    },
+    "/ca/1fe24bcd": {
+        "subcategories": [
+            "/ca/050b2a82",
+            "/ca/10ddb0c5",
+            "/ca/1fe24bcd1",
+            "/ca/1fe24bcd12",
+            "/ca/1fe24bcd13",
+            "/ca/1fe24bcd14",
+            "/ca/1fe24bcd15",
+            "/ca/1fe24bcd16",
+            "/ca/1fe24bcd17",
+            "/ca/1fe24bcd18",
+            "/ca/1fe24bcd19",
+            "/ca/1fe24bcd2",
+            "/ca/1fe24bcd4",
+            "/ca/1fe24bcd6",
+            "/ca/1fe24bcd7",
+            "/ca/1fe24bcd8",
+            "/ca/1fe24bcd9",
+            "/ca/45f7302f",
+            "/ca/482edb4d",
+            "/ca/5645e878",
+            "/ca/5e46f464",
+            "/ca/92c964e7",
+            "/ca/aaf010cc"
+        ],
+        "label": "Clothing"
+    },
+    "/ca/05b44c56": {
+        "label": "Suit jackets"
+    },
+    "/ca/aaf010cc": {
+        "subcategories": [
+            "/ca/05b44c56",
+            "/ca/0a954d9c"
+        ],
+        "label": "Suits"
+    },
+    "/ca/06cef63c": {
+        "label": "Knitted jumpers"
+    },
+    "/ca/6fe112fe": {
+        "subcategories": [
+            "/ca/06cef63c"
+        ],
+        "label": "Jumpers"
+    },
+    "/ca/09314d84": {
+        "label": "Accessories",
+        "subcategories": [
+            "/ca/24d375e1",
+            "/ca/383cb0db",
+            "/ca/578779cc",
+            "/ca/76394a46",
+            "/ca/77f65a11",
+            "/ca/93e16428",
+            "/ca/973b3cb1",
+            "/ca/b3995a9e",
+            "/ca/bf413917",
+            "/ca/bf4139170",
+            "/ca/bf4139171",
+            "/ca/ce26af49"
+        ]
+    },
+    "/ca/0a8d3377": {
+        "label": "Polo shirts"
+    },
+    "/ca/0a954d9c": {
+        "label": "Suit trousers"
+    },
+    "/ca/0fbc8fde": {
+        "label": "A-line skirts"
+    },
+    "/ca/1fe24bcd9": {
+        "subcategories": [
+            "/ca/0fbc8fde",
+            "/ca/3c289ba3",
+            "/ca/614ca732",
+            "/ca/7706cae1",
+            "/ca/7baa72e9",
+            "/ca/80c448bb",
+            "/ca/d35bf88e",
+            "/ca/ebaf6603"
+        ],
+        "label": "Skirts"
+    },
+    "/ca/1026228d": {
+        "label": "Shawls"
+    },
+    "/ca/973b3cb1": {
+        "subcategories": [
+            "/ca/1026228d",
+            "/ca/3b29b3eb",
+            "/ca/72964cd8"
+        ],
+        "label": "Scarves & Wraps"
+    },
+    "/ca/10ddb0c5": {
+        "label": "Rompers"
+    },
+    "/ca/141c76d3": {
+        "label": "Winter coats"
+    },
+    "/ca/1fe24bcd19": {
+        "subcategories": [
+            "/ca/141c76d3",
+            "/ca/24dba7eb",
+            "/ca/3dfda0e8",
+            "/ca/4ed6a18c",
+            "/ca/ba41a6ca",
+            "/ca/ba46b720",
+            "/ca/f92c271b"
+        ],
+        "label": "Coats"
+    },
+    "/ca/18d663f2": {
+        "label": "Soft shell jackets"
+    },
+    "/ca/1fe24bcd1": {
+        "subcategories": [
+            "/ca/18d663f2",
+            "/ca/18de289e",
+            "/ca/1fb317b2",
+            "/ca/6ab8fcfb",
+            "/ca/736dc715",
+            "/ca/76ac4002",
+            "/ca/81fd7019",
+            "/ca/896373d2",
+            "/ca/a2a78752",
+            "/ca/a7ecfb91",
+            "/ca/ab0d7cfd",
+            "/ca/bd3b8199",
+            "/ca/c772179b",
+            "/ca/d4ce9721",
+            "/ca/de06d74f"
+        ],
+        "label": "Jackets"
+    },
+    "/ca/18de289e": {
+        "label": "Running jackets"
+    },
+    "/ca/1b625aa4": {
+        "label": "Bikini bottoms"
+    },
+    "/ca/78188717": {
+        "subcategories": [
+            "/ca/1b625aa4",
+            "/ca/3a5e3fff",
+            "/ca/fec659a1"
+        ],
+        "label": "Bikinis"
+    },
+    "/ca/1f8d3860": {
+        "label": "Shirt dresses"
+    },
+    "/ca/1fe24bcd2": {
+        "subcategories": [
+            "/ca/1f8d3860",
+            "/ca/7b3a8f89",
+            "/ca/7d9a909c",
+            "/ca/81a7f6eb",
+            "/ca/af04a665"
+        ],
+        "label": "Dresses"
+    },
+    "/ca/1fb317b2": {
+        "label": "Outdoor jackets"
+    },
+    "/ca/1fe24bcd10": {
+        "label": "Socks & Tights",
+        "subcategories": [
+            "/ca/5f3c201d",
+            "/ca/9d5e9285"
+        ]
+    },
+    "/ca/1fe24bcd7": {
+        "subcategories": [
+            "/ca/1fe24bcd10",
+            "/ca/24881490",
+            "/ca/38e8672f",
+            "/ca/3d218955",
+            "/ca/40b9a88a",
+            "/ca/4b2fb24b",
+            "/ca/8096f2fa",
+            "/ca/8b7b1aea",
+            "/ca/8f4f0138",
+            "/ca/a3560114",
+            "/ca/a76aa3f8",
+            "/ca/ce44a3c1",
+            "/ca/d7121151"
+        ],
+        "label": "Underwear, Lingerie & Nightwear"
+    },
+    "/ca/1fe24bcd12": {
+        "label": "Swimwear",
+        "subcategories": [
+            "/ca/78188717",
+            "/ca/7b1276d0",
+            "/ca/e0ded24f",
+            "/ca/e76ba06b",
+            "/ca/fecd2752"
+        ]
+    },
+    "/ca/1fe24bcd13": {
+        "label": "T-Shirts & Tops",
+        "subcategories": [
+            "/ca/7a0dd81b",
+            "/ca/b3e393f0"
+        ]
+    },
+    "/ca/1fe24bcd14": {
+        "label": "Trousers",
+        "subcategories": [
+            "/ca/1fe24bcd141",
+            "/ca/1fe24bcd142",
+            "/ca/1fe24bcd143",
+            "/ca/1fe24bcd144",
+            "/ca/23dbb681",
+            "/ca/d01d41c8"
+        ]
+    },
+    "/ca/1fe24bcd141": {
+        "label": "Chinos"
+    },
+    "/ca/1fe24bcd142": {
+        "label": "Joggers & Sweats"
+    },
+    "/ca/1fe24bcd143": {
+        "label": "Leggings"
+    },
+    "/ca/1fe24bcd144": {
+        "label": "Playsuits & Jumpsuits"
+    },
+    "/ca/1fe24bcd15": {
+        "label": "Blouses & Tunics",
+        "subcategories": [
+            "/ca/1fe24bcd151",
+            "/ca/1fe24bcd152"
+        ]
+    },
+    "/ca/1fe24bcd151": {
+        "label": "Blouses"
+    },
+    "/ca/1fe24bcd152": {
+        "label": "Tunics"
+    },
+    "/ca/1fe24bcd16": {
+        "label": "Jumpers & Cardigans",
+        "subcategories": [
+            "/ca/6b7d1d9e",
+            "/ca/6fe112fe",
+            "/ca/70db15d3",
+            "/ca/8abdf1af",
+            "/ca/a8be4e40"
+        ]
+    },
+    "/ca/1fe24bcd17": {
+        "label": "Activewear",
+        "subcategories": [
+            "/ca/3b669dd2"
+        ]
+    },
+    "/ca/1fe24bcd4": {
+        "label": "Jeans"
+    },
+    "/ca/1fe24bcd6": {
+        "label": "Leggings",
+        "subcategories": [
+            "/ca/d7c9952a"
+        ]
+    },
+    "/ca/1fe24bcd8": {
+        "label": "Shorts",
+        "subcategories": [
+            "/ca/91b5530c",
+            "/ca/a42abaa1"
+        ]
+    },
+    "/ca/23dbb681": {
+        "label": "Cargo trousers"
+    },
+    "/ca/24881490": {
+        "label": "Bralettes"
+    },
+    "/ca/24d375e1": {
+        "label": "Hats & Caps",
+        "subcategories": [
+            "/ca/80dd818c",
+            "/ca/8204024c"
+        ]
+    },
+    "/ca/24dba7eb": {
+        "label": "Down coats"
+    },
+    "/ca/2b0d2acb": {
+        "label": "Hiking boots"
+    },
+    "/ca/346ee26e": {
+        "label": "Triangle bras"
+    },
+    "/ca/40b9a88a": {
+        "subcategories": [
+            "/ca/346ee26e",
+            "/ca/43186132",
+            "/ca/47deb110",
+            "/ca/98da55d2",
+            "/ca/eb80a448",
+            "/ca/f5b45759"
+        ],
+        "label": "Bras"
+    },
+    "/ca/383cb0db": {
+        "label": "Gloves & Mittens",
+        "subcategories": [
+            "/ca/407c9314"
+        ]
+    },
+    "/ca/38e8672f": {
+        "label": "Dressing Gowns"
+    },
+    "/ca/3a5e3fff": {
+        "label": "Bikini sets"
+    },
+    "/ca/3b00eba9": {
+        "label": "Lace up boots"
+    },
+    "/ca/3b29b3eb": {
+        "label": "Wraps"
+    },
+    "/ca/3b669dd2": {
+        "label": "Sports bras"
+    },
+    "/ca/3c289ba3": {
+        "label": "Denim skirts"
+    },
+    "/ca/3d218955": {
+        "label": "Nightwear"
+    },
+    "/ca/3dfda0e8": {
+        "label": "Pea coats"
+    },
+    "/ca/407c9314": {
+        "label": "Fingerless gloves"
+    },
+    "/ca/410bbab5": {
+        "label": "Handbags"
+    },
+    "/ca/43186132": {
+        "label": "Balconette bras"
+    },
+    "/ca/44c358fa": {
+        "label": "Headscarves"
+    },
+    "/ca/72964cd8": {
+        "subcategories": [
+            "/ca/44c358fa"
+        ],
+        "label": "Scarves"
+    },
+    "/ca/45f7302f": {
+        "label": "Kimonos"
+    },
+    "/ca/465b5284": {
+        "label": "Biker ankle boots"
+    },
+    "/ca/fdb6defa": {
+        "subcategories": [
+            "/ca/465b5284",
+            "/ca/69631c67",
+            "/ca/71d02509",
+            "/ca/8478f8fe",
+            "/ca/b835e576",
+            "/ca/d3dac44f"
+        ],
+        "label": "Ankle boots"
+    },
+    "/ca/47deb110": {
+        "label": "Push-up bras"
+    },
+    "/ca/482edb4d": {
+        "label": "Sarongs"
+    },
+    "/ca/48ba6fd6": {
+        "label": "Bracelets"
+    },
+    "/ca/4b2fb24b": {
+        "label": "Knickers"
+    },
+    "/ca/4ed6a18c": {
+        "label": "Trench coats"
+    },
+    "/ca/5645e878": {
+        "label": "Jumpsuits"
+    },
+    "/ca/56e42a3b": {
+        "label": "Low-top trainers"
+    },
+    "/ca/5761c9a9": {
+        "label": "Backpacks"
+    },
+    "/ca/578779cc": {
+        "label": "Sunglasses"
+    },
+    "/ca/5e46f464": {
+        "label": "Ponchos"
+    },
+    "/ca/5f857f5d": {
+        "label": "Wooly hats"
+    },
+    "/ca/8204024c": {
+        "subcategories": [
+            "/ca/5f857f5d"
+        ],
+        "label": "Hats"
+    },
+    "/ca/60c72a61": {
+        "label": "Platform boots"
+    },
+    "/ca/614ca732": {
+        "label": "Pleated skirts"
+    },
+    "/ca/645a2e4c": {
+        "label": "Thigh high boots"
+    },
+    "/ca/66a93f06": {
+        "label": "Turtlenecks"
+    },
+    "/ca/a8be4e40": {
+        "subcategories": [
+            "/ca/66a93f06"
+        ],
+        "label": "Sweatshirts"
+    },
+    "/ca/69631c67": {
+        "label": "Platform ankle boots"
+    },
+    "/ca/6ab8fcfb": {
+        "label": "Rain jackets"
+    },
+    "/ca/6b7d1d9e": {
+        "label": "Fleece Jumpers"
+    },
+    "/ca/6c35f1f5": {
+        "label": "High-top trainers"
+    },
+    "/ca/6dae3aaa": {
+        "label": "Tank tops"
+    },
+    "/ca/b3e393f0": {
+        "subcategories": [
+            "/ca/6dae3aaa",
+            "/ca/7fc08902",
+            "/ca/f4f9e75f"
+        ],
+        "label": "Tops"
+    },
+    "/ca/70db15d3": {
+        "label": "Hoodies"
+    },
+    "/ca/713e005c": {
+        "label": "Dress shirts"
+    },
+    "/ca/71d02509": {
+        "label": "Wedge ankle boots"
+    },
+    "/ca/72dbe731": {
+        "label": "Rucksacks"
+    },
+    "/ca/736dc715": {
+        "label": "Bomber jackets"
+    },
+    "/ca/76394a46": {
+        "label": "Belts"
+    },
+    "/ca/76ac4002": {
+        "label": "Sweat jackets"
+    },
+    "/ca/7706cae1": {
+        "label": "Mini skirts"
+    },
+    "/ca/77f65a11": {
+        "label": "Earmuffs"
+    },
+    "/ca/7a0dd81b": {
+        "label": "T-Shirts",
+        "subcategories": [
+            "/ca/7e06299c",
+            "/ca/98bf3f7c"
+        ]
+    },
+    "/ca/7b1276d0": {
+        "label": "Swimming shorts"
+    },
+    "/ca/7b3a8f89": {
+        "label": "Knitted dresses"
+    },
+    "/ca/7baa72e9": {
+        "label": "Maxi skirts"
+    },
+    "/ca/7d9a909c": {
+        "label": "T-Shirt dresses"
+    },
+    "/ca/7e06299c": {
+        "label": "Plain t-shirts"
+    },
+    "/ca/7e99e8dc": {
+        "label": "Knee high socks"
+    },
+    "/ca/7fc08902": {
+        "label": "Long sleeve tops"
+    },
+    "/ca/8096f2fa": {
+        "label": "Shapewear"
+    },
+    "/ca/80c448bb": {
+        "label": "Leather skirts"
+    },
+    "/ca/80dd818c": {
+        "label": "Caps",
+        "subcategories": [
+            "/ca/9a61b1f5",
+            "/ca/eac99eba"
+        ]
+    },
+    "/ca/81a7f6eb": {
+        "label": "Jersey dresses"
+    },
+    "/ca/81fd7019": {
+        "label": "Jean jackets"
+    },
+    "/ca/8478f8fe": {
+        "label": "Lace up ankle boots"
+    },
+    "/ca/896373d2": {
+        "label": "Blazers"
+    },
+    "/ca/8a6af16e": {
+        "label": "Brogues"
+    },
+    "/ca/8abdf1af": {
+        "label": "Cardigans"
+    },
+    "/ca/8b7b1aea": {
+        "label": "Vests & Camisoles"
+    },
+    "/ca/8f4f0138": {
+        "label": "Pyjamas"
+    },
+    "/ca/91b5530c": {
+        "label": "Jean shorts"
+    },
+    "/ca/92c964e7": {
+        "label": "Dungarees"
+    },
+    "/ca/93e16428": {
+        "label": "Ties"
+    },
+    "/ca/94448ae1": {
+        "label": "Travel bags"
+    },
+    "/ca/98bf3f7c": {
+        "label": "Printed t-shirts"
+    },
+    "/ca/98da55d2": {
+        "label": "T-shirt bras"
+    },
+    "/ca/994a65b6": {
+        "label": "Rings"
+    },
+    "/ca/9a61b1f5": {
+        "label": "Beanies"
+    },
+    "/ca/9d5e9285": {
+        "label": "Tights"
+    },
+    "/ca/9e9893b7": {
+        "label": "Classic boots"
+    },
+    "/ca/9fbaed88": {
+        "label": "Denim shirts"
+    },
+    "/ca/a2a78752": {
+        "label": "Fleece jackets"
+    },
+    "/ca/a3560114": {
+        "label": "Briefs"
+    },
+    "/ca/a42abaa1": {
+        "label": "Sweatshorts"
+    },
+    "/ca/a76aa3f8": {
+        "label": "Thongs"
+    },
+    "/ca/a7ecfb91": {
+        "label": "Training jackets"
+    },
+    "/ca/aac9e4a0": {
+        "label": "Vintage"
+    },
+    "/ca/ab0d7cfd": {
+        "label": "Ski jackets"
+    },
+    "/ca/ab201fed": {
+        "label": "Boot socks"
+    },
+    "/ca/af04a665": {
+        "label": "Denim dresses"
+    },
+    "/ca/b1e03f6a": {
+        "label": "Pendants"
+    },
+    "/ca/b835e576": {
+        "label": "Classic ankle boots"
+    },
+    "/ca/b848fe5c": {
+        "label": "Duffle bags"
+    },
+    "/ca/ba41a6ca": {
+        "label": "Waistcoats"
+    },
+    "/ca/ba46b720": {
+        "label": "Short coats"
+    },
+    "/ca/bd1d4ffb": {
+        "label": "Earrings"
+    },
+    "/ca/bd3b8199": {
+        "label": "Lightweight jackets"
+    },
+    "/ca/bf4139170": {
+        "label": "Wallets"
+    },
+    "/ca/bf4139171": {
+        "label": "Watches"
+    },
+    "/ca/c772179b": {
+        "label": "Down jackets"
+    },
+    "/ca/ce26af49": {
+        "label": "Keyrings & Keychains"
+    },
+    "/ca/ce44a3c1": {
+        "label": "Boxer shorts"
+    },
+    "/ca/d01d41c8": {
+        "label": "Capris"
+    },
+    "/ca/d33fe185": {
+        "label": "Purses"
+    },
+    "/ca/d35bf88e": {
+        "label": "Bubble hem skirts"
+    },
+    "/ca/d3dac44f": {
+        "label": "Heeled ankle boots"
+    },
+    "/ca/d4ce9721": {
+        "label": "Winter jackets"
+    },
+    "/ca/d7121151": {
+        "label": "Suspenders"
+    },
+    "/ca/d7773c85": {
+        "label": "Heeled boots"
+    },
+    "/ca/d7c9952a": {
+        "label": "Jeggings"
+    },
+    "/ca/d92aee9b": {
+        "label": "Fanny packs"
+    },
+    "/ca/de06d74f": {
+        "label": "Gilets"
+    },
+    "/ca/e0ded24f": {
+        "label": "Wetsuits"
+    },
+    "/ca/e4343b94": {
+        "label": "Football boots"
+    },
+    "/ca/e76ba06b": {
+        "label": "Bathrobes"
+    },
+    "/ca/e783aa09": {
+        "label": "Riding boots"
+    },
+    "/ca/ea3fbb08": {
+        "label": "Daysacks"
+    },
+    "/ca/eac99eba": {
+        "label": "Baseball caps"
+    },
+    "/ca/eb80a448": {
+        "label": "Strapless bras"
+    },
+    "/ca/ebaf6603": {
+        "label": "Pencil skirts"
+    },
+    "/ca/edc762f6": {
+        "label": "Snow boots"
+    },
+    "/ca/efd4beb4": {
+        "label": "Wedge boots"
+    },
+    "/ca/f4f9e75f": {
+        "label": "Vest tops"
+    },
+    "/ca/f5413162": {
+        "label": "Ski boots"
+    },
+    "/ca/f5b45759": {
+        "label": "Underwire bras"
+    },
+    "/ca/f840add8": {
+        "label": "Tote bags"
+    },
+    "/ca/f92c271b": {
+        "label": "Parkas"
+    },
+    "/ca/fab6acd0": {
+        "label": "Winter boots"
+    },
+    "/ca/fec659a1": {
+        "label": "Bikini tops"
+    },
+    "/ca/fecd2752": {
+        "label": "Swimsuits"
+    },
+    "/co": {
+        "label": "Colour"
+    },
+    "/fa": {
+        "label": "Fabric",
+        "subcategories": [
+            "/fa/0d3a71fd",
+            "/fa/1fb317b2",
+            "/fa/28c9e793",
+            "/fa/2c248ac0",
+            "/fa/63e0058b",
+            "/fa/68a58cef",
+            "/fa/6e1cbd6b",
+            "/fa/d1accd20",
+            "/fa/fefefa0e"
+        ]
+    },
+    "/fa/0d3a71fd": {
+        "label": "Polyester"
+    },
+    "/fa/1fb317b2": {
+        "label": "Leather"
+    },
+    "/fa/28c9e793": {
+        "label": "Fiberglass"
+    },
+    "/fa/2c248ac0": {
+        "label": "Silk"
+    },
+    "/fa/63e0058b": {
+        "label": "Rayon"
+    },
+    "/fa/68a58cef": {
+        "label": "Wool"
+    },
+    "/fa/6e1cbd6b": {
+        "label": "Linen"
+    },
+    "/fa/d1accd20": {
+        "label": "Cotton"
+    },
+    "/fa/fefefa0e": {
+        "label": "Bamboo"
+    },
+    "/ge": {
+        "label": "Gender",
+        "subcategories": [
+            "/ge/016a33d9",
+            "/ge/8dab17c2"
+        ]
+    },
+    "/ge/016a33d9": {
+        "label": "Women"
+    },
+    "/ge/8dab17c2": {
+        "label": "Men"
+    },
+    "/hf": {
+        "label": "Heel form",
+        "subcategories": [
+            "/hf/0fbf0557",
+            "/hf/11079beb",
+            "/hf/165ea779",
+            "/hf/274ad720",
+            "/hf/41594753",
+            "/hf/41736598",
+            "/hf/4306b72a",
+            "/hf/70e7a4c6",
+            "/hf/7e7352eb",
+            "/hf/bd0309e3"
+        ]
+    },
+    "/hf/0fbf0557": {
+        "label": "Stiletto"
+    },
+    "/hf/11079beb": {
+        "label": "Block heel"
+    },
+    "/hf/165ea779": {
+        "label": "Flat"
+    },
+    "/hf/274ad720": {
+        "label": "Hidden platform"
+    },
+    "/hf/41594753": {
+        "label": "Wedge"
+    },
+    "/hf/41736598": {
+        "label": "Platform boot"
+    },
+    "/hf/4306b72a": {
+        "label": "Platform"
+    },
+    "/hf/70e7a4c6": {
+        "label": "Hidden wedge"
+    },
+    "/hf/7e7352eb": {
+        "label": "Funnel heel"
+    },
+    "/hf/bd0309e3": {
+        "label": "Platform toe"
+    },
+    "/le": {
+        "label": "Length",
+        "subcategories": [
+            "/le/0d626635",
+            "/le/47811501",
+            "/le/7516e7b0",
+            "/le/7783d6c9",
+            "/le/8292fd39",
+            "/le/900b331f",
+            "/le/9eca291c",
+            "/le/a3f90d72",
+            "/le/c21b5f54",
+            "/le/cb6c3a7d",
+            "/le/ff7d05c4"
+        ]
+    },
+    "/le/0d626635": {
+        "label": "Knee-length"
+    },
+    "/le/47811501": {
+        "label": "Mid-length"
+    },
+    "/le/7516e7b0": {
+        "label": "Short"
+    },
+    "/le/7783d6c9": {
+        "label": "Normal"
+    },
+    "/le/8292fd39": {
+        "label": "3/4 length"
+    },
+    "/le/900b331f": {
+        "label": "Thigh-length"
+    },
+    "/le/9eca291c": {
+        "label": "Cropped"
+    },
+    "/le/a3f90d72": {
+        "label": "Extra long"
+    },
+    "/le/c21b5f54": {
+        "label": "Calf-length"
+    },
+    "/le/cb6c3a7d": {
+        "label": "Long"
+    },
+    "/le/ff7d05c4": {
+        "label": "Ankle-length"
+    },
+    "/oc": {
+        "label": "Occasion",
+        "subcategories": [
+            "/oc/0520c37d",
+            "/oc/72285dcd",
+            "/oc/7bba90f2",
+            "/oc/984f4272",
+            "/oc/bac5d7fc",
+            "/oc/c95c6350",
+            "/oc/e4740245"
+        ]
+    },
+    "/oc/0520c37d": {
+        "label": "Evening"
+    },
+    "/oc/72285dcd": {
+        "label": "Casual"
+    },
+    "/oc/7bba90f2": {
+        "label": "Party"
+    },
+    "/oc/984f4272": {
+        "label": "Funeral"
+    },
+    "/oc/bac5d7fc": {
+        "label": "Beach"
+    },
+    "/oc/c95c6350": {
+        "label": "Wedding"
+    },
+    "/oc/e4740245": {
+        "label": "Work"
+    },
+    "/pa": {
+        "label": "Pattern",
+        "subcategories": [
+            "/pa/135600d3",
+            "/pa/36a88f3e",
+            "/pa/414aa6b7",
+            "/pa/4bfceedb",
+            "/pa/4ec3090c",
+            "/pa/72ec097e",
+            "/pa/8452ce94",
+            "/pa/91467b40",
+            "/pa/9a8f976b",
+            "/pa/add18e39",
+            "/pa/b4773859",
+            "/pa/d165d2ea",
+            "/pa/d1c5bad0",
+            "/pa/f3059444",
+            "/pa/f4734551",
+            "/pa/fa876e75"
+        ]
+    },
+    "/pa/135600d3": {
+        "label": "Striped"
+    },
+    "/pa/36a88f3e": {
+        "label": "Pinstriped"
+    },
+    "/pa/3f88aa7a": {
+        "label": "Animal print"
+    },
+    "/pa/4bfceedb": {
+        "subcategories": [
+            "/pa/3f88aa7a",
+            "/pa/c3f5c5bc"
+        ],
+        "label": "Print"
+    },
+    "/pa/414aa6b7": {
+        "label": "Tie-dye"
+    },
+    "/pa/4ec3090c": {
+        "label": "Plain"
+    },
+    "/pa/72ec097e": {
+        "label": "Colourful"
+    },
+    "/pa/8452ce94": {
+        "label": "Abstract"
+    },
+    "/pa/91467b40": {
+        "label": "Burnout"
+    },
+    "/pa/9a8f976b": {
+        "label": "Camouflage"
+    },
+    "/pa/add18e39": {
+        "label": "Polka dot"
+    },
+    "/pa/b4773859": {
+        "label": "Checked"
+    },
+    "/pa/c3f5c5bc": {
+        "label": "Photo print"
+    },
+    "/pa/d165d2ea": {
+        "label": "Marl"
+    },
+    "/pa/d1c5bad0": {
+        "label": "Floral"
+    },
+    "/pa/f3059444": {
+        "label": "Paisley"
+    },
+    "/pa/f4734551": {
+        "label": "Colour gradient"
+    },
+    "/pa/fa876e75": {
+        "label": "Herringbone"
+    },
+    "/sale": {
+        "label": "Sale"
+    },
+    "/sc": {
+        "label": "Shirt collar",
+        "subcategories": [
+            "/sc/02df0e4d",
+            "/sc/1adfff1d",
+            "/sc/1ca0d4a4",
+            "/sc/1d0e1849",
+            "/sc/22e09083",
+            "/sc/411e28c8",
+            "/sc/44b94588",
+            "/sc/46f60c5a",
+            "/sc/490269e5",
+            "/sc/499b8fdb",
+            "/sc/5d26e861",
+            "/sc/5dd46f22",
+            "/sc/5de8cfdf",
+            "/sc/5f72543c",
+            "/sc/61dad5c3",
+            "/sc/648ef8b7",
+            "/sc/6861d6ff",
+            "/sc/6eb02f69",
+            "/sc/81017fe3",
+            "/sc/81bd9c2f",
+            "/sc/8ba445e3",
+            "/sc/9a7a187a",
+            "/sc/a6683351",
+            "/sc/b9c0a343",
+            "/sc/bafa142c",
+            "/sc/bef30229",
+            "/sc/d507d4c4",
+            "/sc/daf6bbbd",
+            "/sc/dbe136ee",
+            "/sc/e698fcea",
+            "/sc/f59edd4c",
+            "/sc/fab3149e",
+            "/sc/fde9c44b"
+        ]
+    },
+    "/sc/02df0e4d": {
+        "label": "Boat neck"
+    },
+    "/sc/1adfff1d": {
+        "label": "Off-the-shoulder"
+    },
+    "/sc/1ca0d4a4": {
+        "label": "Contrast collar"
+    },
+    "/sc/1d0e1849": {
+        "label": "Shawl collar"
+    },
+    "/sc/22e09083": {
+        "label": "Lined collar"
+    },
+    "/sc/411e28c8": {
+        "label": "Volant collar"
+    },
+    "/sc/44b94588": {
+        "label": "Peter Pan collar"
+    },
+    "/sc/46f60c5a": {
+        "label": "Backless"
+    },
+    "/sc/490269e5": {
+        "label": "Double collar"
+    },
+    "/sc/499b8fdb": {
+        "label": "Tab collar"
+    },
+    "/sc/5d26e861": {
+        "label": "Low v-neck"
+    },
+    "/sc/5dd46f22": {
+        "label": "Low round neck"
+    },
+    "/sc/5de8cfdf": {
+        "label": "Mao collar"
+    },
+    "/sc/5f72543c": {
+        "label": "Cache-coeur"
+    },
+    "/sc/61dad5c3": {
+        "label": "High collar"
+    },
+    "/sc/648ef8b7": {
+        "label": "Polo neck"
+    },
+    "/sc/6861d6ff": {
+        "label": "Hood"
+    },
+    "/sc/6eb02f69": {
+        "label": "Cutaway collar"
+    },
+    "/sc/81017fe3": {
+        "label": "Lapel collar"
+    },
+    "/sc/81bd9c2f": {
+        "label": "Mock neck"
+    },
+    "/sc/8ba445e3": {
+        "label": "Turn-down collar"
+    },
+    "/sc/9a7a187a": {
+        "label": "V-neck"
+    },
+    "/sc/a6683351": {
+        "label": "Mandarin collar"
+    },
+    "/sc/b9c0a343": {
+        "label": "Square neck"
+    },
+    "/sc/bafa142c": {
+        "label": "Henley"
+    },
+    "/sc/bef30229": {
+        "label": "Button down"
+    },
+    "/sc/d507d4c4": {
+        "label": "Round neck"
+    },
+    "/sc/daf6bbbd": {
+        "label": "Envelope"
+    },
+    "/sc/dbe136ee": {
+        "label": "Kent collar"
+    },
+    "/sc/e698fcea": {
+        "label": "Wing collar"
+    },
+    "/sc/f59edd4c": {
+        "label": "Cup-shaped collar"
+    },
+    "/sc/fab3149e": {
+        "label": "Cowl neck"
+    },
+    "/sc/fde9c44b": {
+        "label": "Shirt collar"
+    },
+    "/se": {
+        "label": "Season",
+        "subcategories": [
+            "/se/1916f9db",
+            "/se/1b93ae2c",
+            "/se/5ee6e78f",
+            "/se/91608754"
+        ]
+    },
+    "/se/1916f9db": {
+        "label": "Winter"
+    },
+    "/se/1b93ae2c": {
+        "label": "Spring"
+    },
+    "/se/5ee6e78f": {
+        "label": "Autumn"
+    },
+    "/se/91608754": {
+        "label": "Summer"
+    },
+    "/sf": {
+        "label": "Shoe fastener",
+        "subcategories": [
+            "/sf/6bd03866",
+            "/sf/77c1afb4",
+            "/sf/99408e5a",
+            "/sf/c22f1826",
+            "/sf/f5acd28f",
+            "/sf/f6cdf524"
+        ]
+    },
+    "/sf/6bd03866": {
+        "label": "Straps"
+    },
+    "/sf/77c1afb4": {
+        "label": "Buckle"
+    },
+    "/sf/99408e5a": {
+        "label": "Zip"
+    },
+    "/sf/c22f1826": {
+        "label": "Laces"
+    },
+    "/sf/f5acd28f": {
+        "label": "Slip on"
+    },
+    "/sf/f6cdf524": {
+        "label": "Velcro"
+    },
+    "/sl": {
+        "label": "Sleeve length",
+        "subcategories": [
+            "/sl/3b6d0aaf",
+            "/sl/c866ba98",
+            "/sl/d8565283"
+        ]
+    },
+    "/sl/3b6d0aaf": {
+        "label": "Sleeveless"
+    },
+    "/sl/c866ba98": {
+        "label": "Long sleeve"
+    },
+    "/sl/d8565283": {
+        "label": "Short sleeve"
+    },
+    "/tr": {
+        "label": "Trouser rise",
+        "subcategories": [
+            "/tr/3530be5c",
+            "/tr/5bf73150",
+            "/tr/7a5789fb"
+        ]
+    },
+    "/tr/3530be5c": {
+        "label": "Normal rise"
+    },
+    "/tr/5bf73150": {
+        "label": "Low rise"
+    },
+    "/tr/7a5789fb": {
+        "label": "High rise"
+    }
+}

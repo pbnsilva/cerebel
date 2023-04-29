@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductDetailBuyCollectionViewCell" id="gTV-IL-0wX" customClass="ProductDetailBuyCollectionViewCell" customModule="faer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haL-Yv-Mww">
+                        <rect key="frame" x="20" y="20" width="200" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy on Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vn-AQ-woh">
+                                <rect key="frame" x="28.5" y="14" width="143" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="2vn-AQ-woh" firstAttribute="centerY" secondItem="haL-Yv-Mww" secondAttribute="centerY" id="Ttp-nx-eMY"/>
+                            <constraint firstItem="2vn-AQ-woh" firstAttribute="centerX" secondItem="haL-Yv-Mww" secondAttribute="centerX" id="cA3-53-1Bk"/>
+                            <constraint firstAttribute="height" constant="50" id="yWx-dz-SZJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="haL-Yv-Mww" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="AHP-hn-6zv"/>
+                <constraint firstItem="haL-Yv-Mww" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="Ir4-Uj-Yh4"/>
+                <constraint firstAttribute="trailing" secondItem="haL-Yv-Mww" secondAttribute="trailing" constant="20" id="ThY-cp-Y8m"/>
+                <constraint firstAttribute="bottom" secondItem="haL-Yv-Mww" secondAttribute="bottom" constant="20" id="bPy-ld-Xlm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="240" height="127"/>
+            <point key="canvasLocation" x="138" y="135.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

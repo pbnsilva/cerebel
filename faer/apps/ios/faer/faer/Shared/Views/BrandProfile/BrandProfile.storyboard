@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="937-kH-cuh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About-->
+        <scene sceneID="BcN-bi-xhy">
+            <objects>
+                <viewController id="bYi-HT-b7E" customClass="BrandProfileCollectionViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jne-Vw-vIf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SeU-g4-0tn">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="kUn-vx-n1k">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <cells/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="BrandProfileCollectionHeaderView" id="f8o-qZ-AdR" customClass="BrandProfileCollectionHeaderView" customModule="faer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJl-FA-aSe">
+                                    <rect key="frame" x="28" y="14" width="319" height="22"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGz-qS-w3U" userLabel="detailDiscloure">
+                                    <rect key="frame" x="325" y="14" width="22" height="22"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="FJl-FA-aSe" firstAttribute="leading" secondItem="f8o-qZ-AdR" secondAttribute="leadingMargin" constant="20" id="0ik-Mf-9Ng"/>
+                                <constraint firstItem="oGz-qS-w3U" firstAttribute="centerY" secondItem="f8o-qZ-AdR" secondAttribute="centerY" id="EIK-eE-3m7"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="FJl-FA-aSe" secondAttribute="trailing" constant="20" id="FDs-Em-fGy"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="oGz-qS-w3U" secondAttribute="trailing" constant="20" id="HSS-od-cQX"/>
+                                <constraint firstItem="FJl-FA-aSe" firstAttribute="centerY" secondItem="f8o-qZ-AdR" secondAttribute="centerY" id="k57-VO-IN5"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="detailDisclosureBtn" destination="oGz-qS-w3U" id="tzN-Tj-kX4"/>
+                                <outlet property="title" destination="FJl-FA-aSe" id="uu9-8u-VZq"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="bYi-HT-b7E" id="1ID-bd-bRN"/>
+                            <outlet property="delegate" destination="bYi-HT-b7E" id="qAE-BA-JgF"/>
+                            <outlet property="prefetchDataSource" destination="bYi-HT-b7E" id="2Ra-0S-CqZ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="About" id="kGd-zZ-Nig">
+                        <barButtonItem key="leftBarButtonItem" image="navbar-back" style="done" id="hwt-vF-rNo">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="hero_dismissViewController" destination="bYi-HT-b7E" id="5or-TS-2pu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="jne-Vw-vIf" id="FQv-hX-Fbu"/>
+                        <outlet property="loadingIndicator" destination="kUn-vx-n1k" id="qGO-j2-Ddy"/>
+                        <segue destination="3ee-Nc-tX7" kind="showDetail" identifier="PDPSegue" id="L9Z-y2-bmB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VNv-Rd-AR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-710.19490254872574"/>
+        </scene>
+        <!--ProductDetailCollectionView-->
+        <scene sceneID="gfE-fG-Vtb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProductDetailCollectionView" id="3ee-Nc-tX7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gef-b1-N0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="-979"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E9b-fo-zzH">
+            <objects>
+                <viewController storyboardIdentifier="criteriaDisclosurePopupVC" modalPresentationStyle="overCurrentContext" id="TRn-uz-wbK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zos-a0-Ucs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usq-8O-o0B">
+                                <rect key="frame" x="10" y="10" width="355" height="80"/>
+                                <string key="text">Our ethics and sustainability details are based on publicly available information provided by &lt;brand&gt; on their website and social media.</string>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zHc-7a-jNQ" firstAttribute="bottom" secondItem="usq-8O-o0B" secondAttribute="bottom" constant="10" id="2lW-8o-XZI"/>
+                            <constraint firstItem="usq-8O-o0B" firstAttribute="leading" secondItem="Zos-a0-Ucs" secondAttribute="leading" constant="10" id="Mt3-0Y-arT"/>
+                            <constraint firstAttribute="trailing" secondItem="usq-8O-o0B" secondAttribute="trailing" constant="10" id="Qkx-Nu-QQs"/>
+                            <constraint firstItem="usq-8O-o0B" firstAttribute="top" secondItem="zHc-7a-jNQ" secondAttribute="top" constant="10" id="cZ0-e7-o2d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zHc-7a-jNQ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iau-hF-91F" appends="YES" id="eUi-8c-XDq"/>
+                        </connections>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="120"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="100"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKp-ea-zlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iau-hF-91F">
+                    <connections>
+                        <action selector="hero_dismissViewController" destination="TRn-uz-wbK" id="9ZL-8A-1p7"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="84" y="-294"/>
+        </scene>
+        <!--Brand Profile Navigation View Controller-->
+        <scene sceneID="Fz1-BQ-Rcs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="937-kH-cuh" customClass="BrandProfileNavigationViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wZT-pm-M9V">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bYi-HT-b7E" kind="relationship" relationship="rootViewController" id="meB-qN-Qwd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blH-jz-waO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855.20000000000005" y="-710.19490254872574"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navbar-back" width="30" height="30"/>
+    </resources>
+</document>

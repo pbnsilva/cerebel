@@ -1,0 +1,178 @@
+{{ template "header.html" }}
+<style>
+.card {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  float: left;
+}
+</style>
+  <!--
+  <div id="products-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-barcode" style="font-size: 7em;"></i>
+      <a href="/pim">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Products & Orders</h4>
+    </div>
+  </div>
+  -->
+  <div id="scrapers-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-binoculars" style="font-size: 7em;"></i>
+      <a href="/scrapers">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Scrapers</h4>
+    </div>
+  </div>
+
+  <!--
+  <div id="analytics-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-chart-line" style="font-size: 7em;"></i>
+      <a href="/analytics">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Analytics</h4>
+    </div>
+  </div>
+  -->
+
+  <!--
+  <div id="feededitor-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-stream" style="font-size: 7em;"></i>
+      <a href="/feededitor">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Feed editor</h4>
+    </div>
+  </div>
+  -->
+  
+  <div id="brandpages-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-store" style="font-size: 7em;"></i>
+      <a href="/brandpages">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Brand pages</h4>
+    </div>
+  </div>
+
+  <div id="searchdemo-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-search" style="font-size: 7em;"></i>
+      <a href="/searchdemo">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Search demo</h4>
+    </div>
+  </div>
+  
+  <!--
+  <div id="producttagger-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-tags" style="font-size: 7em;"></i>
+      <a href="/producttagger">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Product tagger</h4>
+    </div>
+  </div>
+  -->
+  
+  <!--
+  <div id="imagetagger-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-object-group" style="font-size: 7em;"></i>
+      <a href="/imagetagger">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Image tagger</h4>
+    </div>
+  </div>
+  -->
+
+  <!--
+  <div id="searcheval-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fab fa-searchengin" style="font-size: 7em;"></i>
+      <a href="/searcheval">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Search quality evaluator</h4>
+    </div>
+  </div>
+  -->
+  
+  <!--
+  <div id="visiondemo-div" class="card m-4 pt-2">
+    <div class="view overlay text-center">
+      <i class="fas fa-eye" style="font-size: 7em;"></i>
+      <a href="/visiondemo">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center">Vision demo</h4>
+    </div>
+  </div>
+  -->
+  
+<script>
+$("#products-div").click(function() {
+  window.location.href = "/pim";
+});
+$("#stores-div").click(function() {
+  window.location.href = "/stores";
+});
+$("#analytics-div").click(function() {
+  window.location.href = "/analytics";
+});
+$("#feededitor-div").click(function() {
+  window.location.href = "/feededitor";
+});
+$("#searchdemo-div").click(function() {
+  window.location.href = "/searchdemo";
+});
+$("#producttagger-div").click(function() {
+  window.location.href = "/producttagger";
+});
+$("#imagetagger-div").click(function() {
+  window.location.href = "/imagetagger";
+});
+$("#searcheval-div").click(function() {
+  window.location.href = "/searcheval";
+});
+$("#visiondemo-div").click(function() {
+  window.location.href = "/visiondemo";
+});
+$("#scrapers-div").click(function() {
+  window.location.href = "/scrapers";
+});
+$("#brandpages-div").click(function() {
+  window.location.href = "/brandpages";
+});
+</script>
+{{ template "footer.html" }}

@@ -1,0 +1,49 @@
+{{ template "header.html" }}
+<link href="/css/visiondemo.css" rel="stylesheet">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div class="m-4">
+  <p>Cerebel’s Vision API lets you to understand the content of fashion product images and recognize key concepts
+      such as shapes, colors or textures with standardized labels.</p>
+  <div id="uploadFile">
+      <h2>Try the API</h2>
+      <p>
+          <form id="imageUploadform">
+              <label for="fileElem">
+                  <div id="drop-area">
+                      <div class="loader">Loading...</div>
+                      <div id="imageHint">Choose an image file or drag it here</div>
+                      <input type="file" id="fileElem" accept="image/*" onchange="handleFiles(this.files)">
+                  </div>
+              </label>
+          </form>
+      </p>
+  </div>
+  <div id="annotations">
+      <h2>Insights from your image</h2>
+      <p>
+          <a href="#" class="btn" id="newUpload">Upload another image</a>
+      </p>
+      <div id="annotationsInnerContainer">
+          <div id="uploadImageContainer"></div>
+          <div style="width: 100%">
+              <ul id="tabMenu">
+                  <li>
+                      <a href="#" data-id="labels">Labels</a>
+                  </li>
+                  <li>
+                      <a href="#" data-id="patterns">Patterns</a>
+                  </li>
+                  <li>
+                      <a href="#" data-id="color">Color</a>
+                  </li>
+                  <li>
+                      <a href="#" data-id="json">JSON</a>
+                  </li>
+              </ul>
+              <div id="tabContent"></div>
+          </div>
+      </div>
+  </div>
+</div>
+<script type="application/javascript" src="/js/visiondemo.js"></script>
+{{ template "footer.html" }}

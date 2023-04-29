@@ -1,0 +1,80 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: scrapyd
+  labels:
+    app: scrapyd
+spec:
+  ports:
+  - port: 6800
+    name: http
+  selector:
+    app: scrapyd
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: scrapyd 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        prometheus.io/port: "9100"
+        prometheus.io/scrape: "true"
+      labels:
+        app: scrapyd
+    spec:
+      volumes:
+      - name: data
+        hostPath:
+          path: /root/data
+      - name: secret-faer-scraper
+        secret:
+          secretName: gtranslate-service-account
+      - name: secret
+        secret:
+          secretName: firebase-admin-application-credentials
+      containers:
+      - name: scrapyd-container
+        image: eu.gcr.io/cerebel-prod/scrapyd@sha256:_SHA_
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 6800
+        volumeMounts:
+          - name: secret
+            mountPath: /secret
+          - name: secret-faer-scraper
+            mountPath: /secret_faer_scraper
+          - name: data
+            mountPath: /data
+        env:
+        - name: ENV
+          value: "prod"
+        - name: ANNOTATION_HOST
+          value: "localhost:9092"
+        - name: STORE_HOST
+          value: "backend:9090"
+        - name: ELASTIC_HOST
+          value: "http://elasticsearch:9200"
+        - name: DATA_PATH
+          value: "/data"
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: "/secret_faer_scraper/Cerebel-1c54d496305e.json"
+      - name: annotation-container
+        image: eu.gcr.io/cerebel-prod/annotation@sha256:008a252fb427fd4918ba1dbdc6b3c6a34416f710bb82d0db94c8c4cff9d3f476
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9092
+        volumeMounts:
+          - name: data
+            mountPath: /data
+        env:
+        - name: ENV
+          value: "prod"
+        - name: GRPC_PORT
+          value: "9092"
+        - name: DATA_PATH
+          value: "/data"
+        - name: USE_CUDA
+          value: "false"

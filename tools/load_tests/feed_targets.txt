@@ -1,0 +1,2 @@
+GET https://api.cerebel.io/store/faer/feed?token=AonNLZaEXMtLiHdqJqqGQjKrVRGMhq&gender=women&size=20
+GET https://api.cerebel.io/store/faer/feed?token=AonNLZaEXMtLiHdqJqqGQjKrVRGMhq&gender=men&size=20

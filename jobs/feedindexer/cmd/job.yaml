@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: feedindexer-job
+spec:
+  template:
+    metadata:
+      name: feedindexer-job
+    spec:
+      containers:
+      - name: feedindexer-container
+        image: eu.gcr.io/cerebel-prod/feedindexer
+        env:
+        - name: ENV
+          value: "prod"
+        - name: ELASTIC_HOST
+          value: "http://elasticsearch:9200"
+        - name: ANNOTATION_HOST
+          value: "annotation:9092"
+        - name: PROMETHEUS_PORT
+          value: "9100"
+      restartPolicy: Never

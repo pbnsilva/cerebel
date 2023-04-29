@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110210925-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', 'UA-110210925-1');
+  </script>
+
+  <title>{name} by {brand_name}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="description" content="{short_description}" />
+  <meta name="title" content="{name} by {brand_name} - Download Faer to discover the best in sustainable and ethical fashion" />
+  <meta name="keywords" content="{keywords}" />
+
+  <link rel="stylesheet" href="https://shop.wearefaer.com/css/main.css">
+  <!-- Micro formats / Open graph -->
+  <meta property="og:url" content="{url}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Faer" />
+  <meta property="og:title" content="{name} by {brand_name} - Download Faer to discover the best in sustainable and ethical fashion" />
+  <meta property="og:description" content="{short_description}" />
+  <meta property="og:image" content="{main_image_url}" />
+
+  <!-- see https://schema.org/IndividualProduct https://developers.google.com/search/docs/data-types/product -->
+  <script type="application/ld+json">
+    {ld_schema}
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://shop.wearefaer.com/js/main.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">fær</div>
+        <div class="cta"><a href="https://wearefaer.com/download" class="button">Get the Faer app</a></div>
+    </header>
+    <article id="{product_id}">
+        <!-- Elements denoted with "*-mobile" are hidden by default and only become visible on smaller screens  -->
+        <div id="product-info-mobile">
+            <div class="title">
+              <h1>{name}</h1>
+            </div>
+            <div>
+              <h2>by <a href="{brand_url}" target="_blank">{brand_name}</a></h2>
+            </div>
+            <div>
+              <h1 class="regular">{currency_symbol}{price}</h1>
+            </div>
+            <div class="productLikes" style="display:none;">
+              <h2>
+                <img alt="like icon" class="likesIcon" src="https://shop.wearefaer.com/images/like.svg"><strong></strong> likes
+              </h2>
+            </div>
+        </div>
+        <div id="images-preview-container">
+          {images_container}
+        </div>
+        <div id="product-details">
+            <div id="product-info">
+                <div>
+                  <h1>{name}</h1>
+                </div>
+                <div>
+                  <h2>by <a href="{brand_url}" target="_blank">{brand_name}</a></h2>
+                </div>
+                <div>
+                  <h1 class="regular">{currency_symbol}{price}</h1>
+                </div>
+                <div class="productLikes" style="display:none;">
+                  <h2>
+                    <img alt="like icon" class="likesIcon" src="https://shop.wearefaer.com/images/like.svg"><strong></strong> likes
+                  </h2>
+                </div>
+              </div>
+            <div id="description">
+              <p>{description}</p><br><a href="{source_url}" target="_blank">Learn more</a></p>
+            </div>
+            <div id="download">
+                <a href="https://wearefaer.com/download" class="button large">Get the Faer app</a>
+                <p>Download Faer to discover the best in ethical and sustainable fashion.</p>
+            </div>
+            <!-- Elements denoted with "-mobile" are hidden by default and only become visible on smaller screens  -->
+            <div id="images-preview-container-mobile">
+              {images_container}
+            </div>
+            <div id="download-mobile">
+                <a href="https://wearefaer.com/download" class="button large">Get the Faer app</a>
+                <p>Download Faer to discover the best in ethical and sustainable fashion.</p>
+            </div>
+        </div>
+    </article>
+    <footer>
+      <div><a href="https://wearefaer.com/about-faer">About Faer</a></div>
+      <div><a href="https://wearefaer.com/terms-and-conditions">Terms & Conditions</a></div>
+      <div><a href="https://wearefaer.com/terms-and-conditions#privacypolicy">Privacy</a></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t4O-UY-h23">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fontawesome-webfont-solid.ttf">
+            <string>FontAwesome5FreeSolid</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Visual Search View Controller-->
+        <scene sceneID="Tuw-kk-eWm">
+            <objects>
+                <viewController storyboardIdentifier="VisualSearchViewController" id="XW6-un-QAu" customClass="VisualSearchViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G9O-c9-Nyl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40F-4g-aOP" customClass="PreviewView" customModule="faer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="e0K-eO-NR1" appends="YES" id="9Zk-ti-hEN"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOx-RO-rNE" userLabel="Info View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0W-mR-dvY">
+                                        <rect key="frame" x="20" y="311.5" width="335" height="44"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Tap the round button below to take a photo and find similar looks">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="18" name="Montserrat-SemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="k0W-mR-dvY" secondAttribute="trailing" constant="20" id="4u5-xx-F2C"/>
+                                    <constraint firstItem="k0W-mR-dvY" firstAttribute="centerY" secondItem="gOx-RO-rNE" secondAttribute="centerY" id="SEC-0X-qj7"/>
+                                    <constraint firstItem="k0W-mR-dvY" firstAttribute="leading" secondItem="gOx-RO-rNE" secondAttribute="leading" constant="20" id="uq2-7Z-zYq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNF-Ad-y4x" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="162.5" y="228.5" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="SGU-2Q-LUl"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZLH-PZ-EHA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScaleParty"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fTb-43-kEb" userLabel="Photo Options">
+                                <rect key="frame" x="10" y="30" width="190" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAQ-FY-fDd" userLabel="Toggle Camera" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="bTI-bU-aw1"/>
+                                            <constraint firstAttribute="height" constant="50" id="p2t-uN-GF0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="24"/>
+                                        <state key="normal" title=""/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOutlined" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeCamera:" destination="XW6-un-QAu" eventType="touchUpInside" id="zAq-I4-pIb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwk-jC-IpP" userLabel="Toggle Flash Mode" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="NIw-ux-s5p"/>
+                                            <constraint firstAttribute="height" constant="50" id="fa2-p7-OGc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="24"/>
+                                        <state key="normal" title=""/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOutlined" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeFlashMode:" destination="XW6-un-QAu" eventType="touchUpInside" id="Vid-GY-wMq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-PC-BNZ" userLabel="Photo Upload Btn" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="140" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="52Y-gi-Ryl"/>
+                                            <constraint firstAttribute="width" constant="50" id="bzM-cQ-qx0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="24"/>
+                                        <state key="normal" title=""/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOutlined" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="photoLibraryPickerButton:" destination="XW6-un-QAu" eventType="touchUpInside" id="MYf-fc-KPr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="0AQ-RD-Krr" userLabel="Search Type Menu">
+                                <rect key="frame" x="147" y="546" width="81" height="81"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yif-TZ-Lwb" userLabel="mic search" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24" width="0.0" height="33.5"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="28"/>
+                                        <state key="normal" title="">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="mic"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOutlined" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcM-ED-ZkX" userLabel="camera search" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.99756528249999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" image="camera-shutter"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="camera"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOutlined" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgI-fc-G1L" userLabel="keyboard search" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24" width="0.0" height="33.5"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="28"/>
+                                        <state key="normal" title="">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="keyboard"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOutlined" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="searchMenu"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="heQ-yE-Dv5" userLabel="Dismiss">
+                                <rect key="frame" x="315" y="30" width="50" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtK-Gu-J2e" userLabel="Dismiss" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="P6I-13-qRv"/>
+                                            <constraint firstAttribute="height" constant="50" id="YNR-HJ-2bN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="navbar-cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isOutlined" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="hero_dismissViewController" destination="Wmy-Tn-uNA" eventType="touchUpInside" id="q4P-Qq-vvr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fTb-43-kEb" firstAttribute="top" secondItem="NMz-S6-YEl" secondAttribute="top" constant="10" id="69p-jb-eei"/>
+                            <constraint firstItem="gOx-RO-rNE" firstAttribute="top" secondItem="G9O-c9-Nyl" secondAttribute="top" id="DrM-C2-ltE"/>
+                            <constraint firstAttribute="bottom" secondItem="40F-4g-aOP" secondAttribute="bottom" id="EVs-Qk-bKp"/>
+                            <constraint firstItem="40F-4g-aOP" firstAttribute="top" secondItem="G9O-c9-Nyl" secondAttribute="top" id="JY6-wf-ixl"/>
+                            <constraint firstItem="hNF-Ad-y4x" firstAttribute="centerY" secondItem="G9O-c9-Nyl" secondAttribute="centerY" constant="-80" id="Jr3-h0-slS"/>
+                            <constraint firstItem="heQ-yE-Dv5" firstAttribute="top" secondItem="NMz-S6-YEl" secondAttribute="top" constant="10" id="LTT-k1-ECi"/>
+                            <constraint firstItem="NMz-S6-YEl" firstAttribute="bottom" secondItem="0AQ-RD-Krr" secondAttribute="bottom" constant="40" id="Nuu-ie-b8h"/>
+                            <constraint firstItem="hNF-Ad-y4x" firstAttribute="centerX" secondItem="G9O-c9-Nyl" secondAttribute="centerX" id="bR4-YB-NCZ"/>
+                            <constraint firstItem="gOx-RO-rNE" firstAttribute="trailing" secondItem="NMz-S6-YEl" secondAttribute="trailing" id="gBQ-2Y-33M"/>
+                            <constraint firstAttribute="trailing" secondItem="40F-4g-aOP" secondAttribute="trailing" id="gxA-W3-Qhx"/>
+                            <constraint firstItem="0AQ-RD-Krr" firstAttribute="centerX" secondItem="G9O-c9-Nyl" secondAttribute="centerX" id="jcg-tw-1Iw"/>
+                            <constraint firstItem="gOx-RO-rNE" firstAttribute="leading" secondItem="NMz-S6-YEl" secondAttribute="leading" id="lop-AE-Eaq"/>
+                            <constraint firstItem="gOx-RO-rNE" firstAttribute="bottom" secondItem="G9O-c9-Nyl" secondAttribute="bottom" id="rlo-Ii-9CD"/>
+                            <constraint firstItem="NMz-S6-YEl" firstAttribute="trailing" secondItem="heQ-yE-Dv5" secondAttribute="trailing" constant="10" id="tM7-Ww-ffH"/>
+                            <constraint firstItem="fTb-43-kEb" firstAttribute="leading" secondItem="NMz-S6-YEl" secondAttribute="leading" constant="10" id="wdV-pZ-5mJ"/>
+                            <constraint firstItem="40F-4g-aOP" firstAttribute="leading" secondItem="NMz-S6-YEl" secondAttribute="leading" id="xrX-uj-A9D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NMz-S6-YEl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LkC-UK-ghO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="hNF-Ad-y4x" id="gt9-YH-ncS"/>
+                        <outlet property="cameraButton" destination="eAQ-FY-fDd" id="HQW-6C-AjW"/>
+                        <outlet property="dismissButton" destination="LtK-Gu-J2e" id="hQg-KY-dGy"/>
+                        <outlet property="flashModeButton" destination="Wwk-jC-IpP" id="F17-9L-GeA"/>
+                        <outlet property="infoTitle" destination="k0W-mR-dvY" id="73d-Nm-eBg"/>
+                        <outlet property="infoView" destination="gOx-RO-rNE" id="IPd-X5-kLm"/>
+                        <outlet property="photoLibraryPickerButton" destination="hf0-PC-BNZ" id="wAu-dk-Knc"/>
+                        <outlet property="previewView" destination="40F-4g-aOP" id="NoD-d7-bGv"/>
+                        <segue destination="bx7-Y2-BWE" kind="showDetail" identifier="searchResultSegue" id="s9i-Y7-sbJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wmy-Tn-uNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="e0K-eO-NR1">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="XW6-un-QAu" id="O0S-Z9-cce"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-453.60000000000002" y="1067.3163418290856"/>
+        </scene>
+        <!--SearchResult-->
+        <scene sceneID="tg8-4B-Hgj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchResult" id="bx7-Y2-BWE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fop-5e-wdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="829"/>
+        </scene>
+        <!--Visual Search Navigation Controller-->
+        <scene sceneID="fwQ-x9-YIA">
+            <objects>
+                <navigationController storyboardIdentifier="VisualSearchNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="t4O-UY-h23" customClass="VisualSearchNavigationController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SGJ-Xg-PSo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XW6-un-QAu" kind="relationship" relationship="rootViewController" id="zdy-vH-loN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mxu-yF-NfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1392.8" y="1067.3163418290856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera-shutter" width="81" height="81"/>
+        <image name="navbar-cancel" width="30" height="30"/>
+    </resources>
+</document>

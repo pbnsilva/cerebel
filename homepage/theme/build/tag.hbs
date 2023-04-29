@@ -1,0 +1,12 @@
+{{!< default}}
+        <div class="spacer"></div>
+        {{#get "posts" filter="tags:blog"}}
+    {{#foreach posts}}
+    <article class="tag">
+        <h1><a class="nostyle" href="{{url}}">{{title}}</a></h1>
+        <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
+        <div><p><a class="nostyle" href="{{url}}">{{excerpt}}</a></p></div>
+        </a>
+    </article>
+    {{/foreach}}
+{{/get}}

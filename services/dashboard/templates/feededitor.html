@@ -1,0 +1,180 @@
+{{ template "header.html" }}
+<link href="css/feededitor.css" rel="stylesheet">
+<script type="text/javascript" src="/js/feededitor.js"></script>
+<ul class="nav nav-tabs bg-dark" id="feedTabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#new">New</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#live">Live feed</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#sources">Sources</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#promotions">Promotions</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#match" style="visibility:hidden">Match</a>
+  </li>
+</ul>
+<div class="tab-content main-content">
+      <div id="new" class="tab-pane active">
+        <div id="new-content"></div>
+      </div>
+      <div id="live" class="tab-pane">
+        <div class="btn-toolbar ml-2" role="toolbar">
+					<div id="new-content-gender" class="btn-group" role="group">
+						<button type="button" value="all" class="btn btn-info btn-sm active">All</button>
+						<button type="button" value="women" class="btn btn-sm btn-info">Women</button>
+						<button type="button" value="men" class="btn btn-sm btn-info">Men</button>
+					</div>
+				</div>
+        <div id="live-content"></div>
+      </div>
+      <div id="match" class="tab-pane">
+        <div id="match-content" class="ml-4 mt-4">
+            <button id="match-modal-back-button" type="button" class="btn btn-sm btn-primary">Back</button>
+            <button id="match-modal-done-button" type="button" class="btn btn-raised btn-primary" disabled>Done</button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img id="match-modal-image" width="200px" />
+                </div>
+                <div class="col-sm-8">
+                  <label for="match-modal-title" class="bmd-label-static">Title</label>
+                  <p id="match-modal-title"></p>
+                  <label for="match-modal-account" class="bmd-label-static">Account</label>
+                  <p><a id="match-modal-account" href="#" target="_blank"></a></p>
+                  <label for="match-modal-date" class="bmd-label-static">Date</label>
+                  <p id="match-modal-date"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 mt-4">
+                  <h5>Matched Products</h5>
+                  <div class="input-group ml-3">
+                    <input id="match-modal-product-id-input" type="text" class="form-control form-control-sm" placeholder="Enter product ID">
+                    <span class="input-group-btn">
+                      <button id="match-modal-product-id-button" class="btn btn-secondary" type="button">Add</button>
+                    </span>
+                  </div>
+                  <div id="match-modal-cards"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 mt-4">
+                  <h5>Search</h5>
+                    <li class="nav-item dropdown">
+                      <a id="gender-selected" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">All genders</a>
+                      <div class="dropdown-menu">
+                        <a id="gender-all" class="dropdown-item" href="#">All genders</a>
+                        <a id="gender-women" class="dropdown-item" href="#">Women</a>
+                        <a id="gender-men" class="dropdown-item" href="#">Men</a>
+                      </div>
+                    </li>
+                  <div class="input-group ml-3">
+
+
+                    <input id="match-modal-product-search-input" type="text" class="form-control form-control-sm" placeholder="Enter search terms">
+                    <span class="input-group-btn">
+                      <button id="match-modal-product-search-button" class="btn btn-secondary" type="button">Search</button>
+                    </span>
+                  </div>
+                  <div id="match-modal-search-info"></div>
+                  <div id="match-modal-search"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p id="match-modal-error"></p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div id="sources" class="tab-pane active">
+        <div id="sources-content" class="p-3">
+					<button id="add-source-button" type="button" value="Add source" class="btn btn-primary" data-toggle="modal" data-target="#add-source-modal">Add source</button>
+          <table id="sources-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Type</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="promotions" class="tab-pane active">
+        <div id="promotions-content" class="p-3">
+					<button id="add-promotion-button" type="button" value="Add promotion" class="btn btn-primary" data-toggle="modal" data-target="#add-promotion-modal">Add promotion</button>
+          <table id="promotions-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Position</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal fade" id="add-source-modal" tabindex="-1" role="dialog" aria-labelledby="add-source-modal-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="add-source-modal-label">Add source</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="add-source-modal-body" class="modal-body">
+              <div class="input-group mb-3">
+                <input id="source-name-input" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon2">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="add-source-modal-button" type="button" class="btn btn-primary">Add</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="add-promotion-modal" tabindex="-1" role="dialog" aria-labelledby="add-promotion-modal-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="add-promotion-modal-label">Add promotion</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="add-promotion-modal-body" class="modal-body">
+              <div class="input-group mb-3">
+                <input id="promotion-product-input" type="text" class="form-control" placeholder="Product ID" aria-label="Product ID" aria-describedby="basic-addon2" style="display:block">
+              <div class="input-group mb-3 mt-4">
+                <input id="promotion-image-input" type="text" class="form-control" placeholder="Image URL" aria-label="Image URL" aria-describedby="basic-addon2" style="display:block">
+              </div>
+              <div class="input-group mb-3 mt-3">
+                <input id="promotion-position-input" type="text" class="form-control" placeholder="Position in feed" aria-label="Position" aria-describedby="basic-addon2" style="display:block">
+              </div>
+              <div class="input-group mb-3 mt-3">
+                <input id="promotion-name-input" type="text" class="form-control" placeholder="Promotion name (e.g. Faer special)" aria-label="Name" aria-describedby="basic-addon2" style="display:block">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="add-promotion-modal-button" type="button" class="btn btn-primary">Add</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img id="spinner" src="img/spinner.gif" />
+</div>
+{{ template "footer.html" }}

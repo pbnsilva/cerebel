@@ -1,0 +1,18 @@
+{{!< default}}
+<header>
+    <div>
+        <h1 style="line-height: 36px">Do good. Look great.</h1>
+        <p>Ethical fashion made simple.</p>
+       <p><a class="nostyle" href="https://itunes.apple.com/app/apple-store/id1302786309?pt=118860157&ct=Homepage&mt=8"><img src="{{asset "images/appstore-logo.svg"}}" width="150"></a>&nbsp;&nbsp;&nbsp;<a class="nostyle applestorelogo" href="https://play.google.com/store/apps/details?id=io.cerebel.faer"><img src="{{asset "images/google-play-badge.svg"}}" class="googleplaylogo"></a></p>
+    </div>
+    <div>
+        <img src="{{asset "images/teaser-product-detail.jpg"}}" width="300">
+    </div>
+</header>
+<div class="spacer"></div>
+{{#get "posts" filter="tags:homepage"}} {{#foreach posts}}
+<article class="homepage">
+    <h1>{{title}}</h1>
+    {{content}}
+</article>
+{{/foreach}} {{/get}}

@@ -1,0 +1,41 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'faer' do
+  use_frameworks!
+
+# Pods for faer
+pod 'SnapKit', '~> 4.2.0'
+pod 'googleapis', :path => '.'
+pod 'NVActivityIndicatorView'
+pod 'TOCropViewController'
+pod 'SquareMosaicLayout'
+pod 'SDWebImage'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
+#fix SnapKit in NotificationBanner
+pod 'NotificationBannerSwift', :git => 'https://github.com/Arcovv/NotificationBanner.git', :branch => 'master'
+pod 'Fabric', '~> 1.7.2'
+pod 'Crashlytics', '~> 3.9.3'
+pod 'Hero'
+##FB
+pod 'FBSDKCoreKit', '~> 4.43'
+pod 'FacebookCore', '0.6.0'
+pod 'FacebookLogin', '0.6.0'
+pod 'FBSDKMarketingKit'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'UIImageColors'
+
+
+# Workaround for Cocoapods issue #7606
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
+end
+
+end
+
+

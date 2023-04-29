@@ -1,0 +1,287 @@
+{{ template "header.html" }}
+<style>
+.number {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.change {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.card p {
+  color: #888;
+}
+</style>
+<script type="text/javascript" src="/js/analytic.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<ul class="nav nav-tabs bg-dark pl-4">
+  <li class="nav-item dropdown">
+    <a id="date-selected" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Yesterday</a>
+    <div class="dropdown-menu">
+      <a id="date-yesterday" class="dropdown-item" href="#">Yesterday</a>
+      <a id="date-last-week" class="dropdown-item" href="#">Last 7 days</a>
+      <a id="date-last-month" class="dropdown-item" href="#">Last 30 days</a>
+  </li>
+</ul>
+
+<div id="top-stats" class="row pl-4">
+  <div class="ml-4 mt-4">
+    <div class="card" style="width:12rem;">
+      <div class="card-body p-2 pl-4">
+        <span id="new-users-count-value" class="number">-</span>
+        <span id="new-users-count-diff" class="change"></span>
+        <p>New users</p>
+      </div>
+    </div>
+  </div>
+  <div class="ml-4 mt-4">
+    <div class="card" style="width:12rem;">
+      <div class="card-body p-2 pl-4">
+        <span id="total-users-count-value" class="number">-</span>
+        <span id="total-users-count-diff" class="change"></span>
+        <p>Total users</p>
+      </div>
+    </div>
+  </div>
+  <div class="ml-4 mt-4">
+    <div class="card" style="width:12rem;">
+      <div class="card-body p-2 pl-4">
+        <span id="active-new-users-count-value" class="number">-</span>
+        <span id="active-new-users-count-diff" class="change"></span>
+        <p>New active users</p>
+      </div>
+    </div>
+  </div>
+  <div class="ml-4 mt-4">
+    <div class="card" style="width:12rem;">
+      <div class="card-body p-2 pl-4">
+        <span id="active-users-count-value" class="number">-</span>
+        <span id="active-users-count-diff" class="change"></span>
+        <p>Total active users</p>
+      </div>
+    </div>
+  </div>
+  <div class="ml-4 mt-4">
+    <div class="card" style="width:15rem;">
+      <div class="card-body p-2 pl-4">
+        <span id="engagement-actions-per-user-value" class="number">-</span>
+        <span id="engagement-actions-per-user-diff" class="change"></span>
+        <p>Engagement actions per user</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row pl-5">
+  <div id="three-month-retention-rate-chart" class="card mt-4" style="min-height:18rem; width: 47%">
+  </div>
+  <div id="return-rate-chart" class="card mt-4 ml-4" style="min-height:18rem; width: 47%">
+  </div>
+</div>
+
+<div class="row pl-5 mt-3">
+  <div id="engagement-actions-per-user-chart" class="card mt-3" style="min-height:18rem; width: 47%">
+  </div>
+</div>
+
+
+<div class="pl-5 mt-5">
+  <h2>Checkouts</h2>
+  <div class="row">
+    <div class="mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="checkouts-value" class="number">-</span>
+          <span id="checkouts-diff" class="change"></span>
+          <p>Checkouts</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ml-4 mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="gmv-value" class="number">-</span>
+          <span id="gmv-diff" class="change"></span>
+          <p>GMV (euros)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div id="checkouts-chart" class="card mt-4" style="min-height:18rem; width:47%">
+    </div>
+    <div id="gmv-chart" class="card ml-4 mt-4" style="min-height:18rem; width:48%">
+    </div>
+  </div>
+
+</div>
+
+
+<div class="pl-5 mt-5">
+  <h2>Search</h2>
+  <div class="row">
+    <div class="mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="search-count-value" class="number">-</span>
+          <span id="search-count-diff" class="change"></span>
+          <p>Total searches</p>
+        </div>
+      </div>
+    </div>
+    <div class="ml-4 mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="search-clickout-rate-value" class="number">-</span>
+          <span id="search-clickout-rate-diff" class="change"></span>
+          <p>Clickout rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="search-clickout-rate-chart" class="card mt-4 w-50" style="min-height:18rem;">
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Searches table -->
+    <div class="card mt-4" style="width:30rem;">
+      <div class="card-body pb-0">
+        <h4 class="card-title">Searches</h4>
+        <table id="top-terms-table" class="table"></table>
+      </div>
+      <div class="d-flex justify-content-left ml-4 mb-4">
+        <nav>
+          <ul id="top-terms-pagination-ul" class="pagination pagination-circle mb-0">
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+    <!-- Empty searches table -->
+    <div class="card ml-4 mt-4" style="width:30rem;">
+      <div class="card-body pb-0">
+        <h4 class="card-title">Empty search results</h4>
+        <table id="empty-terms-table" class="table"></table>
+      </div>
+      <div class="d-flex justify-content-left ml-4 mb-4">
+        <nav>
+          <ul id="empty-terms-pagination-ul" class="pagination pagination-circle mb-0">
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pl-5 mt-5">
+  <h2>Fresh looks</h2>
+  <div class="row">
+    <div class="mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="freshlooks-clickout-rate-value" class="number">-</span>
+          <span id="freshlooks-clickout-rate-diff" class="change"></span>
+          <p>Clickout rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div id="freshlooks-clickout-rate-chart" class="card mt-4 w-50" style="min-height:18rem;">
+    </div>
+  </div>
+
+</div>
+
+<div class="pl-5 mt-5">
+  <h2>Notifications</h2>
+  <div class="row">
+    <div class="mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="notifications-open-rate-count-value" class="number">-</span>
+          <span id="notifications-open-rate-count-diff" class="change"></span>
+          <p>Notifications open rate</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ml-4 mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="notifications-sent-count-value" class="number">-</span>
+          <span id="notifications-sent-count-diff" class="change"></span>
+          <p>Notifications sent</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ml-4 mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="notifications-open-count-value" class="number">-</span>
+          <span id="notifications-open-count-diff" class="change"></span>
+          <p>Notifications open</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pl-5 mt-5">
+  <h2>Catalog</h2>
+  <div class="row">
+    <div class="mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="product-count-value" class="number">-</span>
+          <p>Product count</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ml-4 mt-3">
+      <div class="card" style="width:12rem;">
+        <div class="card-body p-2 pl-4">
+          <span id="brand-count-value" class="number">-</span>
+          <p>Brand count</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="row">
+    <div id="new-products-chart" class="card mt-4 w-50" style="min-height:18rem;">
+    </div>
+  </div>
+
+</div>
+
+<div class="pl-5 mt-5">
+  <h2>Other</h2>
+  <div class="row mt-3">
+    <!-- Annotation coverage table -->
+    <div class="card" style="width:30rem;">
+      <div class="card-body pb-0">
+        <h4 class="card-title">Annotation coverage</h4>
+        <table id="annotation-coverage-table" class="table"></table>
+      </div>
+      <div class="d-flex justify-content-left ml-4 mb-4">
+        <nav>
+          <ul id="top-terms-pagination-ul" class="pagination pagination-circle mb-0">
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+{{ template "footer.html" }}

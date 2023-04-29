@@ -1,0 +1,14 @@
+POST https://api.cerebel.io/v3/store/faer/search/text
+X-Cerebel-Token: AonNLZaEXMtLiHdqJqqGQjKrVRGMhq
+Content-Type: application/json
+@bodies/body1.json
+
+POST https://api.cerebel.io/v3/store/faer/search/text
+X-Cerebel-Token: AonNLZaEXMtLiHdqJqqGQjKrVRGMhq
+Content-Type: application/json
+@bodies/body2.json
+
+POST https://api.cerebel.io/v3/store/faer/search/text
+X-Cerebel-Token: AonNLZaEXMtLiHdqJqqGQjKrVRGMhq
+Content-Type: application/json
+@bodies/body3.json

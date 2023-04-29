@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tKr-y4-FF1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Search Popup View Controller-->
+        <scene sceneID="S5L-fi-Fug">
+            <objects>
+                <viewController storyboardIdentifier="SearchPopupViewController" id="1pS-IA-tzd" customClass="SearchPopupViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5UX-xt-St6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HPX-ZQ-Akm" userLabel="Suggestions TableView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchPopupTableViewCell" id="s03-ak-lDJ" customClass="SearchPopupTableViewCell" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s03-ak-lDJ" id="efa-Zd-L2q">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaE-bb-cfp">
+                                                    <rect key="frame" x="15" y="10" width="350" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aaE-bb-cfp" firstAttribute="top" secondItem="efa-Zd-L2q" secondAttribute="top" constant="10" id="1x8-Eh-AqN"/>
+                                                <constraint firstItem="aaE-bb-cfp" firstAttribute="leading" secondItem="efa-Zd-L2q" secondAttribute="leading" constant="15" id="74e-fV-UwQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="aaE-bb-cfp" secondAttribute="bottom" constant="10" id="EhF-bQ-848"/>
+                                                <constraint firstAttribute="trailing" secondItem="aaE-bb-cfp" secondAttribute="trailing" constant="10" id="WwT-LV-QR4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="title" destination="aaE-bb-cfp" id="IBe-RP-uyc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1pS-IA-tzd" id="gbm-ZK-g12"/>
+                                    <outlet property="delegate" destination="1pS-IA-tzd" id="LzP-zM-9El"/>
+                                    <outlet property="prefetchDataSource" destination="1pS-IA-tzd" id="SVh-FT-AFO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HPX-ZQ-Akm" firstAttribute="trailing" secondItem="iPb-KR-uCy" secondAttribute="trailing" id="2vD-YL-AA0"/>
+                            <constraint firstItem="HPX-ZQ-Akm" firstAttribute="leading" secondItem="iPb-KR-uCy" secondAttribute="leading" id="PKJ-Aj-qYZ"/>
+                            <constraint firstItem="HPX-ZQ-Akm" firstAttribute="top" secondItem="iPb-KR-uCy" secondAttribute="top" id="j2B-Kc-oQo"/>
+                            <constraint firstItem="HPX-ZQ-Akm" firstAttribute="bottom" secondItem="iPb-KR-uCy" secondAttribute="bottom" id="znG-pM-K5V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iPb-KR-uCy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BRa-S8-bdt"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="HPX-ZQ-Akm" id="1zE-OZ-8zc"/>
+                        <segue destination="sve-xG-IAH" kind="showDetail" identifier="searchResultSegue" customClass="ReplaceSegue" customModule="faer" customModuleProvider="target" id="80Y-uU-nJO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbs-bQ-ktt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="160.56971514242881"/>
+        </scene>
+        <!--SearchResult-->
+        <scene sceneID="Bk5-jo-6ja">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchResult" id="sve-xG-IAH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vky-Oq-pPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="-23"/>
+        </scene>
+        <!--Search Popup Navigation Controller-->
+        <scene sceneID="sZk-mc-YHe">
+            <objects>
+                <navigationController storyboardIdentifier="SearchPopupNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="tKr-y4-FF1" customClass="SearchPopupNavigationController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="dVL-Sc-GRB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1pS-IA-tzd" kind="relationship" relationship="rootViewController" id="hnx-VX-pBX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="is0-oZ-L02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90.400000000000006" y="160.56971514242881"/>
+        </scene>
+    </scenes>
+</document>

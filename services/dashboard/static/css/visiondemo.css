@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+p {
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+/* Custom Elements Start */
+
+.btn {
+    display: inline-block;
+    background: #ff5300;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ff5300;
+    background-image: -webkit-linear-gradient(top, rgba(255, 83, 0, 0.2), #ff5300);
+    background-image: -moz-linear-gradient(top, rgba(255, 83, 0, 0.2), #ff5300);
+    background-image: -ms-linear-gradient(top, rgba(255, 83, 0, 0.2), #ff5300);
+    background-image: -o-linear-gradient(top, rgba(255, 83, 0, 0.2), #ff5300);
+    background-image: linear-gradient(to bottom, rgba(255, 83, 0, 0.2), #ff5300);
+    text-decoration: none;
+}
+
+/* Custom Elements End */
+
+/* Upload Form Start */
+
+#drop-area {
+    padding: 50px;
+    color: #4A4A4A;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #979797;
+    border-radius: 10px;
+    font-weight: normal;
+    text-align: center;
+    max-width: 70%;
+}
+
+#drop-area:hover {
+    background-color: rgba(255, 83, 0, 0.1);
+    border: 2px dashed #ff5300;
+}
+
+#fileElem {
+    display: none;
+}
+
+/* Upload Form End */
+
+#annotations {
+    display: none;
+    max-width: 90%;
+}
+
+#annotationsInnerContainer {
+    box-shadow: 3px 3px 10px silver;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#uploadImageContainer {
+    width: 100%;
+    text-align: center;
+}
+
+#uploadImageContainer img {
+    height: 200px;
+}
+
+#uploadImageContainer {
+    margin-right: 25px;
+}
+
+#tabContainer {
+    margin-left: 25px;
+    max-width: 70%;
+    height: 200px;
+}
+
+#tabContent {
+    margin-top: 25px;
+    height: 350px;
+}
+
+#newUpload,
+#tabJSON,
+#tabPatterns,
+#tabColor {
+    display: none;
+}
+
+pre {
+    background-color: mintcream;
+    border: 1px solid silver;
+    padding: 10px 20px;
+    overflow-y: auto;
+}
+
+.json-key {
+    color: brown;
+}
+
+.json-value {
+    color: navy;
+}
+
+.json-string {
+    color: olive;
+}
+
+#tabMenu {
+    display: table;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#tabMenu li {
+    display: table-cell;
+}
+
+#tabMenu a {
+    display: block;
+    margin: 0 25px;
+    text-align: center;
+    background: #4A4A4A;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 15px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+/* Spinner Start */
+
+.loader {
+    display: none;
+    margin: 10px auto;
+    text-indent: -9999em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: -moz-linear-gradient(left, silver 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, silver 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, silver 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, silver 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, silver 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.loader:before {
+    width: 50%;
+    height: 50%;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.loader:after {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@-webkit-keyframes load3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Spinner End */

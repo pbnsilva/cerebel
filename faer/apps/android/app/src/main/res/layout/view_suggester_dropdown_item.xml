@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/suggestion_item_textview"
+    style="?android:attr/dropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="38sp"
+    android:background="@drawable/suggester_spinner_rect"
+    android:ellipsize="marquee"
+    android:paddingEnd="0dp"
+    android:paddingStart="16dp"
+    android:singleLine="true"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+    android:textSize="20sp" />

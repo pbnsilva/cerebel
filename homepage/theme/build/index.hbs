@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{asset "css/main.css"}}">
+</head>
+
+<body>
+    <div class="container">
+        <div><img src="{{asset "images/faer-logo-outline.svg"}}" width="150"></div>
+        <div class="spacer"></div>
+        {{#get "posts" filter="tags:blog"}}
+    {{#foreach posts}}
+    <article>
+        <h1>{{title}}</h1>
+         {{content}}
+    </article>
+    {{/foreach}}
+{{/get}}
+        <footer>
+            <div class="icon">
+                <a href="#">&#xf16d;</a>
+                <a href="#">&#xf099;</a>
+                <a href="#">&#xf308;</a>
+            </div>
+            <div>
+                <a href="#">About us</a>
+            </div>
+            <div>
+                <a href="tag/blog">Blog</a>
+            </div>
+            <div>
+                <a href="#">Terms & Privacy</a>
+            </div>
+            <div>© 2018</div>
+        </footer>
+    </div>
+</body>
+
+</html>

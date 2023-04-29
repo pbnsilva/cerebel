@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "923090459120",
+    "firebase_url": "https://faer-180421.firebaseio.com",
+    "project_id": "faer-180421",
+    "storage_bucket": "faer-180421.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923090459120:android:7c4f8e0dcfa55b42",
+        "android_client_info": {
+          "package_name": "io.cerebel.faer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923090459120-4v8ro8hb5mdst2n633aep5456md6p0mh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYHVG2Fcga4dFs8ngH3xnNTRuP3idyLlY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

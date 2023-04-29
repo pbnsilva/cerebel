@@ -1,0 +1,50 @@
+{{ template "header.html" }}
+<script type="text/javascript" src="/js/brandpages.js"></script>
+<div style="padding:30px">
+{{ if .brands }}
+<table id="brandpages-table" class="table table-striped">
+  <tbody>
+    {{ range $i, $brand := .brands }}
+    <tr>
+      <td><a href="/brandpages/{{ $brand.ID }}">{{ $brand.Name }}</a></td>
+      <td>
+      {{ if or (not $brand.Tags) (not $brand.Location) (not $brand.PriceRange) (not $brand.URL) }}
+      &#9679;
+      {{ end }}
+      </td>
+    </tr>
+    {{ end}}
+  </tbody>
+</table>
+{{ else if .brand }}
+<div>
+  <button id="backButton" class="btn btn-secondary" style="padding-left:0px; margin-bottom:30px; padding-top: 0px">&larr; Back</button>
+  <div class="form-group">
+    <label for="nameInput">Name</label>
+    <input type="text" class="form-control" id="nameInput" placeholder="Name" value="{{.brand.Name}}">
+  </div>
+  <div class="form-group">
+    <label for="urlInput">URL</label>
+    <input type="url" class="form-control" id="urlInput" placeholder="URL" value="{{.brand.URL}}">
+  </div>
+  <div class="form-group">
+    <label for="descriptionInput">Description</label>
+    <textarea rows="10" type="description" class="form-control" id="descriptionInput" placeholder="Description">{{.brand.Description}}</textarea>
+  </div>
+  <div class="form-group">
+    <label for="locationInput">Location</label>
+    <input type="text" class="form-control" id="locationInput" placeholder="Location" value="{{.brand.Location}}">
+  </div>
+  <div class="form-group">
+    <label for="priceRangeInput">Price range</label>
+    <input type="text" class="form-control" id="priceRangeInput" placeholder="Price range" value="{{.brand.PriceRange}}">
+  </div>
+  <div class="form-group">
+    <label for="tagsInput">Tags (comma separated)</label>
+    <input type="text" class="form-control" id="tagsInput" placeholder="Tags" value="{{.brandTags}}">
+  </div>
+  <button id="saveButton" class="btn btn-primary" data-brandid="{{.brand.ID}}" style="padding-left:0px; padding-top:30px">Save</button>
+</div>
+{{ end }}
+</div>
+{{ template "footer.html" }}

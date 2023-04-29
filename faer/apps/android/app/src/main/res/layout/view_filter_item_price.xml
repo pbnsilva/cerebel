@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/price_range_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:bar_color="#BBB"
+        app:bar_highlight_color="@color/colorPrimaryDark"
+        app:data_type="_integer"
+        app:gap="40"
+        app:max_value="2500"
+        app:min_value="1"
+        app:steps="10" />
+
+    <TextView
+        android:id="@+id/price_min_text"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_range_bar"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/price_max_text"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/price_range_bar"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+</RelativeLayout>

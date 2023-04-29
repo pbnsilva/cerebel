@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="dIG-LE-dgU">
+                                <rect key="frame" x="99" y="80" width="123" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="KlJ-VE-3db"/>
+                                    <constraint firstAttribute="width" constant="123" id="Liv-KX-api"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-welcome" translatesAutoresizingMaskIntoConstraints="NO" id="x7u-II-bV3">
+                                <rect key="frame" x="68.5" y="272.5" width="183" height="23"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dIG-LE-dgU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Y8G-Gl-VJS"/>
+                            <constraint firstItem="x7u-II-bV3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i01-UL-dcX"/>
+                            <constraint firstItem="x7u-II-bV3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ju1-jV-fKE"/>
+                            <constraint firstItem="dIG-LE-dgU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="w59-52-iK4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="faer-logo" width="123" height="79"/>
+        <image name="launch-welcome" width="183" height="23"/>
+    </resources>
+</document>

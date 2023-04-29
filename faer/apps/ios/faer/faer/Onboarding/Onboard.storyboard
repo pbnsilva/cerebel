@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YQ6-Yu-3uj">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Page View Controller-->
+        <scene sceneID="ssH-jq-pLe">
+            <objects>
+                <pageViewController storyboardIdentifier="OnboardingPageViewControllerSB" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="YQ6-Yu-3uj" customClass="OnboardingPageViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irl-tM-c7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="-390"/>
+        </scene>
+        <!--Gender View Controller-->
+        <scene sceneID="Jft-aS-1Lw">
+            <objects>
+                <viewController storyboardIdentifier="genderSB" id="tiL-4N-oFC" customClass="GenderViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s98-SI-bU4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please allow access" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WM-Nm-ulU">
+                                <rect key="frame" x="46" y="50" width="228" height="29.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="NQw-lE-iDK">
+                                <rect key="frame" x="98.5" y="80" width="123" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="bYl-IS-Skt"/>
+                                    <constraint firstAttribute="height" constant="79" id="kMu-AZ-o1i"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UMK-PB-Cpr">
+                                <rect key="frame" x="77.5" y="302" width="165" height="166"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to choose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adp-az-bdb">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQr-s0-z6B">
+                                        <rect key="frame" x="0.0" y="52" width="165" height="42"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                                        <state key="normal" title="Shop Women">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shopWomenTapped:" destination="tiL-4N-oFC" eventType="touchUpInside" id="ph0-uj-Xgj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxi-2O-Dtv">
+                                        <rect key="frame" x="0.0" y="124" width="165" height="42"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                                        <state key="normal" title="Shop Men">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shopMenTapped:" destination="tiL-4N-oFC" eventType="touchUpInside" id="TUt-os-rj6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NQw-lE-iDK" firstAttribute="centerX" secondItem="s98-SI-bU4" secondAttribute="centerX" id="9sR-b2-i3s"/>
+                            <constraint firstItem="UMK-PB-Cpr" firstAttribute="centerX" secondItem="s98-SI-bU4" secondAttribute="centerX" id="Vty-ko-KwU"/>
+                            <constraint firstItem="NQw-lE-iDK" firstAttribute="top" secondItem="kyI-yu-ogo" secondAttribute="top" constant="60" id="Xpj-iC-QH8"/>
+                            <constraint firstItem="kyI-yu-ogo" firstAttribute="bottom" secondItem="UMK-PB-Cpr" secondAttribute="bottom" constant="100" id="xgT-UL-WQr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kyI-yu-ogo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxM-yH-H0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635.625" y="-391.90140845070425"/>
+        </scene>
+        <!--Newsletter View Controller-->
+        <scene sceneID="RU6-2B-nqg">
+            <objects>
+                <viewController storyboardIdentifier="newsletterSB" id="ZXj-fX-5Ja" customClass="NewsletterViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LQy-ds-P4z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YEd-YQ-mY7">
+                                <rect key="frame" x="20" y="119.5" width="280" height="159.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbr-E6-wGc">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H8o-SN-MPb">
+                                        <rect key="frame" x="0.0" y="38" width="280" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rwK-8T-r2X"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                        <connections>
+                                            <action selector="emailFieldDidBeginEditing:" destination="ZXj-fX-5Ja" eventType="editingDidBegin" id="7Mj-BJ-fdq"/>
+                                            <action selector="emailFieldDidEndEditing:" destination="ZXj-fX-5Ja" eventType="editingDidEnd" id="IPl-Ri-Lf6"/>
+                                            <action selector="emailFieldPrimaryAction:" destination="ZXj-fX-5Ja" eventType="primaryActionTriggered" id="ItM-3w-jKS"/>
+                                            <outlet property="delegate" destination="ZXj-fX-5Ja" id="lCM-10-fiQ"/>
+                                        </connections>
+                                    </textField>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The entered email address doesn't seem to be valid." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygu-D3-HY9">
+                                        <rect key="frame" x="0.0" y="86" width="280" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.35968942409999999" blue="0.33718695160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive news about Faer and the best in sustainable fashion straight to your inbox." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsF-PV-uW6">
+                                        <rect key="frame" x="0.0" y="94" width="280" height="65.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASg-RT-zRF" userLabel="Skip Step Button">
+                                <rect key="frame" x="136" y="470" width="48" height="38"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="21"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stepCompletedBtnTapped:" destination="ZXj-fX-5Ja" eventType="touchUpInside" id="f3z-Fa-0Pw"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpX-ih-4ZO" userLabel="Subscribe Newsletter Button">
+                                <rect key="frame" x="45.5" y="470" width="229" height="38"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="21"/>
+                                <state key="normal" title="Subscribe newsletter">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="subscribeBtnTapped:" destination="ZXj-fX-5Ja" eventType="touchUpInside" id="MAb-L2-Zz9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay in the loop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpX-Cg-Vqe">
+                                <rect key="frame" x="65" y="70" width="190.5" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xpX-Cg-Vqe" firstAttribute="centerX" secondItem="LQy-ds-P4z" secondAttribute="centerX" id="1r3-UI-tRg"/>
+                            <constraint firstItem="WpX-ih-4ZO" firstAttribute="centerX" secondItem="LQy-ds-P4z" secondAttribute="centerX" id="2lZ-ms-Y1w"/>
+                            <constraint firstItem="xpX-Cg-Vqe" firstAttribute="top" secondItem="XyX-YF-EJb" secondAttribute="top" constant="50" id="6Pd-aF-Lz7"/>
+                            <constraint firstItem="XyX-YF-EJb" firstAttribute="bottom" secondItem="WpX-ih-4ZO" secondAttribute="bottom" constant="60" id="7gK-38-hLG"/>
+                            <constraint firstAttribute="trailing" secondItem="YEd-YQ-mY7" secondAttribute="trailing" constant="20" id="X6e-De-dyR"/>
+                            <constraint firstItem="YEd-YQ-mY7" firstAttribute="leading" secondItem="XyX-YF-EJb" secondAttribute="leading" constant="20" id="g32-Z0-lCY"/>
+                            <constraint firstItem="ASg-RT-zRF" firstAttribute="centerX" secondItem="LQy-ds-P4z" secondAttribute="centerX" id="hfG-DR-N6A"/>
+                            <constraint firstItem="XyX-YF-EJb" firstAttribute="bottom" secondItem="ASg-RT-zRF" secondAttribute="bottom" constant="60" id="iL3-mS-svj"/>
+                            <constraint firstItem="YEd-YQ-mY7" firstAttribute="top" secondItem="xpX-Cg-Vqe" secondAttribute="bottom" constant="20" id="lev-IY-Zjo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XyX-YF-EJb"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailAddressInvalidLabel" destination="ygu-D3-HY9" id="pZ4-oD-OX2"/>
+                        <outlet property="emailTextField" destination="H8o-SN-MPb" id="Pdw-vS-wOK"/>
+                        <outlet property="stepCompletedBtn" destination="ASg-RT-zRF" id="Lg0-4X-fsb"/>
+                        <outlet property="subscribeBtn" destination="WpX-ih-4ZO" id="c8S-U9-xcr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7v1-xB-49X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="-392.95774647887322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="faer-logo" width="123" height="79"/>
+    </resources>
+</document>

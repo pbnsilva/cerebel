@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fontawesome-webfont-solid.ttf">
+            <string>FontAwesome5FreeSolid</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageCropViewController" customModule="faer" customModuleProvider="target">
+            <connections>
+                <outlet property="cropper" destination="X6d-MW-99g" id="DEd-1e-68p"/>
+                <outlet property="dismissBtn" destination="4vg-WL-Bnc" id="F0A-sj-ATP"/>
+                <outlet property="imageView" destination="uVZ-D1-cQ1" id="TOA-TC-SuG"/>
+                <outlet property="imageViewHeight" destination="zG6-ZI-a72" id="dE0-P7-aAf"/>
+                <outlet property="imageViewWidth" destination="DZ1-Gh-qml" id="3B9-oB-Ao3"/>
+                <outlet property="scrollView" destination="gQz-mv-IOd" id="dC1-Gx-p3f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" alpha="0.5" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQz-mv-IOd">
+                    <rect key="frame" x="0.0" y="126" width="375" height="375"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uVZ-D1-cQ1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="DZ1-Gh-qml"/>
+                                <constraint firstAttribute="height" constant="355" id="zG6-ZI-a72"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="uVZ-D1-cQ1" secondAttribute="trailing" id="3cX-2O-dgB"/>
+                        <constraint firstItem="uVZ-D1-cQ1" firstAttribute="leading" secondItem="gQz-mv-IOd" secondAttribute="leading" id="E6B-9P-8QF"/>
+                        <constraint firstAttribute="bottom" secondItem="uVZ-D1-cQ1" secondAttribute="bottom" id="P99-FX-YhI"/>
+                        <constraint firstItem="uVZ-D1-cQ1" firstAttribute="top" secondItem="gQz-mv-IOd" secondAttribute="top" id="h1J-Hy-acy"/>
+                    </constraints>
+                </scrollView>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6d-MW-99g" customClass="CropperView" customModule="faer" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9a-UW-a3b" userLabel="searchBtn" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                    <rect key="frame" x="162" y="573" width="50" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="ZFr-yo-HVi"/>
+                        <constraint firstAttribute="height" constant="62" id="mAk-1T-dQK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="50"/>
+                    <state key="normal" title="">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="searchBtnTapped:" destination="-1" eventType="touchUpInside" id="REu-0V-a1t"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vg-WL-Bnc" userLabel="dismiss" customClass="FaerButton" customModule="faer" customModuleProvider="target">
+                    <rect key="frame" x="311" y="35" width="44" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4RS-Rh-1UW"/>
+                        <constraint firstAttribute="width" constant="44" id="9Yi-ag-uEN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="24"/>
+                    <state key="normal" title=""/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="dismissBtnTapped:" destination="-1" eventType="touchUpInside" id="DsO-v4-xeZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="X6d-MW-99g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9UM-b3-cmh"/>
+                <constraint firstItem="X6d-MW-99g" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="IgK-KL-kIZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4vg-WL-Bnc" secondAttribute="trailing" constant="20" id="Jma-OM-qhW"/>
+                <constraint firstItem="N9a-UW-a3b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P9N-tS-xea"/>
+                <constraint firstItem="4vg-WL-Bnc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="Qb7-ht-hJg"/>
+                <constraint firstItem="gQz-mv-IOd" firstAttribute="top" secondItem="4vg-WL-Bnc" secondAttribute="bottom" constant="47" id="XDM-iJ-snh"/>
+                <constraint firstItem="X6d-MW-99g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z5j-Tm-8zI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="N9a-UW-a3b" secondAttribute="bottom" constant="32" id="ZrP-JB-1Og"/>
+                <constraint firstItem="gQz-mv-IOd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iZL-AF-pBQ"/>
+                <constraint firstItem="N9a-UW-a3b" firstAttribute="top" secondItem="gQz-mv-IOd" secondAttribute="bottom" priority="750" constant="72" id="jPE-58-Apr"/>
+                <constraint firstItem="gQz-mv-IOd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vzh-5u-vpO"/>
+                <constraint firstItem="X6d-MW-99g" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="xIs-67-pWK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="77.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="3Iv-g0-gr2">
+            <objects>
+                <viewController storyboardIdentifier="loginSB" id="FRw-pf-DGG" customClass="LoginViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZH-ZK-RYB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zct-8N-XGU">
+                                <rect key="frame" x="163.5" y="569" width="48" height="38"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="21"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipBtn:" destination="FRw-pf-DGG" eventType="touchUpInside" id="h4F-4o-2j7"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FUC-j7-Zb2" userLabel="Login Container">
+                                <rect key="frame" x="20" y="239" width="335" height="124"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the community to get the latest looks and updates" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiB-rh-hu7">
+                                        <rect key="frame" x="3" y="0.0" width="329" height="44"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="as1-0s-gpr" userLabel="FB Login">
+                                        <rect key="frame" x="47.5" y="74" width="240" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0Oi-y9-yOb">
+                                                <rect key="frame" x="20" y="15" width="200" height="20"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-fb-white" translatesAutoresizingMaskIntoConstraints="NO" id="4Qw-UD-rMm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="20"/>
+                                                        <color key="tintColor" red="1" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="VA7-F6-Mre"/>
+                                                            <constraint firstAttribute="width" constant="16" id="jsH-F7-dfM"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9s-0Y-KAA">
+                                                        <rect key="frame" x="31" y="0.0" width="169" height="20"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <state key="normal" title="Continue with Facebook">
+                                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="fbLoginBtn:" destination="FRw-pf-DGG" eventType="touchUpInside" id="zDk-GQ-Dts"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.25882352941176473" green="0.35294117647058826" blue="0.58039215686274515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="0Oi-y9-yOb" firstAttribute="leading" secondItem="as1-0s-gpr" secondAttribute="leading" constant="20" id="Y9I-Ej-FcN"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Oi-y9-yOb" secondAttribute="trailing" constant="20" id="ZkW-MU-TBS"/>
+                                            <constraint firstAttribute="bottom" secondItem="0Oi-y9-yOb" secondAttribute="bottom" constant="15" id="v7k-nJ-jIL"/>
+                                            <constraint firstItem="0Oi-y9-yOb" firstAttribute="top" secondItem="as1-0s-gpr" secondAttribute="top" constant="15" id="wy9-8n-Uvr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="enQ-DQ-Vn2">
+                                <rect key="frame" x="126" y="80" width="123" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="Gzr-9D-U8V"/>
+                                    <constraint firstAttribute="width" constant="123" id="Wt6-Mp-VZb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rBs-Ks-xAd" firstAttribute="bottom" secondItem="zct-8N-XGU" secondAttribute="bottom" constant="60" id="6Rg-Gx-hDN"/>
+                            <constraint firstItem="enQ-DQ-Vn2" firstAttribute="centerX" secondItem="vZH-ZK-RYB" secondAttribute="centerX" id="JyG-xp-Mte"/>
+                            <constraint firstItem="zct-8N-XGU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FUC-j7-Zb2" secondAttribute="bottom" constant="80" id="XOJ-XO-40M"/>
+                            <constraint firstItem="enQ-DQ-Vn2" firstAttribute="top" secondItem="rBs-Ks-xAd" secondAttribute="top" constant="60" id="a3D-fR-QDm"/>
+                            <constraint firstItem="FUC-j7-Zb2" firstAttribute="leading" secondItem="vZH-ZK-RYB" secondAttribute="leading" constant="20" id="eQ8-mV-pLo"/>
+                            <constraint firstItem="FUC-j7-Zb2" firstAttribute="top" secondItem="enQ-DQ-Vn2" secondAttribute="bottom" constant="80" id="q5Q-6m-D10"/>
+                            <constraint firstAttribute="trailing" secondItem="FUC-j7-Zb2" secondAttribute="trailing" constant="20" id="sdp-9z-JfO"/>
+                            <constraint firstItem="zct-8N-XGU" firstAttribute="centerX" secondItem="vZH-ZK-RYB" secondAttribute="centerX" id="tH6-fR-rG5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rBs-Ks-xAd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9a-F2-bEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.875" y="-392.95774647887322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="faer-logo" width="123" height="79"/>
+        <image name="login-fb-white" width="16" height="30"/>
+    </resources>
+</document>

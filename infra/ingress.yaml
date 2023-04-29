@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress
+  annotations:
+    ingress.kubernetes.io/ssl-redirect: "true"
+    kubernetes.io/ingress.global-static-ip-name: lb-ip-1
+spec:
+  tls:
+  - secretName: cerebel-io-cert
+  - secretName: wearefaer-com-cert
+  backend:
+    serviceName: balancer
+    servicePort: 80

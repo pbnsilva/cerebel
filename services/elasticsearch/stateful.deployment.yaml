@@ -1,0 +1,86 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch
+  labels:
+    app: elasticsearch-cluster
+spec:
+  selector:
+    app: elasticsearch-cluster
+  ports:
+  - port: 9200
+    name: http
+  - port: 9300
+    name: transport
+---
+# This Headless service we need to address each individual node
+# http://blog.kubernetes.io/2017/01/running-mongodb-on-kubernetes-with-statefulsets.html
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch-cluster
+  labels:
+    app: elasticsearch-cluster
+spec:
+  selector:
+    app: elasticsearch-cluster
+  clusterIP: None
+  ports:
+  - port: 9200
+    name: http
+  - port: 9300
+    name: transport
+---
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  name: elasticsearch-cluster
+  labels:
+    app: elasticsearch-cluster
+spec:
+  serviceName: elasticsearch-cluster
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: elasticsearch-cluster
+    spec:
+      terminationGracePeriodSeconds: 10
+      initContainers:
+        - name: init-sysctl
+          image: eu.gcr.io/cerebel-prod/_IMAGE_
+          imagePullPolicy: Always
+          command: 
+          - sysctl
+          - -w
+          - vm.max_map_count=262144
+          securityContext:
+            privileged: true
+      containers:
+      - name: elasticsearch-cluster-container
+        image: eu.gcr.io/cerebel-prod/_IMAGE_
+        imagePullPolicy: Always
+        env:
+        - name: NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        - name: SERVICE
+          value: elasticsearch-cluster
+        - name: CLUSTER_NAME
+          value: elasticsearch-cluster
+        ports:
+        - containerPort: 9200
+        - containerPort: 9300
+        volumeMounts:
+        - name: elasticsearch-pvc
+          mountPath: /usr/share/elasticsearch/data
+  volumeClaimTemplates:
+  - metadata:
+      name: elasticsearch-pvc
+    spec:
+      storageClassName: fast
+      accessModes: [ ReadWriteOnce ]
+      resources:
+        requests:
+          storage: 50Gi

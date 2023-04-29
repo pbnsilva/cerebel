@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: scrapers-job
+spec:
+  template:
+    metadata:
+      name: scrapers-job
+    spec:
+      containers:
+      - name: scrapers-container
+        image: eu.gcr.io/cerebel-prod/scrapers
+        imagePullPolicy: Always
+      restartPolicy: Never

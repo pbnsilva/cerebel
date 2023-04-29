@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.settings.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/settings_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/settings"
+            android:textColor="@color/colorSearchView"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/finish_button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_close_circle_solid"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/gender_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="@string/shop"
+        android:textColor="@color/colorSearchView"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/gender_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingStart="15dp">
+
+        <RadioButton
+            android:id="@+id/shop_women_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:tag="@string/shoppingWomen"
+            android:text="@string/shop_women"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/shop_men_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="@string/shoppingMen"
+            android:text="@string/shop_men"
+            android:textSize="16sp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/currency_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="@string/preferred_currency"
+        android:textColor="@color/colorSearchView"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/currency_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingStart="15dp">
+
+
+        <RadioButton
+            android:id="@+id/eur_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:tag="@string/shoppingInEur"
+            android:text="@string/eur"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/usd_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:tag="@string/shoppingInUsd"
+            android:text="@string/usd"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/gbp_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:tag="@string/shoppingInGbp"
+            android:text="@string/gbp"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/dkk_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="@string/shoppingInDkk"
+            android:text="@string/dkk"
+            android:textSize="16sp" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/currency_explanation_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="40dp"
+        android:text="@string/currencyDetails"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/notifications_title_textview"
+        android:paddingStart="20dp"
+        android:paddingEnd="40dp"
+        android:text="Notifications"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Switch
+        android:id="@+id/notifications_switch"
+        android:paddingStart="20dp"
+        android:paddingEnd="40dp"
+        android:text="Product goes on sale"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="35dp"
+        android:checked="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/about_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/about"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/visit_faer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
+        android:autoLink="web"
+        android:text="@string/about_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/feedback_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="@string/feedback"
+        android:textColor="@color/colorRed"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

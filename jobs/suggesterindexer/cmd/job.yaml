@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: suggesterindexer-job
+spec:
+  template:
+    metadata:
+      name: suggesterindexer-job
+    spec:
+      containers:
+      - name: suggesterindexer-container
+        image: eu.gcr.io/cerebel-prod/suggesterindexer
+        env:
+        - name: ENV
+          value: "prod"
+        - name: ELASTIC_HOST
+          value: "http://elasticsearch:9200"
+        - name: PROMETHEUS_PORT
+          value: "9100"
+      restartPolicy: Never

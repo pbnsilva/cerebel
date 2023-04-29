@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nck-An-VTq">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Survey View Controller-->
+        <scene sceneID="BYo-XH-PAU">
+            <objects>
+                <viewController storyboardIdentifier="SurveyView" id="nck-An-VTq" customClass="SurveyViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1X-Xs-XKR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-OH-qQz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.79968158290793856" green="0.79968158290793856" blue="0.79968158290793856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQF-yZ-0GW">
+                                <rect key="frame" x="20" y="44" width="280" height="480"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQr-vC-5A8" userLabel="Start">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="480"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDr-0K-QBV">
+                                                <rect key="frame" x="20" y="20" width="240" height="32.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Hi there,">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="Montserrat-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPL-gQ-KZC">
+                                                <rect key="frame" x="20" y="62.5" width="240" height="243.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">Our community is very important to us and we'd greatly appreciate your feedback regarding your experience with Faer. 
+
+Your participation in this survey will help us to improve Faer, the survey should take about 3 minutes to complete.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6SV-Sc-mqT" userLabel="Actions">
+                                                <rect key="frame" x="20" y="352" width="240" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDz-Z7-fyB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                        <state key="normal" title="Skip">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="skipBtnTapped:" destination="nck-An-VTq" eventType="touchUpInside" id="kzx-Ph-Gr9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rz2-V3-qpB">
+                                                        <rect key="frame" x="0.0" y="64" width="240" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                                        <state key="normal" title="Start survey">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="startBtnTapped:" destination="nck-An-VTq" eventType="touchUpInside" id="x2C-rL-k6S"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="TPL-gQ-KZC" firstAttribute="top" secondItem="PDr-0K-QBV" secondAttribute="bottom" constant="10" id="SyW-zU-ad1"/>
+                                            <constraint firstAttribute="trailing" secondItem="6SV-Sc-mqT" secondAttribute="trailing" constant="20" id="U2o-bw-uAo"/>
+                                            <constraint firstAttribute="trailing" secondItem="TPL-gQ-KZC" secondAttribute="trailing" constant="20" id="USP-3T-Qhy"/>
+                                            <constraint firstAttribute="trailing" secondItem="PDr-0K-QBV" secondAttribute="trailing" constant="20" id="Z0Y-yE-zWO"/>
+                                            <constraint firstItem="PDr-0K-QBV" firstAttribute="leading" secondItem="zQr-vC-5A8" secondAttribute="leading" constant="20" id="ZxX-iu-zvW"/>
+                                            <constraint firstItem="6SV-Sc-mqT" firstAttribute="leading" secondItem="zQr-vC-5A8" secondAttribute="leading" constant="20" id="h9q-ex-Wkq"/>
+                                            <constraint firstAttribute="bottom" secondItem="6SV-Sc-mqT" secondAttribute="bottom" constant="30" id="hxY-ly-VhO"/>
+                                            <constraint firstItem="TPL-gQ-KZC" firstAttribute="leading" secondItem="zQr-vC-5A8" secondAttribute="leading" constant="20" id="pvj-vU-IcX"/>
+                                            <constraint firstItem="PDr-0K-QBV" firstAttribute="top" secondItem="zQr-vC-5A8" secondAttribute="top" constant="20" id="vyA-LD-MJt"/>
+                                        </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o36-v0-bdw" userLabel="Comment">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="480"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xX7-7l-bjg">
+                                                <rect key="frame" x="20" y="20" width="240" height="64.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Thank you. Care to tell us why?">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="Montserrat-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="52" bounces="NO" bouncesZoom="NO" text="Please leave your feedback here." translatesAutoresizingMaskIntoConstraints="NO" id="AHP-YW-1wA">
+                                                <rect key="frame" x="20" y="94.5" width="240" height="95"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="95" id="NrO-nB-zcT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="nck-An-VTq" id="k8e-tC-xkM"/>
+                                                </connections>
+                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TfX-b5-lPG" userLabel="Comment Actions">
+                                                <rect key="frame" x="20" y="352" width="240" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="may-g9-Cdc" userLabel="Cancel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                        <state key="normal" title="Cancel survey">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="skipBtnTapped:" destination="nck-An-VTq" eventType="touchUpInside" id="hcf-H3-CLe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYN-be-5Qj" userLabel="Continue">
+                                                        <rect key="frame" x="0.0" y="64" width="240" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                                        <state key="normal" title="Continue to last page">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="commentContinue:" destination="nck-An-VTq" eventType="touchUpInside" id="7Qs-Ku-ywL"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xX7-7l-bjg" firstAttribute="top" secondItem="o36-v0-bdw" secondAttribute="top" constant="20" id="11d-8Z-QPC"/>
+                                            <constraint firstItem="AHP-YW-1wA" firstAttribute="leading" secondItem="o36-v0-bdw" secondAttribute="leading" constant="20" id="1kb-mL-bdJ"/>
+                                            <constraint firstItem="xX7-7l-bjg" firstAttribute="leading" secondItem="o36-v0-bdw" secondAttribute="leading" constant="20" id="1xp-AZ-8fC"/>
+                                            <constraint firstAttribute="trailing" secondItem="TfX-b5-lPG" secondAttribute="trailing" constant="20" id="Af3-aq-20c"/>
+                                            <constraint firstAttribute="trailing" secondItem="xX7-7l-bjg" secondAttribute="trailing" constant="20" id="OFJ-nr-s0R"/>
+                                            <constraint firstAttribute="trailing" secondItem="AHP-YW-1wA" secondAttribute="trailing" constant="20" id="PNw-Ls-L7P"/>
+                                            <constraint firstAttribute="bottom" secondItem="TfX-b5-lPG" secondAttribute="bottom" constant="30" id="QAQ-Xb-8Xh"/>
+                                            <constraint firstItem="TfX-b5-lPG" firstAttribute="leading" secondItem="o36-v0-bdw" secondAttribute="leading" constant="20" id="RdS-Es-5sA"/>
+                                            <constraint firstItem="AHP-YW-1wA" firstAttribute="top" secondItem="xX7-7l-bjg" secondAttribute="bottom" constant="10" id="vvm-S0-Tfc"/>
+                                        </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EC-Gc-CXB">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="480"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX3-zq-cFO">
+                                                <rect key="frame" x="20" y="20" width="240" height="161"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="How likely is it that you would recommend Faer to a friend or colleague?">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="24" name="Montserrat-SemiBold"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="25" lineHeightMultiple="1.1000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdb-LN-nn4">
+                                                <rect key="frame" x="20" y="191" width="240" height="151"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="nck-An-VTq" id="bg4-zy-DIW"/>
+                                                    <outlet property="delegate" destination="nck-An-VTq" id="VOu-zT-QhI"/>
+                                                </connections>
+                                            </pickerView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-Hf-dKs" userLabel="Actions">
+                                                <rect key="frame" x="20" y="352" width="240" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJg-Nl-J0C" userLabel="Cancel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                        <state key="normal" title="Cancel survey">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="skipBtnTapped:" destination="nck-An-VTq" eventType="touchUpInside" id="6RO-zj-8mW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpx-7b-gbB" userLabel="Continue survey">
+                                                        <rect key="frame" x="0.0" y="64" width="240" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                                        <state key="normal" title="Continue">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <state key="disabled">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="npsContinueBtnTapped:" destination="nck-An-VTq" eventType="touchUpInside" id="9bw-Zq-yfd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Mdb-LN-nn4" secondAttribute="trailing" constant="20" id="0RS-vq-9tw"/>
+                                            <constraint firstItem="dX3-zq-cFO" firstAttribute="top" secondItem="5EC-Gc-CXB" secondAttribute="top" constant="20" id="Ali-AN-Vyn"/>
+                                            <constraint firstAttribute="bottom" secondItem="3rm-Hf-dKs" secondAttribute="bottom" constant="30" id="DFe-oN-VyJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="3rm-Hf-dKs" secondAttribute="trailing" constant="20" id="LRV-RU-HST"/>
+                                            <constraint firstItem="3rm-Hf-dKs" firstAttribute="leading" secondItem="5EC-Gc-CXB" secondAttribute="leading" constant="20" id="N09-dX-aYz"/>
+                                            <constraint firstAttribute="trailing" secondItem="dX3-zq-cFO" secondAttribute="trailing" constant="20" id="QiN-7F-u8n"/>
+                                            <constraint firstItem="3rm-Hf-dKs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Mdb-LN-nn4" secondAttribute="bottom" constant="10" id="bl2-RB-g1p"/>
+                                            <constraint firstItem="dX3-zq-cFO" firstAttribute="leading" secondItem="5EC-Gc-CXB" secondAttribute="leading" constant="20" id="kbg-cZ-IfZ"/>
+                                            <constraint firstItem="Mdb-LN-nn4" firstAttribute="top" secondItem="dX3-zq-cFO" secondAttribute="bottom" constant="10" id="oqC-3I-Eas"/>
+                                            <constraint firstItem="Mdb-LN-nn4" firstAttribute="leading" secondItem="5EC-Gc-CXB" secondAttribute="leading" constant="20" id="z2Y-vp-sfS"/>
+                                        </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEM-mG-eSk" userLabel="End">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="480"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHC-cJ-6sH">
+                                                <rect key="frame" x="20" y="20" width="240" height="97"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Thanks for sharing your thoughts with us.">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="Montserrat-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWC-pT-9Fa">
+                                                <rect key="frame" x="20" y="137" width="240" height="50.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Leave your email to stay in the loop about Faer:">
+                                                        <attributes>
+                                                            <font key="NSFont" size="18" name="OpenSans"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your email address" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CiB-JR-KfD">
+                                                <rect key="frame" x="20" y="207.5" width="240" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gi0-2g-kic"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
+                                                <connections>
+                                                    <action selector="emailFieldDidEndEditing:" destination="nck-An-VTq" eventType="editingDidEnd" id="EcK-o9-Nd1"/>
+                                                    <action selector="emailFieldPrimaryAction:" destination="nck-An-VTq" eventType="primaryActionTriggered" id="dJc-NO-iEq"/>
+                                                    <action selector="emailFieldStartedEditing:" destination="nck-An-VTq" eventType="editingDidBegin" id="U6f-df-OoS"/>
+                                                </connections>
+                                            </textField>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The entered email address doesn't seem to be valid." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skw-3J-A47">
+                                                <rect key="frame" x="27" y="262.5" width="233" height="29.5"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                                <color key="textColor" red="1" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-Jc-mDS" userLabel="Actions">
+                                                <rect key="frame" x="20" y="416" width="240" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSf-Nr-q5J">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                                        <state key="normal" title="Close">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="skipBtnTapped:" destination="nck-An-VTq" eventType="touchUpInside" id="giq-0M-SMv"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Skw-3J-A47" firstAttribute="leading" secondItem="LEM-mG-eSk" secondAttribute="leading" constant="27" id="09a-0T-csb"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Zk-Jc-mDS" secondAttribute="trailing" constant="20" id="5Mo-eM-Ae5"/>
+                                            <constraint firstItem="CiB-JR-KfD" firstAttribute="top" secondItem="NWC-pT-9Fa" secondAttribute="bottom" constant="20" id="EvP-Kd-05s"/>
+                                            <constraint firstItem="NWC-pT-9Fa" firstAttribute="leading" secondItem="LEM-mG-eSk" secondAttribute="leading" constant="20" id="FH5-pr-Jjg"/>
+                                            <constraint firstItem="6Zk-Jc-mDS" firstAttribute="leading" secondItem="LEM-mG-eSk" secondAttribute="leading" constant="20" id="L20-6m-gwQ"/>
+                                            <constraint firstItem="CiB-JR-KfD" firstAttribute="leading" secondItem="LEM-mG-eSk" secondAttribute="leading" constant="20" id="L3C-Dn-F0K"/>
+                                            <constraint firstItem="Skw-3J-A47" firstAttribute="top" secondItem="CiB-JR-KfD" secondAttribute="bottom" constant="5" id="MQA-Yq-Rpn"/>
+                                            <constraint firstItem="AHC-cJ-6sH" firstAttribute="top" secondItem="LEM-mG-eSk" secondAttribute="top" constant="20" id="NZo-uT-lbz"/>
+                                            <constraint firstAttribute="trailing" secondItem="NWC-pT-9Fa" secondAttribute="trailing" constant="20" id="OV4-aH-ZQj"/>
+                                            <constraint firstItem="NWC-pT-9Fa" firstAttribute="top" secondItem="AHC-cJ-6sH" secondAttribute="bottom" constant="20" id="e16-6R-kOX"/>
+                                            <constraint firstAttribute="trailing" secondItem="AHC-cJ-6sH" secondAttribute="trailing" constant="20" id="fnZ-yI-Wbd"/>
+                                            <constraint firstAttribute="trailing" secondItem="Skw-3J-A47" secondAttribute="trailing" constant="20" id="jP5-Bp-zU2"/>
+                                            <constraint firstItem="AHC-cJ-6sH" firstAttribute="leading" secondItem="LEM-mG-eSk" secondAttribute="leading" constant="20" id="kMw-jR-Tbx"/>
+                                            <constraint firstAttribute="bottom" secondItem="6Zk-Jc-mDS" secondAttribute="bottom" constant="30" id="kUf-F9-m24"/>
+                                            <constraint firstAttribute="trailing" secondItem="CiB-JR-KfD" secondAttribute="trailing" constant="20" id="yH4-LJ-LmA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zQr-vC-5A8" firstAttribute="top" secondItem="qQF-yZ-0GW" secondAttribute="top" id="0h5-Ch-eSg"/>
+                                    <constraint firstAttribute="bottom" secondItem="LEM-mG-eSk" secondAttribute="bottom" id="2NY-v6-KNd"/>
+                                    <constraint firstAttribute="trailing" secondItem="o36-v0-bdw" secondAttribute="trailing" id="3EM-tQ-0Dq"/>
+                                    <constraint firstAttribute="bottom" secondItem="o36-v0-bdw" secondAttribute="bottom" id="7Ms-jh-hlN"/>
+                                    <constraint firstAttribute="trailing" secondItem="LEM-mG-eSk" secondAttribute="trailing" id="88j-9P-mrK"/>
+                                    <constraint firstItem="5EC-Gc-CXB" firstAttribute="leading" secondItem="qQF-yZ-0GW" secondAttribute="leading" id="AXA-px-b9I"/>
+                                    <constraint firstAttribute="trailing" secondItem="5EC-Gc-CXB" secondAttribute="trailing" id="Eob-Ae-81b"/>
+                                    <constraint firstItem="zQr-vC-5A8" firstAttribute="leading" secondItem="qQF-yZ-0GW" secondAttribute="leading" id="FK4-aI-i9V"/>
+                                    <constraint firstAttribute="height" constant="480" id="QKs-nh-j7H"/>
+                                    <constraint firstItem="o36-v0-bdw" firstAttribute="leading" secondItem="qQF-yZ-0GW" secondAttribute="leading" id="REz-mu-lZI"/>
+                                    <constraint firstItem="LEM-mG-eSk" firstAttribute="top" secondItem="qQF-yZ-0GW" secondAttribute="top" id="RIw-lV-KSH"/>
+                                    <constraint firstAttribute="trailing" secondItem="zQr-vC-5A8" secondAttribute="trailing" id="aDW-fx-qRw"/>
+                                    <constraint firstItem="5EC-Gc-CXB" firstAttribute="top" secondItem="qQF-yZ-0GW" secondAttribute="top" id="drW-iA-fbT"/>
+                                    <constraint firstItem="o36-v0-bdw" firstAttribute="top" secondItem="qQF-yZ-0GW" secondAttribute="top" id="fo6-SL-013"/>
+                                    <constraint firstAttribute="bottom" secondItem="5EC-Gc-CXB" secondAttribute="bottom" id="tAE-Po-TFR"/>
+                                    <constraint firstAttribute="bottom" secondItem="zQr-vC-5A8" secondAttribute="bottom" id="xgr-bR-fTE"/>
+                                    <constraint firstItem="LEM-mG-eSk" firstAttribute="leading" secondItem="qQF-yZ-0GW" secondAttribute="leading" id="yIa-2G-KF3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qQF-yZ-0GW" firstAttribute="leading" secondItem="XdH-0N-WFj" secondAttribute="leading" constant="20" id="8y9-xj-wxY"/>
+                            <constraint firstItem="Fad-OH-qQz" firstAttribute="leading" secondItem="XdH-0N-WFj" secondAttribute="leading" id="Uth-Hk-lQC"/>
+                            <constraint firstItem="qQF-yZ-0GW" firstAttribute="centerY" secondItem="n1X-Xs-XKR" secondAttribute="centerY" id="Xrj-Qd-szQ"/>
+                            <constraint firstItem="Fad-OH-qQz" firstAttribute="bottom" secondItem="XdH-0N-WFj" secondAttribute="bottom" id="dZf-qw-MZV"/>
+                            <constraint firstItem="Fad-OH-qQz" firstAttribute="top" secondItem="n1X-Xs-XKR" secondAttribute="top" id="efq-jb-9eJ"/>
+                            <constraint firstItem="Fad-OH-qQz" firstAttribute="trailing" secondItem="XdH-0N-WFj" secondAttribute="trailing" id="fH5-ci-OIY"/>
+                            <constraint firstItem="XdH-0N-WFj" firstAttribute="trailing" secondItem="qQF-yZ-0GW" secondAttribute="trailing" constant="20" id="pem-kq-Tun"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XdH-0N-WFj"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="commentActionsBottom" destination="QAQ-Xb-8Xh" id="LXk-JU-YPL"/>
+                        <outlet property="commentView" destination="o36-v0-bdw" id="yNd-4A-k9s"/>
+                        <outlet property="containerView" destination="qQF-yZ-0GW" id="Wbg-C5-NCb"/>
+                        <outlet property="emailField" destination="CiB-JR-KfD" id="b2V-xa-gNb"/>
+                        <outlet property="emailFieldInfo" destination="NWC-pT-9Fa" id="Fy1-Y3-bzF"/>
+                        <outlet property="emailFieldWarning" destination="Skw-3J-A47" id="rzK-VQ-OR3"/>
+                        <outlet property="endView" destination="LEM-mG-eSk" id="vhQ-mk-k3X"/>
+                        <outlet property="npsContinueBtn" destination="Hpx-7b-gbB" id="dD4-b9-92S"/>
+                        <outlet property="npsView" destination="5EC-Gc-CXB" id="oCI-A2-py9"/>
+                        <outlet property="startInfo" destination="TPL-gQ-KZC" id="DOX-gB-2ki"/>
+                        <outlet property="startTitle" destination="PDr-0K-QBV" id="BBb-YI-hL4"/>
+                        <outlet property="startView" destination="zQr-vC-5A8" id="vyi-nE-Lau"/>
+                        <outlet property="translucentBackground" destination="Fad-OH-qQz" id="0P0-JU-GGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kcm-bu-Bk2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311.25" y="198.59154929577466"/>
+        </scene>
+    </scenes>
+</document>

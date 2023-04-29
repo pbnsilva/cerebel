@@ -1,0 +1,16 @@
+.result-card {
+  width: 10rem;
+  height: 20rem;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#spinner {
+  visibility: hidden;
+  width: 30px;
+  margin-left: auto;
+	margin-right: auto;
+  margin-top: 30px;
+	display: block;
+}

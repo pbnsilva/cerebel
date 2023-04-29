@@ -1,0 +1,169 @@
+syntax = "proto3";
+
+package annotation;
+
+import "google/protobuf/any.proto";
+
+
+service Annotator {
+  rpc BatchAnnotateTexts(BatchAnnotateTextsRequest) returns (BatchAnnotateTextsResponse) {}
+  rpc BatchAnnotateImages(BatchAnnotateImagesRequest) returns (BatchAnnotateImagesResponse) {}
+}
+
+message BatchAnnotateImagesRequest {
+  repeated AnnotateImageRequest requests = 1;
+}
+
+message AnnotateImageRequest {
+  Image image = 1;
+  repeated ImageFeature features = 2;
+}
+
+message Image {
+  bytes content = 1;
+  ImageSource source = 2;
+}
+
+message ImageSource {
+  string image_url = 1;
+}
+
+message ImageFeature {
+  enum Type {
+    TYPE_UNSPECIFIED = 0;
+    FEATURE_VECTOR = 1;
+    ITEM_DETECTION = 2;  // bounding box + item category classification
+    CATEGORY_PREDICTION = 3;  // full image category classification
+    COLOR_DETECTION = 4;
+    IS_FASHION_PREDICTION = 5;
+    HAS_FACE_PREDICTION = 6;
+    TEXTURE_PREDICTION = 7;
+  }
+  Type type = 1;
+  int32 max_results = 2;
+}
+
+message BatchAnnotateImagesResponse {
+  repeated AnnotateImageResponse responses = 1;
+}
+
+message AnnotateImageResponse {
+  ImageFeatureVector feature_vector = 1;
+  repeated ItemAnnotation item_annotations = 2;
+  repeated CategoryAnnotation category_annotations = 3;
+  repeated ColorAnnotation color_annotations = 4;
+  IsFashionAnnotation is_fashion_annotation = 5;
+  HasFaceAnnotation has_face_annotation = 6;
+  repeated TextureAnnotation texture_annotations = 7;
+  Status error = 8;
+}
+
+message ImageFeatureVector {
+  repeated float vector = 1;
+}
+
+message ItemAnnotation {
+  string label = 1;
+  BoundingBox bbox = 2;
+  float confidence = 3;
+}
+
+message CategoryAnnotation {
+  string label = 1;
+  float confidence = 2;
+}
+
+message ColorAnnotation {
+  string label = 1;
+  repeated float center = 2;
+}
+
+message IsFashionAnnotation {
+  string label = 1;
+  float confidence = 2;
+}
+
+message HasFaceAnnotation {
+  string label = 1;
+  float confidence = 2;
+}
+
+message TextureAnnotation {
+  string label = 1;
+  float confidence = 2;
+}
+
+message BoundingBox {
+  int32 x_min = 1;
+  int32 y_min = 2;
+  int32 x_max = 3;
+  int32 y_max = 4;
+}
+
+message BatchAnnotateTextsRequest {
+  repeated AnnotateTextRequest requests = 1;
+}
+
+message AnnotateTextRequest {
+  string text = 1;
+  repeated TextFeature features = 2;
+}
+
+message TextFeature {
+  enum Type {
+    TYPE_UNSPECIFIED = 0;
+    ENTITY_PREDICTION = 1;
+    ENTITY_RELATIONS = 2;
+    PRICE_RANGE_DETECTION = 3;
+  }
+  Type type = 1;
+  int32 max_results = 2;
+}
+
+message BatchAnnotateTextsResponse {
+  repeated AnnotateTextResponse responses = 1;
+}
+
+message AnnotateTextResponse {
+  repeated EntityAnnotation entity_annotations = 1;
+  PriceRangeAnnotation price_range_annotation = 2;
+  Status error = 3;
+}
+
+message EntityAnnotation {
+  string id = 1;
+  string cls = 2;
+  string label = 3;
+  int32 start = 4;
+  int32 end = 5;
+  string original = 6;
+  float confidence = 7;
+  repeated EntityRelation relations = 8;
+}
+
+message PriceRangeAnnotation {
+  string currency = 1;
+  repeated RangeAnnotation range_annotations = 2;
+}
+
+message RangeAnnotation {
+  enum RangeOperator {
+    OP_UNSPECIFIED = 0;
+    GTE = 1;
+    LTE = 2;
+    EQ = 3;
+  }
+  RangeOperator operator = 1;
+  int32 value= 2;
+}
+
+message EntityRelation {
+  string name = 1;
+  string target = 2;
+}
+
+message Status {
+  int32 code = 1;
+  string message = 2;
+  repeated google.protobuf.Any details = 3;
+}

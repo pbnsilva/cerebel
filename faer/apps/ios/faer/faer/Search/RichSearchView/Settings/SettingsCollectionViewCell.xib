@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SettingsCollectionViewCell" id="gTV-IL-0wX" customClass="SettingsCollectionViewCell" customModule="faer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="33"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="33"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQ2-FX-rNU">
+                        <rect key="frame" x="20" y="10" width="73" height="21"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                        <state key="normal" title="Settings">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <connections>
+                            <action selector="settingsBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="guH-ad-bb4"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5L-gX-aNh" userLabel="bottom line">
+                        <rect key="frame" x="15" y="32" width="252" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8xc-a2-sYK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qQ2-FX-rNU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="89z-ww-t4c"/>
+                <constraint firstAttribute="bottom" secondItem="S5L-gX-aNh" secondAttribute="bottom" id="Hbs-qF-AEp"/>
+                <constraint firstItem="S5L-gX-aNh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Qtq-6q-gB4"/>
+                <constraint firstItem="qQ2-FX-rNU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="SO1-I4-VjF"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qQ2-FX-rNU" secondAttribute="trailing" constant="15" id="W1z-PS-UP8"/>
+                <constraint firstItem="S5L-gX-aNh" firstAttribute="top" secondItem="qQ2-FX-rNU" secondAttribute="bottom" constant="1" id="hgt-Ot-CtP"/>
+                <constraint firstAttribute="trailing" secondItem="S5L-gX-aNh" secondAttribute="trailing" constant="15" id="nPh-xG-hBm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="282" height="37"/>
+            <point key="canvasLocation" x="323.19999999999999" y="146.17691154422789"/>
+        </collectionViewCell>
+    </objects>
+</document>

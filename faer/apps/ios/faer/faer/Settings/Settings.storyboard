@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j2M-yR-IzT">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="okK-CY-sK4">
+            <objects>
+                <tableViewController id="xPm-3f-kOp" customClass="SettingsTableViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="RmE-bM-YzH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="936"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="About Faer" id="pmN-H3-9x2">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="wJD-N6-8hs">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wJD-N6-8hs" id="wGw-1G-WPy">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visit Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X20-mX-g1G">
+                                                    <rect key="frame" x="20" y="15" width="301" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="X20-mX-g1G" firstAttribute="leading" secondItem="wGw-1G-WPy" secondAttribute="leading" constant="20" id="UkP-qP-2kH"/>
+                                                <constraint firstAttribute="trailing" secondItem="X20-mX-g1G" secondAttribute="trailing" constant="20" id="dvP-Zi-wz5"/>
+                                                <constraint firstItem="X20-mX-g1G" firstAttribute="top" secondItem="wGw-1G-WPy" secondAttribute="top" constant="15" id="j7j-m2-Qmh"/>
+                                                <constraint firstAttribute="bottom" secondItem="X20-mX-g1G" secondAttribute="bottom" constant="15" id="oPC-CN-KT7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="5C8-Ce-HTG">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5C8-Ce-HTG" id="irr-d3-TR8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leave Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOE-MF-x6L">
+                                                    <rect key="frame" x="20" y="15" width="335" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="QOE-MF-x6L" secondAttribute="trailing" constant="20" id="0CB-O7-Fbo"/>
+                                                <constraint firstItem="QOE-MF-x6L" firstAttribute="top" secondItem="irr-d3-TR8" secondAttribute="top" constant="15" id="Ok0-iJ-p2X"/>
+                                                <constraint firstItem="QOE-MF-x6L" firstAttribute="leading" secondItem="irr-d3-TR8" secondAttribute="leading" constant="20" id="c9o-q5-LI9"/>
+                                                <constraint firstAttribute="bottom" secondItem="QOE-MF-x6L" secondAttribute="bottom" constant="15" id="xcf-di-9c4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <segue destination="GSz-tN-x5C" kind="show" id="Ven-Zj-9GZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Shop" id="cW3-iC-rIb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="qUz-ei-srZ">
+                                        <rect key="frame" x="0.0" y="199.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qUz-ei-srZ" id="RES-sz-lA7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Women" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUI-lT-lx2">
+                                                    <rect key="frame" x="20" y="15" width="335" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UUI-lT-lx2" firstAttribute="leading" secondItem="RES-sz-lA7" secondAttribute="leading" constant="20" id="KDT-qU-Tbm"/>
+                                                <constraint firstAttribute="trailing" secondItem="UUI-lT-lx2" secondAttribute="trailing" constant="20" id="YUj-my-BK8"/>
+                                                <constraint firstItem="UUI-lT-lx2" firstAttribute="top" secondItem="RES-sz-lA7" secondAttribute="top" constant="15" id="ZMB-Bf-EwQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="UUI-lT-lx2" secondAttribute="bottom" constant="15" id="k8z-ul-m6r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CDw-C6-7zz">
+                                        <rect key="frame" x="0.0" y="243.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CDw-C6-7zz" id="weZ-We-VL7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29I-Z8-eT1">
+                                                    <rect key="frame" x="20" y="15" width="335" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="29I-Z8-eT1" firstAttribute="top" secondItem="weZ-We-VL7" secondAttribute="top" constant="15" id="Jyu-r5-tE9"/>
+                                                <constraint firstItem="29I-Z8-eT1" firstAttribute="leading" secondItem="weZ-We-VL7" secondAttribute="leading" constant="20" id="Oy7-FB-Cmj"/>
+                                                <constraint firstAttribute="bottom" secondItem="29I-Z8-eT1" secondAttribute="bottom" constant="15" id="j0e-y4-2oB"/>
+                                                <constraint firstAttribute="trailing" secondItem="29I-Z8-eT1" secondAttribute="trailing" constant="20" id="nnO-rG-FS3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Preferred Currency" id="rdZ-FR-iaa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="R43-VM-gJN">
+                                        <rect key="frame" x="0.0" y="343.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R43-VM-gJN" id="QZ8-nR-1j4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faer converts all prices into your preferred currency using current exchange rates." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDC-UT-Kpp">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cDC-UT-Kpp" firstAttribute="leading" secondItem="QZ8-nR-1j4" secondAttribute="leadingMargin" id="8aL-1D-ue7"/>
+                                                <constraint firstItem="cDC-UT-Kpp" firstAttribute="bottom" secondItem="QZ8-nR-1j4" secondAttribute="bottomMargin" id="Ev6-hB-BPb"/>
+                                                <constraint firstItem="cDC-UT-Kpp" firstAttribute="top" secondItem="QZ8-nR-1j4" secondAttribute="topMargin" id="JfZ-1Y-Uhg"/>
+                                                <constraint firstItem="cDC-UT-Kpp" firstAttribute="bottom" secondItem="QZ8-nR-1j4" secondAttribute="bottomMargin" id="Uwc-0K-zQo"/>
+                                                <constraint firstItem="cDC-UT-Kpp" firstAttribute="top" secondItem="QZ8-nR-1j4" secondAttribute="topMargin" id="fTc-GM-z02"/>
+                                                <constraint firstItem="cDC-UT-Kpp" firstAttribute="leading" secondItem="QZ8-nR-1j4" secondAttribute="leadingMargin" id="naq-MK-dC3"/>
+                                                <constraint firstItem="cDC-UT-Kpp" firstAttribute="trailing" secondItem="QZ8-nR-1j4" secondAttribute="trailingMargin" id="vOk-ta-tZf"/>
+                                                <constraint firstItem="cDC-UT-Kpp" firstAttribute="trailing" secondItem="QZ8-nR-1j4" secondAttribute="trailingMargin" id="yxp-41-OF8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="PUf-tI-nAg">
+                                        <rect key="frame" x="0.0" y="387.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PUf-tI-nAg" id="8bH-mp-jal">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="290-eS-1g4">
+                                                    <rect key="frame" x="20" y="15" width="335" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="290-eS-1g4" firstAttribute="top" secondItem="8bH-mp-jal" secondAttribute="top" constant="15" id="4PY-S6-cTo"/>
+                                                <constraint firstAttribute="bottom" secondItem="290-eS-1g4" secondAttribute="bottom" constant="15" id="JQa-Dn-2o3"/>
+                                                <constraint firstAttribute="trailing" secondItem="290-eS-1g4" secondAttribute="trailing" constant="20" id="PCm-t3-kvH"/>
+                                                <constraint firstItem="290-eS-1g4" firstAttribute="leading" secondItem="8bH-mp-jal" secondAttribute="leading" constant="20" id="jA3-pC-hs4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.89755097520000005" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DgR-iP-u2O">
+                                        <rect key="frame" x="0.0" y="431.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DgR-iP-u2O" id="V1c-5K-t6z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY7-WP-8nk">
+                                                    <rect key="frame" x="20" y="15" width="335" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KY7-WP-8nk" firstAttribute="top" secondItem="V1c-5K-t6z" secondAttribute="top" constant="15" id="C2A-Il-Q7U"/>
+                                                <constraint firstAttribute="trailing" secondItem="KY7-WP-8nk" secondAttribute="trailing" constant="20" id="C8K-j8-UMZ"/>
+                                                <constraint firstItem="KY7-WP-8nk" firstAttribute="leading" secondItem="V1c-5K-t6z" secondAttribute="leading" constant="20" id="yyh-a5-m0v"/>
+                                                <constraint firstAttribute="bottom" secondItem="KY7-WP-8nk" secondAttribute="bottom" constant="15" id="znT-gb-XJP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="F5V-VX-wl8">
+                                        <rect key="frame" x="0.0" y="475.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F5V-VX-wl8" id="bdi-pv-8YW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVp-6C-uCY">
+                                                    <rect key="frame" x="20" y="15" width="335" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="oVp-6C-uCY" secondAttribute="bottom" constant="15" id="0Va-eO-lMz"/>
+                                                <constraint firstItem="oVp-6C-uCY" firstAttribute="leading" secondItem="bdi-pv-8YW" secondAttribute="leading" constant="20" id="3Fq-HT-XIe"/>
+                                                <constraint firstItem="oVp-6C-uCY" firstAttribute="top" secondItem="bdi-pv-8YW" secondAttribute="top" constant="15" id="WwN-m7-I9h"/>
+                                                <constraint firstAttribute="trailing" secondItem="oVp-6C-uCY" secondAttribute="trailing" constant="20" id="t0j-nz-36f"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8sS-In-fmm">
+                                        <rect key="frame" x="0.0" y="519.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8sS-In-fmm" id="I8x-pP-tBf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DKK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxr-hl-ni2">
+                                                    <rect key="frame" x="20" y="15" width="335" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="hxr-hl-ni2" secondAttribute="trailing" constant="20" id="Bwh-CE-FhP"/>
+                                                <constraint firstItem="hxr-hl-ni2" firstAttribute="top" secondItem="I8x-pP-tBf" secondAttribute="top" constant="15" id="Nst-GG-Xbj"/>
+                                                <constraint firstItem="hxr-hl-ni2" firstAttribute="leading" secondItem="I8x-pP-tBf" secondAttribute="leading" constant="20" id="Z13-kP-lg0"/>
+                                                <constraint firstAttribute="bottom" secondItem="hxr-hl-ni2" secondAttribute="bottom" constant="15" id="pqW-TZ-ouF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Notifications" id="90a-r5-WoR">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UmN-hr-YTa">
+                                        <rect key="frame" x="0.0" y="619.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UmN-hr-YTa" id="RxV-RO-nFz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product goes on sale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFy-6b-bS7">
+                                                    <rect key="frame" x="20" y="15" width="335" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sm9-7O-q2H">
+                                                    <rect key="frame" x="306" y="6.5" width="51" height="31"/>
+                                                    <color key="onTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="wishlistItemOnSaleSwitched:" destination="xPm-3f-kOp" eventType="valueChanged" id="wBV-lo-g0V"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JFy-6b-bS7" firstAttribute="leading" secondItem="RxV-RO-nFz" secondAttribute="leading" constant="20" id="Khc-hX-Lcf"/>
+                                                <constraint firstAttribute="bottom" secondItem="JFy-6b-bS7" secondAttribute="bottom" constant="15" id="eXk-BF-pii"/>
+                                                <constraint firstAttribute="trailing" secondItem="sm9-7O-q2H" secondAttribute="trailing" constant="20" id="fcf-2A-tOA"/>
+                                                <constraint firstItem="JFy-6b-bS7" firstAttribute="top" secondItem="RxV-RO-nFz" secondAttribute="top" constant="15" id="hJ9-7l-PEY"/>
+                                                <constraint firstAttribute="trailing" secondItem="JFy-6b-bS7" secondAttribute="trailing" constant="20" id="j06-TH-CHj"/>
+                                                <constraint firstItem="sm9-7O-q2H" firstAttribute="centerY" secondItem="RxV-RO-nFz" secondAttribute="centerY" id="u4o-aZ-zAj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="xPm-3f-kOp" id="NGo-m4-S7N"/>
+                            <outlet property="delegate" destination="xPm-3f-kOp" id="APD-bf-TmK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="frR-NA-rG6">
+                        <barButtonItem key="leftBarButtonItem" image="navbar-back" id="qN1-FO-rjJ">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="hero_dismissViewController" destination="3Fj-Xe-bpN" id="hZz-4w-Z6g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="wishlistProductOnSaleSwitch" destination="sm9-7O-q2H" id="8a9-Wd-tjn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fj-Xe-bpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3053.5999999999999" y="1872.4137931034484"/>
+        </scene>
+        <!--Leave Feedback-->
+        <scene sceneID="mEa-H0-ve4">
+            <objects>
+                <viewController id="GSz-tN-x5C" customClass="FeedbackViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAA-jr-L24">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iih-H3-DDJ">
+                                <rect key="frame" x="125.5" y="430" width="69" height="34"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AHa-Kl-zZv">
+                                <rect key="frame" x="20" y="20" width="280" height="380"/>
+                                <subviews>
+                                    <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your email (optional)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xqr-GS-af6">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="returnBtnTapped:" destination="GSz-tN-x5C" eventType="primaryActionTriggered" id="74N-sc-rUs"/>
+                                        </connections>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="scaleToFill" text="Tap here to leave your feedback" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VI4-74-sGi">
+                                        <rect key="frame" x="0.0" y="90" width="280" height="210.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for taking the time to share your thoughts about Faer." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nf6-IQ-BbU">
+                                        <rect key="frame" x="0.0" y="330.5" width="280" height="49.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AHa-Kl-zZv" firstAttribute="top" secondItem="xdy-1c-Rfw" secondAttribute="top" constant="20" id="6ZN-m1-cVs"/>
+                            <constraint firstItem="AHa-Kl-zZv" firstAttribute="leading" secondItem="xdy-1c-Rfw" secondAttribute="leading" constant="20" id="952-59-4SD"/>
+                            <constraint firstItem="xdy-1c-Rfw" firstAttribute="bottom" secondItem="iih-H3-DDJ" secondAttribute="bottom" constant="40" id="95d-k4-U0O"/>
+                            <constraint firstAttribute="trailing" secondItem="AHa-Kl-zZv" secondAttribute="trailing" constant="20" id="Vou-14-gLV"/>
+                            <constraint firstItem="iih-H3-DDJ" firstAttribute="centerX" secondItem="QAA-jr-L24" secondAttribute="centerX" id="Xqg-wM-tee"/>
+                            <constraint firstItem="iih-H3-DDJ" firstAttribute="top" secondItem="AHa-Kl-zZv" secondAttribute="bottom" constant="30" id="rHB-cS-dRg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xdy-1c-Rfw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Leave Feedback" id="fcS-9p-exc">
+                        <barButtonItem key="leftBarButtonItem" tag="8" title="Item" image="navbar-back" id="Hss-aT-WK2">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="backBtnTapped:" destination="GSz-tN-x5C" id="bOe-gd-G0G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sP6-ax-Iaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3930" y="1644"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zzq-yg-hkQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j2M-yR-IzT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="MTR-Ft-GpK">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xPm-3f-kOp" kind="relationship" relationship="rootViewController" id="Und-bq-cu1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mt3-Ed-zoa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2114.4000000000001" y="1872.4137931034484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navbar-back" width="30" height="30"/>
+    </resources>
+</document>

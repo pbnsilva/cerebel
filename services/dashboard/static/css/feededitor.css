@@ -1,0 +1,48 @@
+.tab-pane img {
+  width: 220px;
+  padding-top: 40px;
+}
+
+.main-content {
+  padding-bottom: 50px;
+}
+
+.img-buttons {
+  margin-top: 0.5em;
+}
+
+.img-buttons button {
+  float: left;
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+
+#spinner {
+  visibility: hidden;
+  width: 30px;
+  margin-left: auto;
+	margin-right: auto;
+  margin-top: 30px;
+	display: block;
+}
+
+.match-modal-text {
+  font-size: 0.8em;
+}
+
+#match-modal-title {
+  font-size: 0.8em;
+}
+
+#match-modal-account {
+  font-size: 0.8em;
+}
+
+#match-modal-date {
+  font-size: 0.8em;
+}
+
+li {
+  list-style-type: none;
+  font-size: 0.8em;
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productDetailsViewReuseIdentifier" id="gTV-IL-0wX" customClass="ProductDetailsView" customModule="faer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="528" height="462"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="528" height="462"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="9" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ygj-BV-xjh">
+                        <rect key="frame" x="0.0" y="0.0" width="528" height="462"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W5H-qI-so3">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyG-v9-3bd" userLabel="Price" customClass="OutlinedLabel" customModule="faer" customModuleProvider="target">
+                        <rect key="frame" x="20" y="366" width="55" height="24.5"/>
+                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poG-lI-AKo" userLabel="Original Price" customClass="OutlinedLabel" customModule="faer" customModuleProvider="target">
+                        <rect key="frame" x="85" y="390.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cvV-h2-dRn">
+                        <rect key="frame" x="20" y="400" width="156" height="42"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FdB-BV-hYB">
+                                <rect key="frame" x="0.0" y="0.0" width="156" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMe-60-yxa" userLabel="share" customClass="ProductActionButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" image="share-outline">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" image="share-solid"/>
+                                        <state key="highlighted" image="share-solid"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="solidImage" value="share-solid"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="rMi-QK-QsW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ip-pd-XrM" userLabel="likeBtn" customClass="ProductActionButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="0.0" width="32" height="42"/>
+                                        <state key="normal" image="like-outline"/>
+                                        <state key="selected" image="like-selected"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="solidImage" value="like-solid"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="likeBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="0Wd-gr-jtU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="806-cF-c25" userLabel="shopBtn" customClass="ProductActionButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="124" y="0.0" width="32" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                                        <state key="normal" image="buy-outline">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" image="buy-solid"/>
+                                        <state key="highlighted" image="buy-solid"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="solidImage" value="buy-solid"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shopBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="WEY-SH-EhD"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUu-DR-a09" userLabel="mapBtn" customClass="ProductActionButton" customModule="faer" customModuleProvider="target">
+                                        <rect key="frame" x="156" y="0.0" width="0.0" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="marker-outline">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" image="marker-solid"/>
+                                        <state key="highlighted" image="marker-outline"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="solidImage" value="marker-solid"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="mapBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="74P-KB-2VY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSc-Jx-l5Q" userLabel="Title" customClass="OutlinedLabel" customModule="faer" customModuleProvider="target">
+                        <rect key="frame" x="20" y="331.5" width="55" height="24.5"/>
+                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="poG-lI-AKo" firstAttribute="leading" secondItem="AyG-v9-3bd" secondAttribute="trailing" constant="10" id="1HT-RS-6tB"/>
+                <constraint firstItem="Ygj-BV-xjh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Lx-gt-olf"/>
+                <constraint firstItem="AyG-v9-3bd" firstAttribute="top" secondItem="YSc-Jx-l5Q" secondAttribute="bottom" constant="10" id="H8y-yx-TtR"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YSc-Jx-l5Q" secondAttribute="trailing" constant="50" id="KpR-zz-VBE"/>
+                <constraint firstItem="cvV-h2-dRn" firstAttribute="top" secondItem="poG-lI-AKo" secondAttribute="bottom" constant="9.5" id="QYZ-Nw-p2H"/>
+                <constraint firstItem="AyG-v9-3bd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="SJf-hK-jT1"/>
+                <constraint firstItem="cvV-h2-dRn" firstAttribute="top" secondItem="AyG-v9-3bd" secondAttribute="bottom" constant="9.5" id="TC5-xO-Smv"/>
+                <constraint firstItem="cvV-h2-dRn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="TGx-7X-88h"/>
+                <constraint firstAttribute="trailing" secondItem="Ygj-BV-xjh" secondAttribute="trailing" id="iO0-Kh-f6m"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cvV-h2-dRn" secondAttribute="trailing" constant="20" id="jKK-26-c1D"/>
+                <constraint firstAttribute="bottom" secondItem="cvV-h2-dRn" secondAttribute="bottom" constant="20" id="lEP-h7-QsC"/>
+                <constraint firstAttribute="bottom" secondItem="Ygj-BV-xjh" secondAttribute="bottom" id="lGw-2x-6YT"/>
+                <constraint firstItem="Ygj-BV-xjh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="msX-Ta-ejQ"/>
+                <constraint firstItem="YSc-Jx-l5Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="vkk-E4-LYq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="528" height="462"/>
+            <connections>
+                <outlet property="likeBtn" destination="1ip-pd-XrM" id="q0A-RC-TGB"/>
+                <outlet property="mapBtn" destination="VUu-DR-a09" id="ruu-HP-Svc"/>
+                <outlet property="shareBtn" destination="QMe-60-yxa" id="kXN-Yj-h1b"/>
+                <outlet property="shopBtn" destination="806-cF-c25" id="tSM-Xi-cdE"/>
+            </connections>
+            <point key="canvasLocation" x="-172" y="242"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="buy-outline" width="28" height="32"/>
+        <image name="buy-solid" width="27" height="31"/>
+        <image name="like-outline" width="32" height="28"/>
+        <image name="like-selected" width="30" height="27"/>
+        <image name="like-solid" width="30" height="27"/>
+        <image name="marker-outline" width="24" height="32"/>
+        <image name="marker-solid" width="23" height="31"/>
+        <image name="share-outline" width="32" height="28"/>
+        <image name="share-solid" width="30" height="27"/>
+    </resources>
+</document>

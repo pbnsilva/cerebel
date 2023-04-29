@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6IN-lf-HEa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Product Detail Collection View Controller-->
+        <scene sceneID="8T2-uw-b8O">
+            <objects>
+                <collectionViewController id="aEl-to-2OE" customClass="ProductDetailCollectionViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="S3Z-HH-mE8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="Hpo-OD-YHg">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ProductDetailCollectionHeaderView" id="CYV-fX-wBd" userLabel="ProductDetailCollectionReusableView" customClass="ProductDetailCollectionHeaderView" customModule="faer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SectionHeader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58S-Av-DDP">
+                                    <rect key="frame" x="28" y="-11" width="319" height="22"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="58S-Av-DDP" firstAttribute="leading" secondItem="CYV-fX-wBd" secondAttribute="leadingMargin" constant="20" id="Nbm-S7-R0A"/>
+                                <constraint firstItem="58S-Av-DDP" firstAttribute="centerY" secondItem="CYV-fX-wBd" secondAttribute="centerY" id="Nji-iI-2F7"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="58S-Av-DDP" secondAttribute="trailing" constant="20" id="TFO-Do-n2n"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="title" destination="58S-Av-DDP" id="uqf-XC-rV2"/>
+                            </connections>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ProductDetailCollectionFooterView" id="q1H-Lc-TAC" customClass="ProductDetailCollectionFooterView" customModule="faer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FiN-Ct-XfY">
+                                    <rect key="frame" x="177" y="15" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <connections>
+                                <outlet property="activityIndicator" destination="FiN-Ct-XfY" id="NmA-x9-VDg"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="aEl-to-2OE" id="ifA-Ac-YYn"/>
+                            <outlet property="delegate" destination="aEl-to-2OE" id="5xJ-D2-UUf"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="ieG-7K-g3p">
+                        <barButtonItem key="leftBarButtonItem" image="navbar-back" style="done" id="lK1-X8-KUy">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="hero_dismissViewController" destination="Bh9-FK-Rd9" id="hW2-5O-b5j"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="navbar-buy" id="dgJ-9Z-DfD">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="buyBtnTapped:" destination="aEl-to-2OE" id="M9G-qa-VWd"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="navbar-like" id="ti4-9U-5gB" customClass="ActionBarButtonItem" customModule="faer" customModuleProvider="target">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTint">
+                                        <color key="value" red="1" green="0.13725490200000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultTint">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="likeBtnTapped:" destination="aEl-to-2OE" id="Pin-5j-WKw"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="navbar-share" id="nN4-iE-sYa">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="shareBtnTapped:" destination="aEl-to-2OE" id="heu-rC-zBg"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="navbar-map" id="qFc-fb-3T8">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="mapViewBtnTapped:" destination="aEl-to-2OE" id="akS-zR-LlG"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="buyBtn" destination="dgJ-9Z-DfD" id="yCq-52-6VC"/>
+                        <outlet property="likeBtn" destination="ti4-9U-5gB" id="tiO-BG-vWb"/>
+                        <outlet property="mapViewBtn" destination="qFc-fb-3T8" id="3Qx-vL-5cR"/>
+                        <outlet property="shareBtn" destination="nN4-iE-sYa" id="yhm-HW-TIX"/>
+                        <segue destination="TM2-JV-c9C" kind="showDetail" identifier="PDPSegue" id="Ml0-kX-aev"/>
+                        <segue destination="KCf-wV-t5m" kind="showDetail" identifier="searchResultSegue" id="SZ3-jq-2QJ"/>
+                        <segue destination="YDX-w3-5XG" kind="showDetail" identifier="mapSegue" id="qOX-gM-lcr"/>
+                        <segue destination="Xov-Yv-Eai" kind="presentation" identifier="webViewSegue" modalPresentationStyle="overFullScreen" id="o8A-54-Pw9"/>
+                        <segue destination="MRe-mm-StV" kind="showDetail" identifier="brandProfileSegue" id="ZZy-MA-pui"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bh9-FK-Rd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="160.56971514242881"/>
+        </scene>
+        <!--BrandProfile-->
+        <scene sceneID="zW3-Ry-GoV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BrandProfile" id="MRe-mm-StV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzM-zm-xcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="-121"/>
+        </scene>
+        <!--ProductDetailCollectionView-->
+        <scene sceneID="SYt-Tb-542">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProductDetailCollectionView" id="TM2-JV-c9C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSF-4r-xHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="36"/>
+        </scene>
+        <!--SearchResult-->
+        <scene sceneID="QXz-1b-kGW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchResult" id="KCf-wV-t5m" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMB-nz-4VQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="120"/>
+        </scene>
+        <!--MapView-->
+        <scene sceneID="0aM-RJ-XCb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MapView" id="YDX-w3-5XG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x9d-f8-aVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="205"/>
+        </scene>
+        <!--ItemWebView-->
+        <scene sceneID="Yoy-IW-VTg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ItemWebView" id="Xov-Yv-Eai" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85p-Ur-Qbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="291"/>
+        </scene>
+        <!--Product Detail Navigation Controller-->
+        <scene sceneID="3EG-sF-DV2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6IN-lf-HEa" customClass="ProductDetailNavigationController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="e91-06-2WI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aEl-to-2OE" kind="relationship" relationship="rootViewController" id="Ysh-yL-ceR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lB-Nr-Ild" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="160.56971514242881"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navbar-back" width="30" height="30"/>
+        <image name="navbar-buy" width="30" height="30"/>
+        <image name="navbar-like" width="30" height="30"/>
+        <image name="navbar-map" width="30" height="30"/>
+        <image name="navbar-share" width="30" height="30"/>
+    </resources>
+</document>

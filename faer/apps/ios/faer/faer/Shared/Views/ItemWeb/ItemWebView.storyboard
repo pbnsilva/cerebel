@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pgk-c1-2cb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="diG-62-uaX">
+            <objects>
+                <viewController storyboardIdentifier="webViewSB" id="584-Hl-BDE" customClass="ItemWebViewController" customModule="faer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exH-AX-d9q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olO-Zi-7BB" userLabel="Navigation Bar">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reK-Fp-GwP" userLabel="Dismiss">
+                                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="zBt-lt-yv1"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.89755097520000005" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button" image="navbar-cancel">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hero_dismissViewController" destination="k5J-Ko-JPF" eventType="touchUpInside" id="ydI-fi-Ndl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fZ-JH-SLO" userLabel="Share">
+                                        <rect key="frame" x="335" y="10" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Ffe-2q-UxE"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.89755097520000005" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="navbar-share">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.89755097520000005" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shareBtnTapped:" destination="584-Hl-BDE" eventType="touchUpInside" id="D5f-cs-CYj"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-hM-iWq" userLabel="Title Container">
+                                        <rect key="frame" x="50" y="5" width="275" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsJ-mk-L8U">
+                                                <rect key="frame" x="94" y="0.0" width="87.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69B-Z5-36i">
+                                                <rect key="frame" x="130" y="29" width="15" height="11"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="8"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="reK-Fp-GwP" secondAttribute="bottom" constant="10" id="7Lx-EJ-8hG"/>
+                                    <constraint firstAttribute="bottom" secondItem="zHV-hM-iWq" secondAttribute="bottom" constant="5" id="9OT-iL-3TB"/>
+                                    <constraint firstItem="8fZ-JH-SLO" firstAttribute="leading" secondItem="zHV-hM-iWq" secondAttribute="trailing" constant="10" id="BMy-LI-nLY"/>
+                                    <constraint firstItem="8fZ-JH-SLO" firstAttribute="top" secondItem="olO-Zi-7BB" secondAttribute="top" constant="10" id="HUs-dE-m7i"/>
+                                    <constraint firstAttribute="trailing" secondItem="8fZ-JH-SLO" secondAttribute="trailing" id="IvX-V9-oN6"/>
+                                    <constraint firstItem="zHV-hM-iWq" firstAttribute="top" secondItem="olO-Zi-7BB" secondAttribute="top" constant="5" id="KmN-0E-ByM"/>
+                                    <constraint firstItem="zHV-hM-iWq" firstAttribute="leading" secondItem="reK-Fp-GwP" secondAttribute="trailing" constant="10" id="Tod-oo-IfO"/>
+                                    <constraint firstAttribute="bottom" secondItem="8fZ-JH-SLO" secondAttribute="bottom" constant="10" id="biI-RT-hXl"/>
+                                    <constraint firstItem="reK-Fp-GwP" firstAttribute="leading" secondItem="olO-Zi-7BB" secondAttribute="leading" constant="10" id="eeE-0g-5kY"/>
+                                    <constraint firstItem="reK-Fp-GwP" firstAttribute="top" secondItem="olO-Zi-7BB" secondAttribute="top" constant="10" id="xFw-u0-SYn"/>
+                                    <constraint firstAttribute="height" constant="50" id="yQe-r1-e3e"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVt-WO-6P9">
+                                <rect key="frame" x="0.0" y="70" width="375" height="2"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="8NG-Bt-zI0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8NG-Bt-zI0" firstAttribute="leading" secondItem="jVt-WO-6P9" secondAttribute="leading" id="3TF-lN-lZD"/>
+                                    <constraint firstAttribute="trailing" secondItem="8NG-Bt-zI0" secondAttribute="trailing" id="f4h-JP-PZA"/>
+                                    <constraint firstAttribute="bottom" secondItem="8NG-Bt-zI0" secondAttribute="bottom" id="hQT-hE-jzw"/>
+                                    <constraint firstItem="8NG-Bt-zI0" firstAttribute="top" secondItem="jVt-WO-6P9" secondAttribute="top" id="yXG-uY-ft4"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YA-o9-5Ph" userLabel="WebContainer">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jVt-WO-6P9" secondAttribute="trailing" id="0cg-4D-Xmx"/>
+                            <constraint firstItem="1YA-o9-5Ph" firstAttribute="trailing" secondItem="l0n-gF-aW1" secondAttribute="trailing" id="EfN-U9-lZa"/>
+                            <constraint firstItem="olO-Zi-7BB" firstAttribute="leading" secondItem="l0n-gF-aW1" secondAttribute="leading" id="Sqo-z1-5vc"/>
+                            <constraint firstItem="1YA-o9-5Ph" firstAttribute="bottom" secondItem="l0n-gF-aW1" secondAttribute="bottom" id="WCc-xu-eoq"/>
+                            <constraint firstItem="1YA-o9-5Ph" firstAttribute="top" secondItem="jVt-WO-6P9" secondAttribute="bottom" id="XKB-l4-xBb"/>
+                            <constraint firstItem="jVt-WO-6P9" firstAttribute="top" secondItem="olO-Zi-7BB" secondAttribute="bottom" id="lUU-YK-YGc"/>
+                            <constraint firstItem="olO-Zi-7BB" firstAttribute="trailing" secondItem="l0n-gF-aW1" secondAttribute="trailing" id="pCY-YB-0N7"/>
+                            <constraint firstItem="1YA-o9-5Ph" firstAttribute="leading" secondItem="l0n-gF-aW1" secondAttribute="leading" id="u2h-8h-Nhy"/>
+                            <constraint firstItem="jVt-WO-6P9" firstAttribute="leading" secondItem="exH-AX-d9q" secondAttribute="leading" id="x2K-IU-WdC"/>
+                            <constraint firstItem="olO-Zi-7BB" firstAttribute="top" secondItem="l0n-gF-aW1" secondAttribute="top" id="ynp-bb-BV7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l0n-gF-aW1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="9WQ-QL-HNR">
+                        <barButtonItem key="backBarButtonItem" title=" " id="cPg-t3-ORM"/>
+                        <barButtonItem key="leftBarButtonItem" image="navbar-back" id="IcZ-yu-Yhu" customClass="IconBarButtonItem" customModule="faer" customModuleProvider="target">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="hero_dismissViewController" destination="584-Hl-BDE" id="qwP-Tl-UBv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="progressBarView" destination="8NG-Bt-zI0" id="gYJ-J8-q7p"/>
+                        <outlet property="shareBtn" destination="8fZ-JH-SLO" id="aqS-ap-Apj"/>
+                        <outlet property="titleLabel" destination="dsJ-mk-L8U" id="V2h-Nx-kdU"/>
+                        <outlet property="urlLabel" destination="69B-Z5-36i" id="VoD-jE-zau"/>
+                        <outlet property="webContainer" destination="1YA-o9-5Ph" id="86H-d0-ZU6"/>
+                        <segue destination="nyp-E4-pul" kind="showDetail" identifier="PDPSegue" id="U0B-Nt-uWn"/>
+                        <segue destination="sU4-gF-KSL" kind="showDetail" identifier="searchResultSegue" id="ZI7-e7-mA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5J-Ko-JPF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5824.8000000000002" y="848.72563718140941"/>
+        </scene>
+        <!--ProductDetailCollectionView-->
+        <scene sceneID="wqK-K2-81J">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProductDetailCollectionView" id="nyp-E4-pul" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06h-oN-NxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6511" y="729"/>
+        </scene>
+        <!--SearchResult-->
+        <scene sceneID="NZJ-pw-xPk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchResult" id="sU4-gF-KSL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULt-uG-ZGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6466" y="955"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gVd-G4-CiM">
+            <objects>
+                <navigationController storyboardIdentifier="itemWebViewSB" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="pgk-c1-2cb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="BYi-0H-hwQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="584-Hl-BDE" kind="relationship" relationship="rootViewController" id="ck5-Eh-Kah"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNh-QU-5Mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4885.6000000000004" y="848.72563718140941"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navbar-back" width="30" height="30"/>
+        <image name="navbar-cancel" width="30" height="30"/>
+        <image name="navbar-share" width="30" height="30"/>
+    </resources>
+</document>

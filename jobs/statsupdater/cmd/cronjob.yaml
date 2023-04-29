@@ -1,0 +1,33 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: statsupdater-cron
+spec:
+  schedule: "0 */12 * * *"
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          volumes:
+          - name: secret
+            secret:
+              secretName: firebase-admin-application-credentials
+          containers:
+          - name: statsupdater-container
+            image: eu.gcr.io/cerebel-prod/statsupdater@sha256:_SHA_
+            volumeMounts:
+              - name: secret
+                mountPath: /secret
+            env:
+            - name: ENV
+              value: "prod"
+            - name: ELASTIC_HOST
+              value: "http://elasticsearch:9200"
+            - name: REDIS_HOST
+              value: "redis:6379"
+            - name: PROMETHEUS_PORT
+              value: "9100"
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: "/secret/faer-180421-firebase-adminsdk-2vsmn-6a05d90c4c.json"
+          restartPolicy: OnFailure
